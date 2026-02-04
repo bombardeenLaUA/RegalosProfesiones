@@ -14,7 +14,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80">
-      <div className="relative aspect-square overflow-hidden bg-gray-100">
+      <div className="relative aspect-square overflow-hidden bg-white p-4">
         {imageError ? (
           <div
             className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-amber-100 via-orange-50 to-amber-100 p-4 text-center"
@@ -33,7 +33,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             fill
             unoptimized
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-contain transition-transform duration-300 group-hover:scale-105"
             onError={() => setImageError(true)}
           />
         )}
