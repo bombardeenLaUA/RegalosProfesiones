@@ -43,6 +43,19 @@ export default function AvisoLegalPage() {
               La información ofrecida tiene carácter orientativo. No nos responsabilizamos de los productos o servicios adquiridos a través de los enlaces de afiliados. Las transacciones se realizan directamente con los comercios enlazados.
             </p>
           </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-gray-900">5. Contacto</h2>
+            <p>
+              Para cualquier duda o consulta relacionada con esta web, puedes contactarnos en:{" "}
+              <a
+                href="mailto:contactogiftgenius@gmail.com"
+                className="text-amber-600 font-medium hover:text-amber-700 hover:underline"
+              >
+                contactogiftgenius@gmail.com
+              </a>
+            </p>
+          </section>
         </div>
 
         <Link
