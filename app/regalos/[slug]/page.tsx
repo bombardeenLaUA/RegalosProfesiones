@@ -51,10 +51,13 @@ export default async function RegalosPage({ params }: PageProps) {
           <p className="mt-6 max-w-3xl text-lg text-gray-600 leading-relaxed">
             {niche.description} Hemos seleccionado cuidadosamente productos que cualquier {displayName.toLowerCase()} valorará. Desde lo práctico hasta lo sorprendente, aquí tienes nuestra lista de los mejores regalos.
           </p>
+          <p className="mt-2 text-sm italic text-gray-500">
+            Hemos analizado el mercado para ahorrarte tiempo: esta es nuestra selección exclusiva con los Top ventas y mejor valorados del momento.
+          </p>
           {/* CTA Hero - Deep Linking */}
           <div className="mt-10 flex flex-col items-center">
             <p className="mb-4 text-center text-gray-600">
-              ¿No encuentras lo que buscas? Explora miles de opciones más
+              ¿Prefieres ver más opciones? Accede al catálogo completo en Amazon
             </p>
             <AmazonCtaButton slug={slug} displayName={displayName} variant="hero" />
           </div>
