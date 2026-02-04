@@ -4,7 +4,6 @@ import { useState, useRef } from "react";
 import Link from "next/link";
 import { Search, ArrowRight, Palette, Gamepad2, Heart, Code, GraduationCap } from "lucide-react";
 import { NICHE_DATA } from "@/lib/data";
-import PriceDisclaimer from "@/components/PriceDisclaimer";
 
 const NICHE_ICONS: Record<string, React.ElementType> = {
   arquitectos: Palette,
@@ -30,9 +29,6 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Disclaimer de precios */}
-      <PriceDisclaimer />
-
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-amber-50 via-white to-orange-50">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-100/50 via-transparent to-transparent" />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import PriceDisclaimer from "@/components/PriceDisclaimer";
 import Footer from "@/components/Footer";
 
 const inter = Inter({
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <Navbar />
+        <PriceDisclaimer />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>
