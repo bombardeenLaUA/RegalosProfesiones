@@ -23,7 +23,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <Link
-                  href="/aviso-legal"
+                  href="/legal/aviso-legal"
                   className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   Aviso Legal
@@ -31,7 +31,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/privacidad"
+                  href="/legal/politica-privacidad"
                   className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   Política de Privacidad
@@ -39,7 +39,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/cookies"
+                  href="/legal/politica-privacidad#cookies"
                   className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   Política de Cookies

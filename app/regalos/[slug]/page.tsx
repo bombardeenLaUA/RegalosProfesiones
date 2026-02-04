@@ -64,22 +64,32 @@ export default async function RegalosPage({ params }: PageProps) {
       {/* Grid de Productos con Cargar más y CTA */}
       <ProductGrid products={niche.products} />
 
-      {/* Sección SEO: ¿Por qué hacer un regalo a un [Nombre]? */}
+      {/* Sección SEO: Contenido personalizado por nicho */}
       <section className="border-t border-gray-200 bg-gray-50 py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900">
             ¿Por qué hacer un regalo a un {displayName}?
           </h2>
           <div className="mt-6 space-y-4 text-gray-600 leading-relaxed">
-            <p>
-              Regalar a un {displayName.toLowerCase()} es una forma excelente de reconocer su dedicación y pasión por su trabajo o afición. Un regalo bien elegido demuestra que has pensado en sus intereses y que valoras lo que hacen.
-            </p>
-            <p>
-              Ya sea para un cumpleaños, Navidad, día de la profesión o cualquier ocasión especial, encontrar el regalo perfecto para un {displayName.toLowerCase()} puede parecer complicado. Sin embargo, con un poco de conocimiento sobre sus necesidades y gustos, es más fácil de lo que piensas.
-            </p>
-            <p>
-              Los {displayName.toLowerCase()} suelen apreciar regalos que les ayuden en su día a día, que mejoren su experiencia o que reconozcan su expertise. En esta guía hemos reunido productos de calidad, probados y recomendados, para que tu regalo sea todo un acierto.
-            </p>
+            {niche.content ? (
+              niche.content.split(/\n\n+/).map((paragraph, i) => (
+                <p key={i}>
+                  {paragraph.split(/(\*\*.*?\*\*)/g).map((part, j) =>
+                    part.startsWith("**") && part.endsWith("**") ? (
+                      <strong key={j} className="font-semibold text-gray-800">
+                        {part.slice(2, -2)}
+                      </strong>
+                    ) : (
+                      part
+                    )
+                  )}
+                </p>
+              ))
+            ) : (
+              <p>
+                Regalar a un {displayName.toLowerCase()} es una forma excelente de reconocer su dedicación y pasión. Un regalo bien elegido demuestra que has pensado en sus intereses.
+              </p>
+            )}
           </div>
           <Link
             href="/"

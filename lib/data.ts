@@ -10,6 +10,7 @@ export interface Niche {
   slug: string;
   title: string;
   description: string;
+  content?: string;
   products: Product[];
 }
 
@@ -18,6 +19,7 @@ export const NICHE_DATA: Niche[] = [
     slug: "arquitectos",
     title: "Los Mejores Regalos para Arquitectos",
     description: "Descubre las mejores ideas de regalos para arquitectos. Herramientas profesionales, maquetas, libros de diseño y accesorios.",
+    content: "Los arquitectos viven en el cruce entre el arte y la ingeniería, y sus regalos deben reflejar esa dualidad. No se trata solo de regalar 'cosas de oficina', sino de encontrar herramientas que respeten su obsesión por la estética, la precisión y el diseño. Un buen regalo para un arquitecto suele caer en tres categorías: **productividad**, **inspiración** o **confort**. Olvida los regalos genéricos; busca materiales premium, acabados mate y diseño minimalista.",
     products: [
       { id: "1", title: "Bolígrafo digital Metapen", price: "20,89 €", imageUrl: "https://m.media-amazon.com/images/I/41yUOq1wFtL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B09ZTXVNVD" },
       { id: "2", title: "Libro: El Arquitecto Emprendedor", price: "14,69 €", imageUrl: "https://m.media-amazon.com/images/I/61EuFK10IAL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DR6MB9DQ" },
@@ -37,6 +39,7 @@ export const NICHE_DATA: Niche[] = [
     slug: "gamers",
     title: "Los Mejores Regalos para Gamers",
     description: "Periféricos de alto rendimiento, decoración RGB y accesorios virales para el setup perfecto.",
+    content: "El setup de un gamer es su templo. Regalar a un apasionado de los videojuegos no es comprar el primer juego que veas. Se trata de entender su ecosistema: ¿PC o consola? ¿Competitivo o historia? Los mejores regalos para gamers en 2024 se centran en la **atmósfera y el rendimiento**. Desde iluminación RGB que se sincroniza con la pantalla, hasta periféricos que dan esa milésima de segundo de ventaja.",
     products: [
       { id: "1", title: "KDD Soporte Auriculares Gaming LED con Carga Inalámbrica", price: "26,55 €", imageUrl: "https://m.media-amazon.com/images/I/61JI6UgtcJL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DGGNPHP8" },
       { id: "2", title: "Alfombrilla Ratón Personalizada con Foto para Gamers", price: "12,90 €", imageUrl: "https://m.media-amazon.com/images/I/71CH4+tl-DL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DK213H68" },
@@ -56,6 +59,7 @@ export const NICHE_DATA: Niche[] = [
     slug: "enfermeros",
     title: "Los Mejores Regalos para Enfermeros",
     description: "Regalos pensados para enfermeros y enfermeras. Productos para bienestar y comodidad en el trabajo.",
+    content: "La enfermería no es una profesión, es un estilo de vida de turnos de 12 horas. Si buscas el regalo perfecto, la clave es: **Bienestar**. Sus pies sufren y su tiempo libre es sagrado. Nuestra selección prioriza el confort extremo (calzado, compresión), la utilidad práctica para el hospital y el autocuidado para cuando por fin llegan a casa.",
     products: [
       { id: "1", title: "Zapatillas Cómodas Trabajo", price: "45,99 €", imageUrl: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80", amazonLink: "#" },
       { id: "2", title: "Reloj de Enfermería", price: "32,00 €", imageUrl: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500&q=80", amazonLink: "#" },
@@ -75,6 +79,7 @@ export const NICHE_DATA: Niche[] = [
     slug: "programadores",
     title: "Los Mejores Regalos para Programadores",
     description: "Ideas de regalos para desarrolladores. Teclados, libros técnicos, gadgets y accesorios.",
+    content: "Regalar a un programador es más sencillo de lo que parece: buscan optimizar su entorno y su cerebro. Valoran la eficiencia, la ergonomía y el humor 'geek'. Aquí encontrarás desde hardware que cuida su salud (teclados mecánicos, sillas) hasta gadgets que les ayudan a concentrarse o simplemente les sacan una sonrisa mientras depuran código.",
     products: [
       { id: "1", title: "Teclado Ergonómico Split", price: "129,99 €", imageUrl: "https://images.unsplash.com/photo-1587829741301-dc798b91a603?w=500&q=80", amazonLink: "#" },
       { id: "2", title: "Monitor 4K USB-C", price: "299,00 €", imageUrl: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&q=80", amazonLink: "#" },
@@ -94,6 +99,7 @@ export const NICHE_DATA: Niche[] = [
     slug: "profesores",
     title: "Los Mejores Regalos para Profesores",
     description: "Regalos ideales para maestros y profesores. Material educativo, accesorios de escritorio y detalles de agradecimiento.",
+    content: "Los profesores desgastan la voz y la energía a diario. El mejor regalo no es otra taza genérica, sino algo que **les facilite la vida en el aula** o les ayude a desconectar. Hemos seleccionado artículos que resuelven problemas reales: desde proteger su voz y organizar el caos de papeles, hasta detalles que les recuerdan el impacto positivo que tienen en sus alumnos.",
     products: [
       { id: "1", title: "Bolígrafo Estilográfica Premium", price: "29,99 €", imageUrl: "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=500&q=80", amazonLink: "#" },
       { id: "2", title: "Agenda Docente Año Completo", price: "24,90 €", imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80", amazonLink: "#" },
