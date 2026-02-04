@@ -52,14 +52,17 @@ export default async function RegalosPage({ params }: PageProps) {
             {niche.description} Hemos seleccionado cuidadosamente productos que cualquier {displayName.toLowerCase()} valorará. Desde lo práctico hasta lo sorprendente, aquí tienes nuestra lista de los mejores regalos.
           </p>
           {/* CTA Hero - Deep Linking */}
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex flex-col items-center">
+            <p className="mb-4 text-center text-gray-600">
+              ¿No encuentras lo que buscas? Explora miles de opciones más
+            </p>
             <AmazonCtaButton slug={slug} displayName={displayName} variant="hero" />
           </div>
         </div>
       </header>
 
       {/* Grid de Productos con Cargar más y CTA */}
-      <ProductGrid products={niche.products} slug={slug} displayName={displayName} />
+      <ProductGrid products={niche.products} />
 
       {/* Sección SEO: ¿Por qué hacer un regalo a un [Nombre]? */}
       <section className="border-t border-gray-200 bg-gray-50 py-16">

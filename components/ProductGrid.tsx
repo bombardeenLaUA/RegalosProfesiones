@@ -2,18 +2,15 @@
 
 import { useState } from "react";
 import ProductCard from "./ProductCard";
-import AmazonCtaButton from "./AmazonCtaButton";
 import type { Product } from "@/lib/data";
 
 const PRODUCTS_PER_PAGE = 12;
 
 interface ProductGridProps {
   products: Product[];
-  slug: string;
-  displayName: string;
 }
 
-export default function ProductGrid({ products, slug, displayName }: ProductGridProps) {
+export default function ProductGrid({ products }: ProductGridProps) {
   const [visibleCount, setVisibleCount] = useState(PRODUCTS_PER_PAGE);
   const visibleProducts = products.slice(0, visibleCount);
   const hasMore = visibleCount < products.length;
@@ -31,17 +28,9 @@ export default function ProductGrid({ products, slug, displayName }: ProductGrid
         ))}
       </div>
 
-      {/* CTA Principal Amazon - Deep Linking */}
-      <div className="mt-16 flex flex-col items-center gap-8">
-        <div className="flex w-full flex-col items-center gap-4">
-          <p className="text-center text-sm font-medium text-gray-500">
-            ¿No encuentras lo que buscas? Explora miles de opciones más
-          </p>
-          <AmazonCtaButton slug={slug} displayName={displayName} variant="grid" />
-        </div>
-
-        {/* Botón Cargar más */}
-        {hasMore && (
+      {/* Botón Cargar más */}
+      {hasMore && (
+        <div className="mt-16 flex justify-center">
           <button
             type="button"
             onClick={handleLoadMore}
