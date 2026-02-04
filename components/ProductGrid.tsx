@@ -38,8 +38,8 @@ export default function ProductGrid({ products }: ProductGridProps) {
           >
             Cargar más productos ({Math.min(PRODUCTS_PER_PAGE, totalRemaining)} más)
           </button>
-        )}
-      </div>
+        </div>
+      )}
     </section>
   );
 }
