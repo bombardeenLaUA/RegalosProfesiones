@@ -110,9 +110,9 @@ export const NICHE_DATA: Niche[] = [
       { id: "7", title: "Organizador de Escritorio de Bambú", price: "23,99€", imageUrl: "https://m.media-amazon.com/images/I/61mTsueYW7L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0F6TWMY12" },
       { id: "8", title: "Bolígrafo Borrable Premium (Cuerpo Metal)", price: "9,59€", imageUrl: "https://m.media-amazon.com/images/I/71cHghYwl3L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CNG2SWKK" },
       { id: "9", title: "Fiambrera Bento Box (Estilo Japonés)", price: "13,99€", imageUrl: "https://m.media-amazon.com/images/I/71hsAIJD3QL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BRN27Y2B" },
-      { id: "10", title: "Lanyard (Cinta Cuello) con Estampado Bonito", price: "11,99€", imageUrl: "https://m.media-amazon.com/images/I/71n+f6KKupL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FWBPXNL7" },
-      { id: "11", title: "Crema de Manos Hidratante (No grasa)", price: "4,05€", imageUrl: "https://m.media-amazon.com/images/I/61HHij2yPhL._SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B07C5W53C3" },
-      { id: "12", title: "Carpeta Clasificadora Colores Pastel", price: "11,75€", imageUrl: "https://m.media-amazon.com/images/I/61dV4acxk1L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C34CT8MK" },
+      { id: "10", title: "Mando Presentador Diapositivas Inalámbrico", price: "11,99€", imageUrl: "https://m.media-amazon.com/images/I/41aOTTYrFvL._AC_UY218_.jpg  ", amazonLink: "https://www.amazon.es/dp/B0CW5VC6NN" },
+      { id: "11", title: "Impresora de Etiquetas Bluetooth", price: "4,05€", imageUrl: "https://m.media-amazon.com/images/I/61g8I1U4lDL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0CX8P66SM" },
+      { id: "12", title: "Máquina Plastificadora Hojas A4", price: "11,75€", imageUrl: "https://m.media-amazon.com/images/I/61MTGZ7GiWL._AC_UY218_.jpg", amazonLink: "https://www.amazon.es/dp/B0DFCG1PJL" },
     ],
   }
 ];
