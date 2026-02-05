@@ -71,11 +71,18 @@ export default function HomePage() {
         ref={resultsRef}
         className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8"
       >
-        <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-          Categorías populares
+        <div className="flex justify-center">
+          <span
+            className="inline-block rounded-full bg-orange-100 px-4 py-1 text-sm font-medium text-orange-700 animate-[fadeIn_0.5s_ease-out_both]"
+          >
+            5 Profesiones Disponibles
+          </span>
+        </div>
+        <h2 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl">
+          Elige tu nicho y acierta seguro
         </h2>
         <p className="mt-2 text-gray-600">
-          Elige una categoría y descubre nuestras recomendaciones
+          Explora nuestras guías curadas por profesión
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
