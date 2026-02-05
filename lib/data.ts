@@ -81,7 +81,7 @@ export const NICHE_DATA: Niche[] = [
     description: "Ideas de regalos para desarrolladores. Teclados, libros técnicos, gadgets y accesorios.",
     content: "Regalar a un programador es más sencillo de lo que parece: buscan optimizar su entorno y su cerebro. Valoran la eficiencia, la ergonomía y el humor 'geek'. Aquí encontrarás desde hardware que cuida su salud (teclados mecánicos, sillas) hasta gadgets que les ayudan a concentrarse o simplemente les sacan una sonrisa mientras depuran código.",
     products: [
-      { id: "1", title: "Flipper Zero", price: "105,00 €", imageUrl: "https://m.media-amazon.com/images/I/613mclIMw1L._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0BFXKSFNT" },
+      { id: "1", title: "Power Bank 65W USB-C Cargador Portátil", price: "105,00 €", imageUrl: "https://m.media-amazon.com/images/I/61fS6kG8vxL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0F2MYWRR1" },
       { id: "2", title: "Monitor 4K USB-C (UltraWide)", price: "438,99€", imageUrl: "https://m.media-amazon.com/images/I/61KUUMHO4KL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FT3XYRTJ" },
       { id: "3", title: "Libro: Clean Code", price: "42,95 €", imageUrl: "https://m.media-amazon.com/images/I/81Rnac2Fq+L._SY385_.jpg", amazonLink: "https://www.amazon.es/dp/0135398576" },
       { id: "4", title: "Soporte Laptop Aluminio", price: "26,99€", imageUrl: "https://m.media-amazon.com/images/I/61EMzItW34L._AC_SY879_.jpg", amazonLink: "https://www.amazon.es/dp/B0FX4LFBD8" },
