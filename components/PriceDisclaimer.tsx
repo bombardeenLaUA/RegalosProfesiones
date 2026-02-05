@@ -7,7 +7,7 @@ export default function PriceDisclaimer() {
         <Info className="h-5 w-5 flex-shrink-0 text-blue-600" />
         <p className="text-sm text-gray-800">
           <span className="font-semibold">Nota:</span> Los precios mostrados son
-          el precio base de cada producto y pueden no reflejar los descuentos activos.
+          el precio base de cada producto y no reflejan los descuentos activos.
           A su vez, este precio base no está sujeto a cualquier posible cambio por parte de Amazon.
           ¡Haz clic en los productos para ver el precio final en Amazon, te puedes llevar una sorpresa!
         </p>
