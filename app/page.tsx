@@ -44,7 +44,7 @@ export default function HomePage() {
 
             {/* Buscador funcional */}
             <div className="mt-10 flex justify-center">
-              <div className="flex w-full max-w-xl items-center gap-3 rounded-2xl border-2 border-gray-200 bg-white px-5 py-4 shadow-lg shadow-gray-200/50 transition-all hover:border-amber-300 hover:shadow-xl hover:shadow-amber-100/30 focus-within:border-amber-400 focus-within:ring-4 focus-within:ring-amber-100">
+              <div className="flex w-full max-w-xl items-center gap-3 overflow-hidden rounded-2xl border-2 border-gray-200 bg-white px-5 py-4 shadow-lg shadow-gray-200/50 transition-all hover:border-amber-300 hover:shadow-xl hover:shadow-amber-100/30 focus-within:border-amber-400 focus-within:ring-4 focus-within:ring-amber-100">
                 <Search className="h-6 w-6 flex-shrink-0 text-gray-400" />
                 <input
                   type="text"
@@ -56,7 +56,7 @@ export default function HomePage() {
                 <button
                   type="button"
                   onClick={scrollToResults}
-                  className="rounded-lg bg-amber-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-amber-600"
+                  className="rounded-none bg-amber-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-amber-600"
                 >
                   Explorar
                 </button>

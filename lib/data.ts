@@ -4,6 +4,7 @@ export interface Product {
   price: string;
   imageUrl: string;
   amazonLink: string;
+  badge?: string;
 }
 
 export interface Niche {
@@ -32,8 +33,8 @@ export const NICHE_DATA: Niche[] = [
       { id: "9", title: "LLavero de Arquitecto", price: "9,99 €", imageUrl: "https://m.media-amazon.com/images/I/61hMTPgo-rL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B08241S43M" },
       { id: "10", title: "Plantillas para Planos Casa Diseño Interiores", price: "16,00 €", imageUrl: "https://m.media-amazon.com/images/I/71n8N4DI-aL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B07F1TQRYK" },
       { id: "11", title: "Medidor Láser Portátil", price: "19,99 €", imageUrl: "https://m.media-amazon.com/images/I/61xUc34WUoL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DJ7JKWRZ" },
-      { id: "12", title: "Taza Arquitecto Koalificado", price: "12,95 €", imageUrl: "https://m.media-amazon.com/images/I/617cxgmz7NL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0C211QJKW" },
-    ],
+      { id: "12", title: "Taza Arquitecto Koalificado", price: "12,95 €", imageUrl: "https://m.media-amazon.com/images/I/617cxgmz7NL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0C211QJKW" }
+    ]
   },
   {
     slug: "gamers",
@@ -52,8 +53,8 @@ export const NICHE_DATA: Niche[] = [
       { id: "9", title: "Teclado Mecánico Gaming RGB Dierya", price: "39,99 €", imageUrl: "https://m.media-amazon.com/images/I/610Wsop5scL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0FFMRQNLW/" },
       { id: "10", title: "Taza Gameboy que Cambia con Calor Oficial Gamers Retro", price: "11,99 €", imageUrl: "https://m.media-amazon.com/images/I/71alMT8fYrL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B06WRVFRJV" },
       { id: "11", title: "8 Piezas Hexágonos Luminosos RGB Sincronización Música Gaming", price: "25,72 €", imageUrl: "https://m.media-amazon.com/images/I/61-3jrmXtzL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0D91YRTVY" },
-      { id: "12", title: "Portavasos Escritorio Antiderrames Giratorio para Gaming", price: "15,69 €", imageUrl: "https://m.media-amazon.com/images/I/61wSbS6zXlL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DSJ8SGFH" },
-    ],
+      { id: "12", title: "Portavasos Escritorio Antiderrames Giratorio para Gaming", price: "15,69 €", imageUrl: "https://m.media-amazon.com/images/I/61wSbS6zXlL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DSJ8SGFH" }
+    ]
   },
   {
     slug: "enfermeros",
@@ -72,8 +73,8 @@ export const NICHE_DATA: Niche[] = [
       { id: "9", title: "Rompeampollas Jeringuilla y Conejito", price: "10,99 €", imageUrl: "https://m.media-amazon.com/images/I/71hZapHrysL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0GDWFJX6K" },
       { id: "10", title: "Collar Identificación It's Fine", price: "8,99 €", imageUrl: "https://m.media-amazon.com/images/I/71NT65Dz-iL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DHZQ588T" },
       { id: "11", title: "Forro Polar Personalizado Enfermeria", price: "37,95 €", imageUrl: "https://m.media-amazon.com/images/I/41YoOGkxW+L._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DH8H6LJZ" },
-      { id: "12", title: "Bolígrafos con forma de Jeringuilla", price: "4,41 €", imageUrl: "https://m.media-amazon.com/images/I/61swmr004EL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0CMC3QGR6" },
-    ],
+      { id: "12", title: "Bolígrafos con forma de Jeringuilla", price: "4,41 €", imageUrl: "https://m.media-amazon.com/images/I/61swmr004EL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0CMC3QGR6" }
+    ]
   },
   {
     slug: "programadores",
@@ -92,8 +93,8 @@ export const NICHE_DATA: Niche[] = [
       { id: "9", title: "Elgato Stream Deck (Para Macros)", price: "169,99€", imageUrl: "https://m.media-amazon.com/images/I/61gtdFnK+UL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09738CV2G" },
       { id: "10", title: "YubiKey 5 NFC (Llave Seguridad)", price: "70,18€", imageUrl: "https://m.media-amazon.com/images/I/41DkFsG8yEL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08DHL1YDL" },
       { id: "11", title: "Webcam HD Pro Logitech", price: "61,06€", imageUrl: "https://m.media-amazon.com/images/I/71eGb1FcyiL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B006A2Q81M" },
-      { id: "12", title: "Lámpara de Monitor", price: "49,99€", imageUrl: "https://m.media-amazon.com/images/I/51p1Ui5sa7L._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B08DKQ3JG1" },
-    ],
+      { id: "12", title: "Lámpara de Monitor", price: "49,99€", imageUrl: "https://m.media-amazon.com/images/I/51p1Ui5sa7L._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B08DKQ3JG1" }
+    ]
   },
   {
     slug: "profesores",
@@ -112,9 +113,109 @@ export const NICHE_DATA: Niche[] = [
       { id: "9", title: "Fiambrera Bento Box (Estilo Japonés)", price: "13,99€", imageUrl: "https://m.media-amazon.com/images/I/71hsAIJD3QL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BRN27Y2B" },
       { id: "10", title: "Mando Presentador Diapositivas Inalámbrico", price: "12,99€", imageUrl: "https://m.media-amazon.com/images/I/41aOTTYrFvL._AC_UY218_.jpg  ", amazonLink: "https://www.amazon.es/dp/B0CW5VC6NN" },
       { id: "11", title: "Impresora de Etiquetas Bluetooth", price: "24,99€", imageUrl: "https://m.media-amazon.com/images/I/61g8I1U4lDL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0CX8P66SM" },
-      { id: "12", title: "Máquina Plastificadora Hojas A4", price: "18,99€", imageUrl: "https://m.media-amazon.com/images/I/61MTGZ7GiWL._AC_UY218_.jpg", amazonLink: "https://www.amazon.es/dp/B0DFCG1PJL" },
-    ],
-  }
+      { id: "12", title: "Máquina Plastificadora Hojas A4", price: "18,99€", imageUrl: "https://m.media-amazon.com/images/I/61MTGZ7GiWL._AC_UY218_.jpg", amazonLink: "https://www.amazon.es/dp/B0DFCG1PJL" }
+    ]
+  },
+  {
+    slug: "cocineros",
+    title: "Los Mejores Regalos para Cocineros y Chefs",
+    description: "Utensilios premium y gadgets gourmet para quienes disfrutan entre fogones.",
+    content: "Cocinar es un arte, y todo artista necesita sus herramientas. Ya sea para un chef profesional o ese amigo que se cree concursante de MasterChef, hemos elegido los utensilios que marcan la diferencia. Nada de gadgets inútiles de teletienda: aquí hay cuchillos que cortan el aire, organización inteligente y caprichos gourmet que elevarán sus platos al siguiente nivel.",
+    products: [
+      { id: "1", title: "Cuchillo Santoku Arcos (Serie Riviera)", price: "29,68€", imageUrl: "https://m.media-amazon.com/images/I/41fIPFqleyL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B005LR6C7C", badge: "Top Ventas" },
+      { id: "2", title: "Rallador Microplane Premium (El Original)", price: "19,96€", imageUrl: "https://m.media-amazon.com/images/I/51QX8v-PWkL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B00151WA06", badge: "Mejor Valorados" },
+      { id: "3", title: "Soplete de Cocina Profesional Recargable", price: "19,99€", imageUrl: "https://m.media-amazon.com/images/I/51Bu6ursJ0L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08Y5M5V3X" },
+      { id: "4", title: "Piedra de Afilar Doble Grano (1000/6000)", price: "15,23€", imageUrl: "https://m.media-amazon.com/images/I/71gS-NlrfIL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B089HXZVQS" },
+      { id: "5", title: "Termómetro Digital de Lectura Instantánea", price: "9,49€", imageUrl: "https://m.media-amazon.com/images/I/6145yilthgL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B01LXI5HYH" },
+      { id: "6", title: "Mandolina Japonesa Ajustable", price: "54,44€", imageUrl: "https://m.media-amazon.com/images/I/61tf4OhGIBL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B004E45NXC" },
+      { id: "7", title: "Delantal de Lona Encerada y Cuero (Pro)", price: "25,00€", imageUrl: "https://m.media-amazon.com/images/I/61FO1Nvoy5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07FSHBC1T" },
+      { id: "8", title: "Kit para Hacer Sushi en Casa (Bambú)", price: "25,99€", imageUrl: "https://m.media-amazon.com/images/I/91m8zzLKovL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0G233P492" },
+      { id: "9", title: "Báscula de Cocina Digital Alta Precisión", price: "9,99€", imageUrl: "https://m.media-amazon.com/images/I/61wIruIxTVL._SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0C7VC6D92" },
+      { id: "10", title: "Molinillo de Pimienta Eléctrico (Gravedad)", price: "39,99€", imageUrl: "https://m.media-amazon.com/images/I/81SVY8UPQPL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0DBSQ5GZC" },
+      { id: "11", title: "Máquina para Hacer Pasta Fresca (Acero)", price: "179,54€", imageUrl: "https://m.media-amazon.com/images/I/810imIDIeCL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09LLH82R7" },
+      { id: "12", title: "Libro 'La Cocina y los Alimentos' (La Biblia)", price: "42,65€", imageUrl: "https://m.media-amazon.com/images/I/A1tXTmvUh+L._SY466_.jpg", amazonLink: "https://www.amazon.es/dp/8483067447" }
+    ]
+  },
+  {
+    slug: "opositores",
+    title: "Regalos Útiles para Opositores y Estudiantes",
+    description: "Ergonomía, concentración y motivación para quienes preparan un examen importante.",
+    content: "La vida del opositor es una maratón mental y física. Horas interminables en la silla, dolores de espalda y batallas contra la distracción. Para ellos, el mejor regalo es aquel que les hace el estudio más cómodo o eficiente. Hemos seleccionado desde soportes que cuidan sus cervicales hasta herramientas de gestión del tiempo que valen su peso en oro (o en plazas).",
+    products: [
+      { id: "1", title: "Atril de Madera Regulable para Libros", price: "39,99€", imageUrl: "https://m.media-amazon.com/images/I/71I4KYkNgVL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C3TSQ4VQ" },
+      { id: "2", title: "Tapones para Oídos Loop Quiet (Reducción Ruido)", price: "24,95€", imageUrl: "https://m.media-amazon.com/images/I/51vun8qtNlL._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg", amazonLink: "https://www.amazon.es/dp/B0D3V61JC8" },
+      { id: "3", title: "Cojín de Asiento Gel Ortopédico (Ergonómico)", price: "24,99€", imageUrl: "https://m.media-amazon.com/images/I/81Qk0lpQKGL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D5YK2KFH" },
+      { id: "4", title: "Temporizador Visual 60 Minutos (Gestión Tiempo)", price: "12,24€", imageUrl: "https://m.media-amazon.com/images/I/6132ZKvgWXL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CZZXXSCZ" },
+      { id: "5", title: "Kit Subrayadores Pastel Stabilo Boss (15 uds)", price: "19,28€", imageUrl: "https://m.media-amazon.com/images/I/7106mm4gx5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08S76ZLVJ" },
+      { id: "6", title: "Lámpara Flexo LED con Modos de Lectura", price: "20,99€", imageUrl: "https://m.media-amazon.com/images/I/51qTF5fnhKL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D8PY8CRD" },
+      { id: "7", title: "Reposapiés Ergonómico de Espuma", price: "36,99€", imageUrl: "https://m.media-amazon.com/images/I/71j3meHJQlL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0924JX1V7" },
+      { id: "8", title: "Botella de Agua Motivacional 2L", price: "9,59€", imageUrl: "https://m.media-amazon.com/images/I/61M0AXkvCWL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BNJ16R2S" },
+      { id: "9", title: "Opogenda (Agenda Especial Opositores)", price: "15,95€", imageUrl: "https://m.media-amazon.com/images/I/61JhGWX1JHL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BYHTPSFK" },
+      { id: "10", title: "Pizarra Blanca Pequeña de Escritorio (Cristal)", price: "94,98€", imageUrl: "https://m.media-amazon.com/images/I/61vKZ+amu6L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BX2MPKTR" },
+      { id: "11", title: "Taza Divertida 'Lágrimas de Opositor'", price: "16,90€", imageUrl: "https://m.media-amazon.com/images/I/61s7+p+0MQL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0GKPN86FW" },
+      { id: "12", title: "Organizador Giratorio de Escritorio", price: "8,99€", imageUrl: "https://m.media-amazon.com/images/I/61Vs1Km3FRL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D42322CV" }
+    ]
+  },
+  {
+    slug: "abogados",
+    title: "Regalos Elegantes para Abogados y Juristas",
+    description: "Detalles de clase, decoración de despacho y accesorios para profesionales del derecho.",
+    content: "En el mundo del derecho, la imagen y la organización lo son todo. Un buen regalo para un abogado debe equilibrar la elegancia clásica con la utilidad moderna. Ya sea para celebrar un primer caso ganado o decorar un bufete consolidado, esta lista incluye desde símbolos icónicos de la justicia hasta accesorios de oficina que imponen respeto.",
+    products: [
+      { id: "1", title: "Mazo de Juez de Madera (Decorativo)", price: "18,99€", imageUrl: "https://m.media-amazon.com/images/I/81ykJGimnoL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BGSHC65Z" },
+      { id: "2", title: "Estatua Dama de la Justicia (Bronceado)", price: "9,80€", imageUrl: "https://m.media-amazon.com/images/I/61FSiYvGCOL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FXWQYBHW" },
+      { id: "3", title: "Bolígrafo Parker Jotter (Acero Inoxidable)", price: "7,10€", imageUrl: "https://m.media-amazon.com/images/I/51yQrjjPTaL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07S2NFB17" },
+      { id: "4", title: "Portafolios de Cuero Sintético Premium", price: "20,99€", imageUrl: "https://m.media-amazon.com/images/I/61-RVOUt9zL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B01MEBQ37R" },
+      { id: "5", title: "Gemelos de Camisa 'Balanza de la Justicia'", price: "16,90€", imageUrl: "https://m.media-amazon.com/images/I/61MuLo9mY5L._AC_SY695_.jpg", amazonLink: "https://www.amazon.es/dp/B07C3ZHN34" },
+      { id: "6", title: "Lámpara de Banquero Clásica (Verde)", price: "164,90€", imageUrl: "https://m.media-amazon.com/images/I/5148-RZE+KL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B01CT83UGG" },
+      { id: "7", title: "Pisapapeles de Cristal Grabado", price: "13,99€", imageUrl: "https://m.media-amazon.com/images/I/71mYmxUUfzL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0DRWHLC4C" },
+      { id: "8", title: "Organizador de Escritorio de Madera", price: "33,29€", imageUrl: "https://m.media-amazon.com/images/I/81pfwgzl8vL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08BHZNC2W" },
+      { id: "9", title: "Taza 'No discuto, explico por qué tengo razón'", price: "16,90€", imageUrl: "https://m.media-amazon.com/images/I/61s7+p+0MQL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0GKPN86FW" },
+      { id: "10", title: "Soporte para Tarjetas de Visita Metálico", price: "8,99€", imageUrl: "https://m.media-amazon.com/images/I/81FY+tVcFWL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CBJSFZKC" },
+      { id: "11", title: "Libro 'Leyes de Murphy para Abogados'", price: "14,54 €", imageUrl: "https://m.media-amazon.com/images/I/710exyUw9iL._SY522_.jpg", amazonLink: "https://www.amazon.es/dp/8484600505" },
+      { id: "12", title: "Maletín para Portátil Fino y Elegante", price: "22,99€", imageUrl: "https://m.media-amazon.com/images/I/81UmyFpzOfL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09G71T638" }
+    ]
+  },
+  {
+    slug: "fotografos",
+    title: "Regalos Originales para Fotógrafos",
+    description: "Accesorios creativos, limpieza y gadgets para amantes de la fotografía.",
+    content: "Regalar a un fotógrafo es difícil porque suelen ser muy técnicos, pero hay accesorios infalibles que todos agradecen. Hemos evitado las cámaras (eso es muy personal) y nos hemos centrado en lo que rodea la experiencia: mantener el equipo seguro, limpiar las lentes, estabilizar la imagen o jugar con la luz. Acierto seguro para profesionales y aficionados.",
+    products: [
+      { id: "1", title: "Cámara Instantánea Instax Mini 12", price: "79,90€", imageUrl: "https://m.media-amazon.com/images/I/513tgZCijEL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C8HD6F5W" },
+      { id: "2", title: "Trípode Flexible Joby GorillaPod", price: "67,89€", imageUrl: "https://m.media-amazon.com/images/I/51L3v-ExuOL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C81TNMP4" },
+      { id: "3", title: "Kit de Limpieza Profesional (Pera y Lápiz)", price: "5,53€", imageUrl: "https://m.media-amazon.com/images/I/61k6tggXi3L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CW522W9W" },
+      { id: "4", title: "Bola de Cristal para Fotografía (Lensball)", price: "16,79€", imageUrl: "https://m.media-amazon.com/images/I/81KbXVsZMtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B01NCM3AH4" },
+      { id: "5", title: "Correa de Cámara Vintage (Cuello/Hombro)", price: "30,55€", imageUrl: "https://m.media-amazon.com/images/I/511Fk0JMR+L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C2VHDN2K" },
+      { id: "6", title: "Tarjeta SD SanDisk Extreme Pro (Alta Velocidad)", price: "30,99€", imageUrl: "https://m.media-amazon.com/images/I/81wwLOgkLgL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09X7FXHVJ" },
+      { id: "7", title: "Mochila para Cámara Impermeable y Modular", price: "45,99€", imageUrl: "https://m.media-amazon.com/images/I/71NBojh9ODL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BX3X4B4P" },
+      { id: "8", title: "Reflector de Luz 5 en 1 Plegable", price: "19,49€", imageUrl: "https://m.media-amazon.com/images/I/61zzFMdNi3S._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B002ZIVKAE" },
+      { id: "9", title: "Caja de Luz Portátil para Fotografía Producto", price: "39,98€", imageUrl: "https://m.media-amazon.com/images/I/71ZxMRHgVxL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0936VWSV7" },
+      { id: "10", title: "Disco Duro Externo Rugerizado (Antigolpes)", price: "142,78€", imageUrl: "https://m.media-amazon.com/images/I/717QYwBEEIL._AC_SY300_SX300_QL70_ML2_.jpg", amazonLink: "https://www.amazon.es/dp/B08GTYFC37" },
+      { id: "11", title: "Clip de Captura para Mochila (Tipo Peak)", price: "49,96€", imageUrl: "https://m.media-amazon.com/images/I/71wIBbgm-aL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0F1Y7FT92" },
+      { id: "12", title: "Taza Termo con Forma de Objetivo Cámara", price: "10,99€", imageUrl: "https://m.media-amazon.com/images/I/61LArg-KQjL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B00RD9L7R6" }
+    ]
+  },
+  {
+    slug: "viajeros",
+    title: "Los Mejores Regalos para Viajeros",
+    description: "Gadgets de viaje, organización y confort para recorrer el mundo.",
+    content: "Para el que siempre tiene un billete de avión en la mano, lo más valioso es el espacio y la comodidad. Un buen regalo para viajeros debe ser ligero, resistente y resolver problemas en ruta. Desde cómo meter más ropa en menos espacio hasta cómo dormir en un avión sin romperse el cuello. Estos regalos serán sus compañeros inseparables en la próxima aventura.",
+    products: [
+      { id: "1", title: "Organizadores de Equipaje (Packing Cubes)", price: "18,90€", imageUrl: "https://m.media-amazon.com/images/I/61NreUMk5GL._AC_SY450_.jpg", amazonLink: "https://www.amazon.es/dp/B09SHJHN42" },
+      { id: "2", title: "Almohada de Cuello Viscoelástica Premium", price: "22,69€", imageUrl: "https://m.media-amazon.com/images/I/61rf3ZP9LcL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09ZHWMDCG" },
+      { id: "3", title: "Adaptador de Enchufe Universal (Todo en 1)", price: "12,99€", imageUrl: "https://m.media-amazon.com/images/I/61jD5viM+AL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D95S3MVQ" },
+      { id: "4", title: "Mapa del Mundo para Rascar (Decoración)", price: "19,90€", imageUrl: "https://m.media-amazon.com/images/I/919B0BhkBuL._SY342_.jpg", amazonLink: "https://www.amazon.es/dp/B08DKNFSLV" },
+      { id: "5", title: "Báscula Digital para Maletas", price: "6,99€", imageUrl: "https://m.media-amazon.com/images/I/61oh-62mZiL._SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0DFGF6R1Y" },
+      { id: "6", title: "Power Bank Batería Externa (Carga Rápida)", price: "12,99€", imageUrl: "https://m.media-amazon.com/images/I/61aOhG2hB5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0DPSLQFDW" },
+      { id: "7", title: "Funda de Pasaporte con Bloqueo RFID", price: "5,60€", imageUrl: "https://m.media-amazon.com/images/I/71EFi0kPlpL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B0FP54ZVYY" },
+      { id: "8", title: "Botella con Filtro de Agua (Lifestraw)", price: "13,90€", imageUrl: "https://m.media-amazon.com/images/I/71nKg9SLuaL._SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0CT3R7RS5" },
+      { id: "9", title: "Mochila de Cabina (Apta Ryanair/Vueling)", price: "27,99€", imageUrl: "https://m.media-amazon.com/images/I/718pNNcyJIL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D59MW2N3" },
+      { id: "10", title: "Neceser de Viaje Colgante Impermeable", price: "31,49€", imageUrl: "https://m.media-amazon.com/images/I/8168EUT3y0L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FL6Y2W24" },
+      { id: "11", title: "Diario de Viaje de Cuero Recargable", price: "21,99€", imageUrl: "https://m.media-amazon.com/images/I/71gFfDo5F5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B01N24BYQ7" },
+      { id: "12", title: "Hamaca Colgante de Camping Ultraligera", price: "29,99€", imageUrl: "https://m.media-amazon.com/images/I/618pKE7G3TL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0B53JW8K6" }
+    ]
+  },
 ];
 
 export function getNicheBySlug(slug: string): Niche | undefined {
