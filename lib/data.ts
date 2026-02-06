@@ -22,18 +22,18 @@ export const NICHE_DATA: Niche[] = [
     description: "Descubre las mejores ideas de regalos para arquitectos. Herramientas profesionales, maquetas, libros de diseño y accesorios.",
     content: "Los arquitectos viven en el cruce entre el arte y la ingeniería, y sus regalos deben reflejar esa dualidad. No se trata solo de regalar 'cosas de oficina', sino de encontrar herramientas que respeten su obsesión por la estética, la precisión y el diseño. Un buen regalo para un arquitecto suele caer en tres categorías: **productividad**, **inspiración** o **confort**. Olvida los regalos genéricos; busca materiales premium, acabados mate y diseño minimalista.",
     products: [
-      { id: "1", title: "Bolígrafo Digital Metapen", price: "32,99 €", imageUrl: "https://m.media-amazon.com/images/I/41yUOq1wFtL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B09ZTXVNVD" },
-      { id: "2", title: "Libro: El Arquitecto Emprendedor", price: "15,36 €", imageUrl: "https://m.media-amazon.com/images/I/61EuFK10IAL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DR6MB9DQ" },
-      { id: "3", title: "Escala de Arquitecto Triangular", price: "9,99 €", imageUrl: "https://m.media-amazon.com/images/I/61jxy0HdWWL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B07WWTDCHQ" },
-      { id: "4", title: "Tubo Portaplanos", price: "13,99 €", imageUrl: "https://m.media-amazon.com/images/I/61Gv54Z5vRL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B09SZ9SWRC" },
-      { id: "5", title: "Alfombrilla de Corte A3 con Cuchillos para Manualidades", price: "19,99 €", imageUrl: "https://m.media-amazon.com/images/I/91mRRoUIWrL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B08L3LFZZW" },
-      { id: "6", title: "Winsor & Newton Promarker Arquitectura Set de 24", price: "60,89 €", imageUrl: "https://m.media-amazon.com/images/I/61+nTQraHsL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B089CQRLLM" },
-      { id: "7", title: "Apple iPad Pro M4", price: "1031,53 €", imageUrl: "https://m.media-amazon.com/images/I/6198CBucttL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0D3J9P7RK" },
-      { id: "8", title: "Portaminas Mecánicos Artísticos", price: "18,99 €", imageUrl: "https://m.media-amazon.com/images/I/81YgWF-jpTL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0BCQ65PCQ" },
-      { id: "9", title: "LLavero de Arquitecto", price: "9,99 €", imageUrl: "https://m.media-amazon.com/images/I/61hMTPgo-rL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B08241S43M" },
-      { id: "10", title: "Plantillas para Planos Casa Diseño Interiores", price: "16,00 €", imageUrl: "https://m.media-amazon.com/images/I/71n8N4DI-aL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B07F1TQRYK" },
-      { id: "11", title: "Medidor Láser Portátil", price: "19,99 €", imageUrl: "https://m.media-amazon.com/images/I/61xUc34WUoL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DJ7JKWRZ" },
-      { id: "12", title: "Taza Arquitecto Koalificado", price: "12,95 €", imageUrl: "https://m.media-amazon.com/images/I/617cxgmz7NL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0C211QJKW" }
+      { id: "1", title: "Bolígrafo Digital Metapen", price: "11,99 €", imageUrl: "https://m.media-amazon.com/images/I/71WTjRJgHHL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08Q7L85X2?tag=giftgenius-21" },
+      { id: "2", title: "Libro: El Arquitecto Emprendedor", price: "15,36€", imageUrl: "https://m.media-amazon.com/images/I/61EuFK10IAL._SY466_.jpg", amazonLink: "https://www.amazon.es/dp/B0DR6MB9DQ?tag=giftgenius-21" },
+      { id: "3", title: "Escala de Arquitecto Triangular", price: "11,99 €", imageUrl: "https://m.media-amazon.com/images/I/71TkeOvf3HL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B079C1HKB8?tag=giftgenius-21" },
+      { id: "4", title: "Tubo Portaplanos", price: "22,99 €", imageUrl: "https://m.media-amazon.com/images/I/61PSNxirOoL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0F381KSTZ?tag=giftgenius-21" },
+      { id: "5", title: "Alfombrilla de Corte A3 con Cuchillos para Manualidades", price: "17,09 €", imageUrl: "https://m.media-amazon.com/images/I/91mRRoUIWrL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08L3LFZZW?tag=giftgenius-21" },
+      { id: "6", title: "Winsor & Newton Promarker Arquitectura Set de 24", price: "2,44€", imageUrl: "https://m.media-amazon.com/images/I/61+nTQraHsL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B089CQRLLM?tag=giftgenius-21" },
+      { id: "7", title: "Apple iPad Pro M4", price: "139,99€", imageUrl: "https://m.media-amazon.com/images/I/81Q3b2JkfKL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FLTWKYCM?tag=giftgenius-21", badges: ["⭐ Mejor Valorado"] },
+      { id: "8", title: "Portaminas Mecánicos Artísticos", price: "13,99€", imageUrl: "https://m.media-amazon.com/images/I/71Hitb05k5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07KK8VT4S?tag=giftgenius-21" },
+      { id: "9", title: "LLavero de Arquitecto", price: "14,59 €", imageUrl: "https://m.media-amazon.com/images/I/61hMTPgo-rL._AC_SX569_.jpg", amazonLink: "https://www.amazon.es/dp/B08241S43M?tag=giftgenius-21" },
+      { id: "10", title: "Plantillas para Planos Casa Diseño Interiores", price: "22,08€", imageUrl: "https://m.media-amazon.com/images/I/71rV4ah29OL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0F6MT46YZ?tag=giftgenius-21" },
+      { id: "11", title: "Medidor Láser Portátil", price: "25,99€", imageUrl: "https://m.media-amazon.com/images/I/61bOcqIpMZL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B0863RK1KX?tag=giftgenius-21", badges: ["🏆 Top Ventas"] },
+      { id: "12", title: "Taza Arquitecto Koalificado", price: "35,00€", imageUrl: "https://m.media-amazon.com/images/I/61q-Q195spL._AC_SY879_.jpg", amazonLink: "https://www.amazon.es/dp/B07W4D7CK6?tag=giftgenius-21", badges: ["💎 Calidad/Precio"] }
     ]
   },
   {

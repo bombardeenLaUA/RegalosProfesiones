@@ -1,6 +1,6 @@
 import { ExternalLink, ShoppingBag } from "lucide-react";
 
-const AMAZON_TAG = "TU_TAG_PENDIENTE";
+const AMAZON_TAG = "giftgenius-21";
 
 interface AmazonCtaButtonProps {
   slug: string;
