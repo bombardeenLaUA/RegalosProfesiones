@@ -4,7 +4,7 @@ export interface Product {
   price: string;
   imageUrl: string;
   amazonLink: string;
-  badge?: string;
+  badges?: string[];
 }
 
 export interface Niche {
@@ -122,8 +122,8 @@ export const NICHE_DATA: Niche[] = [
     description: "Utensilios premium y gadgets gourmet para quienes disfrutan entre fogones.",
     content: "Cocinar es un arte, y todo artista necesita sus herramientas. Ya sea para un chef profesional o ese amigo que se cree concursante de MasterChef, hemos elegido los utensilios que marcan la diferencia. Nada de gadgets inútiles de teletienda: aquí hay cuchillos que cortan el aire, organización inteligente y caprichos gourmet que elevarán sus platos al siguiente nivel.",
     products: [
-      { id: "1", title: "Cuchillo Santoku Arcos (Serie Riviera)", price: "29,68€", imageUrl: "https://m.media-amazon.com/images/I/41fIPFqleyL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B005LR6C7C", badge: "Top Ventas" },
-      { id: "2", title: "Rallador Microplane Premium (El Original)", price: "19,96€", imageUrl: "https://m.media-amazon.com/images/I/51QX8v-PWkL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B00151WA06", badge: "Mejor Valorados" },
+      { id: "1", title: "Cuchillo Santoku Arcos (Serie Riviera)", price: "29,68€", imageUrl: "https://m.media-amazon.com/images/I/41fIPFqleyL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B005LR6C7C", badges: ["Top Ventas", "Calidad/Precio"] },
+      { id: "2", title: "Rallador Microplane Premium (El Original)", price: "19,96€", imageUrl: "https://m.media-amazon.com/images/I/51QX8v-PWkL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B00151WA06", badges: ["Mejor Valorados"] },
       { id: "3", title: "Soplete de Cocina Profesional Recargable", price: "19,99€", imageUrl: "https://m.media-amazon.com/images/I/51Bu6ursJ0L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08Y5M5V3X" },
       { id: "4", title: "Piedra de Afilar Doble Grano (1000/6000)", price: "15,23€", imageUrl: "https://m.media-amazon.com/images/I/71gS-NlrfIL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B089HXZVQS" },
       { id: "5", title: "Termómetro Digital de Lectura Instantánea", price: "9,49€", imageUrl: "https://m.media-amazon.com/images/I/6145yilthgL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B01LXI5HYH" },
