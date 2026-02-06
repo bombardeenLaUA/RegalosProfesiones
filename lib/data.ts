@@ -24,16 +24,16 @@ export const NICHE_DATA: Niche[] = [
     products: [
       { id: "1", title: "Bolígrafo Digital Metapen", price: "32,99€", imageUrl: "https://m.media-amazon.com/images/I/41yUOq1wFtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09ZTXVNVD?tag=giftgenius-21", badges: ["🏆 Top Ventas","💎 Calidad/Precio"] },      
       { id: "2", title: "Libro: El Arquitecto Emprendedor", price: "15,36€", imageUrl: "https://m.media-amazon.com/images/I/61EuFK10IAL._SY466_.jpg", amazonLink: "https://www.amazon.es/dp/B0DR6MB9DQ?tag=giftgenius-21" },
-      { id: "3", title: "Escala de Arquitecto Triangular", price: "11,99 €", imageUrl: "https://m.media-amazon.com/images/I/71TkeOvf3HL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B079C1HKB8?tag=giftgenius-21" },
-      { id: "4", title: "Tubo Portaplanos Extensible", price: "22,99 €", imageUrl: "https://m.media-amazon.com/images/I/61PSNxirOoL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0F381KSTZ?tag=giftgenius-21" },
-      { id: "5", title: "Alfombrilla de Corte A3", price: "6,31€", imageUrl: "https://m.media-amazon.com/images/I/61QsK82thtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07TT872BF?tag=giftgenius-21", badges: ["⭐ Mejor Valorado"] },
+      { id: "3", title: "Escala de Arquitecto Triangular", price: "4,99€", imageUrl: "https://m.media-amazon.com/images/I/71TkeOvf3HL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B079C1HKB8?tag=giftgenius-21" },
+      { id: "4", title: "Tubo Portaplanos Extensible", price: "13,99 €", imageUrl: "https://m.media-amazon.com/images/I/61PSNxirOoL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0F381KSTZ?tag=giftgenius-21" },
+      { id: "5", title: "Alfombrilla de Corte A3", price: "7,39€", imageUrl: "https://m.media-amazon.com/images/I/61QsK82thtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07TT872BF?tag=giftgenius-21", badges: ["⭐ Mejor Valorado"] },
       { id: "6", title: "Winsor & Newton Promarker Arquitectura Set", price: "2,44€", imageUrl: "https://m.media-amazon.com/images/I/61+nTQraHsL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B089CQRLLM?tag=giftgenius-21" },
-      { id: "7", title: "Apple iPad Pro M4", price: "89,89 €", imageUrl: "https://m.media-amazon.com/images/I/6198CBucttL._AC_SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0D3J9P7RK?tag=giftgenius-21" },
+      { id: "7", title: "Apple iPad Pro M4", price: "1.028,00€", imageUrl: "https://m.media-amazon.com/images/I/6198CBucttL._AC_SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0D3J9P7RK?tag=giftgenius-21" },
       { id: "8", title: "Portaminas Mecánicos Artísticos", price: "13,99€", imageUrl: "https://m.media-amazon.com/images/I/71Hitb05k5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07KK8VT4S?tag=giftgenius-21" },
-      { id: "9", title: "Llavero de Arquitecto", price: "14,59 €", imageUrl: "https://m.media-amazon.com/images/I/61hMTPgo-rL._AC_SX569_.jpg", amazonLink: "https://www.amazon.es/dp/B08241S43M?tag=giftgenius-21" },
-      { id: "10", title: "Plantillas Dibujo Técnico Arquitectura", price: "2,17 €", imageUrl: "https://m.media-amazon.com/images/I/719nwRZJhIL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07T837682?tag=giftgenius-21" },
+      { id: "9", title: "Llavero de Arquitecto", price: "9,99 €", imageUrl: "https://m.media-amazon.com/images/I/61hMTPgo-rL._AC_SX569_.jpg", amazonLink: "https://www.amazon.es/dp/B08241S43M?tag=giftgenius-21" },
+      { id: "10", title: "Plantillas Dibujo Técnico Arquitectura", price: "17,99€", imageUrl: "https://m.media-amazon.com/images/I/719nwRZJhIL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07T837682?tag=giftgenius-21" },
       { id: "11", title: "Medidor Láser Portátil", price: "25,99€", imageUrl: "https://m.media-amazon.com/images/I/61bOcqIpMZL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B0863RK1KX?tag=giftgenius-21" },
-      { id: "12", title: "Taza Arquitecto Divertida", price: "€49,99", imageUrl: "https://m.media-amazon.com/images/I/6116yjZyotL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CLBNM1MF?tag=giftgenius-21" }
+      { id: "12", title: "Taza Divertida Arquitecto Koalificado", price: "49,99 €", imageUrl: "https://m.media-amazon.com/images/I/617cxgmz7NL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0C212JYLJ?tag=giftgenius-21" }
     ]
   },
   {
