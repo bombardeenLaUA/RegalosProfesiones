@@ -31,7 +31,7 @@ export const NICHE_DATA: Niche[] = [
       { id: "7", title: "Apple iPad Pro M4 256GB", price: "1.028,00€", imageUrl: "https://m.media-amazon.com/images/I/6198CBucttL._AC_SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0D3J9P7RK?tag=giftgenius-21" },
       { id: "8", title: "Portaminas Mecánicos Artísticos", price: "13,99€", imageUrl: "https://m.media-amazon.com/images/I/71Hitb05k5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07KK8VT4S?tag=giftgenius-21" },
       { id: "9", title: "Llavero de Arquitecto", price: "9,99 €", imageUrl: "https://m.media-amazon.com/images/I/61hMTPgo-rL._AC_SX569_.jpg", amazonLink: "https://www.amazon.es/dp/B08241S43M?tag=giftgenius-21" },
-      { id: "10", title: "Plantillas Dibujo Técnico Arquitectura", price: "17,99€", imageUrl: "https://m.media-amazon.com/images/I/719nwRZJhIL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07T837682?tag=giftgenius-21" },
+      { id: "10", title: "Libreta Leuchtturm1917 A5 145x210mm", price: "23,95€", imageUrl: "https://m.media-amazon.com/images/I/517Oz-MQuZL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B002TSIMW4?tag=giftgenius-21" },
       { id: "11", title: "Medidor Láser Portátil", price: "25,99€", imageUrl: "https://m.media-amazon.com/images/I/61bOcqIpMZL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B0863RK1KX?tag=giftgenius-21" },
       { id: "12", title: "Taza Divertida Arquitecto Koalificado", price: "12,95 €", imageUrl: "https://m.media-amazon.com/images/I/617cxgmz7NL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0C212JYLJ?tag=giftgenius-21" }
     ]

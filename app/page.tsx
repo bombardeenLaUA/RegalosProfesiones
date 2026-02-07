@@ -40,7 +40,7 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-              ¿No sabes qué regalar?
+              Encuentra el Regalo Perfecto por Profesión
             </h1>
             <p className="mt-6 text-lg text-gray-600 sm:text-xl">
               Descubre ideas de regalos originales y perfectos para cada profesión y hobby. Guías

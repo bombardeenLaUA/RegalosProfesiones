@@ -30,7 +30,7 @@ export default function AmazonCtaButton({ slug, displayName, variant = "grid" }:
     <a
       href={url}
       target="_blank"
-      rel="noopener noreferrer sponsored"
+      rel="noopener noreferrer nofollow sponsored"
       className={`${baseClasses} ${variantClasses}`}
     >
       <ShoppingBag className="h-6 w-6 flex-shrink-0" aria-hidden />
