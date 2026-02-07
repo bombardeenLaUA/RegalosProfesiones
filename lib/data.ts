@@ -18,7 +18,7 @@ export interface Niche {
 export const NICHE_DATA: Niche[] = [
   {
     slug: "arquitectos",
-    title: "Los Mejores Regalos para Arquitectos",
+    title: "Regalos para Arquitectos",
     description: "Descubre las mejores ideas de regalos para arquitectos. Herramientas profesionales, maquetas, libros de diseño y accesorios.",
     content: "Los arquitectos viven en el cruce entre el arte y la ingeniería, y sus regalos deben reflejar esa dualidad. No se trata solo de regalar 'cosas de oficina', sino de encontrar herramientas que respeten su obsesión por la estética, la precisión y el diseño. Un buen regalo para un arquitecto suele caer en tres categorías: **productividad**, **inspiración** o **confort**. Olvida los regalos genéricos; busca materiales premium, acabados mate y diseño minimalista.",
     products: [
@@ -38,7 +38,7 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "gamers",
-    title: "Los Mejores Regalos para Gamers",
+    title: "Regalos para Gamers",
     description: "Periféricos de alto rendimiento, decoración RGB y accesorios virales para el setup perfecto.",
     content: "El setup de un gamer es su templo. Regalar a un apasionado de los videojuegos no es comprar el primer juego que veas. Se trata de entender su ecosistema: ¿PC o consola? ¿Competitivo o historia? Los mejores regalos para gamers en 2024 se centran en la **atmósfera y el rendimiento**. Desde iluminación RGB que se sincroniza con la pantalla, hasta periféricos que dan esa milésima de segundo de ventaja.",
     products: [
@@ -58,7 +58,7 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "enfermeros",
-    title: "Los Mejores Regalos para Enfermeros",
+    title: "Regalos para Enfermeros",
     description: "Olvídate de las tazas genéricas. Aquí encontrarás herramientas clínicas y accesorios que realmente mejoran el turno de un enfermero.",
     content: "La enfermería no es una profesión, es un estilo de vida de turnos de 12 horas. Si buscas el regalo perfecto, la clave es: **Utilidad Real**. Sus bolsillos son su oficina y sus pies su transporte. Nuestra selección prioriza herramientas profesionales específicas (fonendoscopios, tijeras), organización para el uniforme y detalles exclusivos del gremio que un simple aficionado no entendería.",
     products: [
@@ -78,7 +78,7 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "programadores",
-    title: "Los Mejores Regalos para Programadores",
+    title: "Regalos para Programadores",
     description: "Ideas de regalos para desarrolladores. Teclados, libros técnicos, gadgets y accesorios.",
     content: "Regalar a un programador es más sencillo de lo que parece: buscan optimizar su entorno y su cerebro. Valoran la eficiencia, la ergonomía y el humor 'geek'. Aquí encontrarás desde hardware que cuida su salud (teclados mecánicos, sillas) hasta gadgets que les ayudan a concentrarse o simplemente les sacan una sonrisa mientras depuran código.",
     products: [
@@ -98,7 +98,7 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "profesores",
-    title: "Los Mejores Regalos para Profesores y Maestros",
+    title: "Regalos para Profesores y Maestros",
     description: "Ideas prácticas y bonitas para profes. Papelería, organización y detalles para agradecer su labor.",
     content: "Los profesores no solo enseñan, inspiran. Pero también corrigen exámenes hasta tarde y necesitan mucha energía. Para ellos, hemos seleccionado regalos que mezclan utilidad y cariño: desde organización para su caos creativo hasta pequeños caprichos para sus merecidos descansos. Aquí tienes la lista definitiva para sacar un sobresaliente en tu regalo.",
     products: [
@@ -118,7 +118,7 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "cocineros",
-    title: "Los Mejores Regalos para Cocineros y Chefs",
+    title: "Regalos para Cocineros y Chefs",
     description: "Utensilios premium y gadgets gourmet para quienes disfrutan entre fogones.",
     content: "Cocinar es un arte, y todo artista necesita sus herramientas. Ya sea para un chef profesional o ese amigo que se cree concursante de MasterChef, hemos elegido los utensilios que marcan la diferencia. Nada de gadgets inútiles de teletienda: aquí hay cuchillos que cortan el aire, organización inteligente y caprichos gourmet que elevarán sus platos al siguiente nivel.",
     products: [
@@ -138,7 +138,7 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "opositores",
-    title: "Regalos Útiles para Opositores y Estudiantes",
+    title: "Regalos para Opositores y Estudiantes",
     description: "Ergonomía, concentración y motivación para quienes preparan un examen importante.",
     content: "La vida del opositor es una maratón mental y física. Horas interminables en la silla, dolores de espalda y batallas contra la distracción. Para ellos, el mejor regalo es aquel que les hace el estudio más cómodo o eficiente. Hemos seleccionado desde soportes que cuidan sus cervicales hasta herramientas de gestión del tiempo que valen su peso en oro (o en plazas).",
     products: [
@@ -158,7 +158,7 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "abogados",
-    title: "Regalos Elegantes para Abogados y Juristas",
+    title: "Regalos para Abogados y Juristas",
     description: "Detalles de clase, decoración de despacho y accesorios para profesionales del derecho.",
     content: "En el mundo del derecho, la imagen y la organización lo son todo. Un buen regalo para un abogado debe equilibrar la elegancia clásica con la utilidad moderna. Ya sea para celebrar un primer caso ganado o decorar un bufete consolidado, esta lista incluye desde símbolos icónicos de la justicia hasta accesorios de oficina que imponen respeto.",
     products: [
@@ -178,7 +178,7 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "fotografos",
-    title: "Regalos Originales para Fotógrafos",
+    title: "Regalos para Fotógrafos",
     description: "Accesorios creativos, limpieza y gadgets para amantes de la fotografía.",
     content: "Regalar a un fotógrafo es difícil porque suelen ser muy técnicos, pero hay accesorios infalibles que todos agradecen. Hemos evitado las cámaras (eso es muy personal) y nos hemos centrado en lo que rodea la experiencia: mantener el equipo seguro, limpiar las lentes, estabilizar la imagen o jugar con la luz. Acierto seguro para profesionales y aficionados.",
     products: [
@@ -198,7 +198,7 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "viajeros",
-    title: "Los Mejores Regalos para Viajeros",
+    title: "Regalos para Viajeros",
     description: "Gadgets de viaje, organización y confort para recorrer el mundo.",
     content: "Para el que siempre tiene un billete de avión en la mano, lo más valioso es el espacio y la comodidad. Un buen regalo para viajeros debe ser ligero, resistente y resolver problemas en ruta. Desde cómo meter más ropa en menos espacio hasta cómo dormir en un avión sin romperse el cuello. Estos regalos serán sus compañeros inseparables en la próxima aventura.",
     products: [

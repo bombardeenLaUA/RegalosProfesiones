@@ -108,7 +108,7 @@ export default function HomePage() {
                     <IconComponent className="h-7 w-7" />
                   </div>
                   <h3 className="mt-4 font-semibold text-gray-900 group-hover:text-amber-700">
-                    Regalos para {niche.title.replace("Los Mejores Regalos para ", "")}
+                    {niche.title}
                   </h3>
                   <p className="mt-2 line-clamp-2 text-sm text-gray-500">
                     {niche.description}
