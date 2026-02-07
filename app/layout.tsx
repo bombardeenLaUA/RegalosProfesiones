@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | GiftGenius",
   },
   description:
-    "Encuentra el regalo perfecto. Ideas de regalos originales para arquitectos, programadores, cocineros, gamers y más. Guías curadas con los mejores productos.",
+    "Ideas de regalo por profesión, seleccionadas a mano. Arquitectos, programadores, cocineros, gamers y más. Sin algoritmos, con criterio.",
 };
 
 export default function RootLayout({

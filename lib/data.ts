@@ -19,8 +19,8 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "arquitectos",
     title: "Regalos para Arquitectos",
-    description: "Descubre las mejores ideas de regalos para arquitectos. Herramientas profesionales, maquetas, libros de diseño y accesorios.",
-    content: "Los arquitectos viven en el cruce entre el arte y la ingeniería, y sus regalos deben reflejar esa dualidad. No se trata solo de regalar 'cosas de oficina', sino de encontrar herramientas que respeten su obsesión por la estética, la precisión y el diseño. Un buen regalo para un arquitecto suele caer en tres categorías: **productividad**, **inspiración** o **confort**. Olvida los regalos genéricos; busca materiales premium, acabados mate y diseño minimalista.",
+    description: "Herramientas de precisión, libros de diseño y accesorios que un arquitecto usa de verdad.",
+    content: "Los arquitectos valoran la estética y la precisión: nada de cosas de oficina genéricas. Un buen regalo cae en **productividad** (herramientas que usan a diario), **inspiración** (libros, maquetas) o **confort** (materiales premium, acabados mate). Hemos priorizado lo que realmente se usa en el día a día.",
     products: [
       { id: "1", title: "Bolígrafo Digital Metapen (Alta Precisión)", price: "32,99€", imageUrl: "https://m.media-amazon.com/images/I/41yUOq1wFtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09ZTXVNVD?tag=giftgenius-21", badges: ["Top Ventas", "Calidad/Precio"] },      
       { id: "2", title: "Alfombrilla de Corte A3 (Autocicatrizante)", price: "7,39€", imageUrl: "https://m.media-amazon.com/images/I/61QsK82thtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07TT872BF?tag=giftgenius-21", badges: ["Mejor Valorado"] },
@@ -39,8 +39,8 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "gamers",
     title: "Regalos para Gamers",
-    description: "Periféricos de alto rendimiento, decoración RGB y accesorios virales para el setup perfecto.",
-    content: "El setup de un gamer es su templo. Regalar a un apasionado de los videojuegos no es comprar el primer juego que veas. Se trata de entender su ecosistema: ¿PC o consola? ¿Competitivo o historia? Los mejores regalos para gamers en 2024 se centran en la **atmósfera y el rendimiento**. Desde iluminación RGB que se sincroniza con la pantalla, hasta periféricos que dan esa milésima de segundo de ventaja.",
+    description: "Periféricos que marcan la diferencia, luz RGB y accesorios que los gamers piden.",
+    content: "Regalar a un gamer no es comprar el primer juego que veas. Hay que mirar su ecosistema: ¿PC o consola? ¿Competitivo o historia? Lo que mejor encaja suele ser **atmósfera** (luz RGB, decoración) o **rendimiento** (periféricos que dan ventaja real). Desde paneles que se sincronizan con la pantalla hasta teclados que responden al instante.",
     products: [
       { id: "1", title: "Taza Mágica Gameboy (Cambia con Calor)", price: "19,03 €", imageUrl: "https://m.media-amazon.com/images/I/71alMT8fYrL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B06WRVFRJV?tag=giftgenius-21", badges: ["Top Ventas", "Mejor Valorado"] },
       { id: "2", title: "Teclado Mecánico RGB Compacto (60%)", price: "39,99 €", imageUrl: "https://m.media-amazon.com/images/I/610Wsop5scL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0FFMRQNLW/?tag=giftgenius-21", badges: ["Calidad/Precio"] },
@@ -59,8 +59,8 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "enfermeros",
     title: "Regalos para Enfermeros",
-    description: "Olvídate de las tazas genéricas. Aquí encontrarás herramientas clínicas y accesorios que realmente mejoran el turno de un enfermero.",
-    content: "La enfermería no es una profesión, es un estilo de vida de turnos de 12 horas. Si buscas el regalo perfecto, la clave es: **Utilidad Real**. Sus bolsillos son su oficina y sus pies su transporte. Nuestra selección prioriza herramientas profesionales específicas (fonendoscopios, tijeras), organización para el uniforme y detalles exclusivos del gremio que un simple aficionado no entendería.",
+    description: "Herramientas clínicas y accesorios que mejoran el turno. Nada de tazas genéricas.",
+    content: "Los enfermeros pasan 12 horas de pie, con los bolsillos como oficina y los pies como transporte. La clave: **utilidad real**. Fonendoscopios, tijeras clínicas, organización para el uniforme, zuecos que aguantan el ritmo. Cosas que un enfermero reconoce al instante y que le facilitan el día.",
     products: [
       { id: "1", title: "Zuecos Sanitarios Calzuro (Esterilizables)", price: "73,36 €", imageUrl: "https://m.media-amazon.com/images/I/41JdoFGq0XL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0BGCCQ57Z?tag=giftgenius-21", badges: ["Top Ventas"] },
       { id: "2", title: "Organizador de Bolsillo 'Salvabolsillos'", price: "12,99 €", imageUrl: "https://m.media-amazon.com/images/I/61kdXbdNZVL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0FHBC4N6Y?tag=giftgenius-21", badges: ["Calidad/Precio"] },
@@ -79,8 +79,8 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "programadores",
     title: "Regalos para Programadores",
-    description: "Ideas de regalos para desarrolladores. Teclados, libros técnicos, gadgets y accesorios.",
-    content: "Regalar a un programador es más sencillo de lo que parece: buscan optimizar su entorno y su cerebro. Valoran la eficiencia, la ergonomía y el humor 'geek'. Aquí encontrarás desde hardware que cuida su salud (teclados mecánicos, sillas) hasta gadgets que les ayudan a concentrarse o simplemente les sacan una sonrisa mientras depuran código.",
+    description: "Teclados ergonómicos, libros de código y gadgets que un dev de verdad usa.",
+    content: "Los programadores priorizan eficiencia, ergonomía y un toque de humor geek. Hardware que cuida la postura (teclados mecánicos, ratones verticales), gadgets que ayudan a concentrarse (auriculares, barras de luz) y algún detalle que les saca una sonrisa entre líneas de código. Nada que acabe en el cajón.",
     products: [
       { id: "1", title: "Webcam Logitech C920s HD Pro", price: "61,06€", imageUrl: "https://m.media-amazon.com/images/I/71eGb1FcyiL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B006A2Q81M?tag=giftgenius-21", badges: ["Top Ventas"] },
       { id: "2", title: "Auriculares Sony Noise Cancelling (WH-CH720N)", price: "79,00€", imageUrl: "https://m.media-amazon.com/images/I/71iWkjXCu9L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BTDX26B2?tag=giftgenius-21", badges: ["Calidad/Precio", "Mejor Valorado"] },
@@ -99,8 +99,8 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "profesores",
     title: "Regalos para Profesores y Maestros",
-    description: "Ideas prácticas y bonitas para profes. Papelería, organización y detalles para agradecer su labor.",
-    content: "Los profesores no solo enseñan, inspiran. Pero también corrigen exámenes hasta tarde y necesitan mucha energía. Para ellos, hemos seleccionado regalos que mezclan utilidad y cariño: desde organización para su caos creativo hasta pequeños caprichos para sus merecidos descansos. Aquí tienes la lista definitiva para sacar un sobresaliente en tu regalo.",
+    description: "Papelería útil, organización para el aula y detalles que un profe valora.",
+    content: "Los profesores corrigen hasta tarde y necesitan energía. Mezclamos utilidad (organizadores, plastificadoras, agendas) con caprichos que se agradecen (vasos térmicos, sellos de motivación). Cosas para el aula y para sus descansos. Nada genérico.",
     products: [
       { id: "1", title: "Plastificadora A4 Rápida (Kit Inicial)", price: "18,99€", imageUrl: "https://m.media-amazon.com/images/I/61MTGZ7GiWL._AC_UY218_.jpg", amazonLink: "https://www.amazon.es/dp/B0DFCG1PJL?tag=giftgenius-21", badges: ["Top Ventas", "Mejor Valorado"] },
       { id: "2", title: "Mini Impresora de Etiquetas Térmica", price: "24,99€", imageUrl: "https://m.media-amazon.com/images/I/61g8I1U4lDL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0CX8P66SM?tag=giftgenius-21", badges: ["Calidad/Precio"] },
@@ -119,8 +119,8 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "cocineros",
     title: "Regalos para Cocineros y Chefs",
-    description: "Utensilios premium y gadgets gourmet para quienes disfrutan entre fogones.",
-    content: "Cocinar es un arte, y todo artista necesita sus herramientas. Ya sea para un chef profesional o ese amigo que se cree concursante de MasterChef, hemos elegido los utensilios que marcan la diferencia. Nada de gadgets inútiles de teletienda: aquí hay cuchillos que cortan el aire, organización inteligente y caprichos gourmet que elevarán sus platos al siguiente nivel.",
+    description: "Utensilios que se usan de verdad en cocina. Nada que acabe en el cajón.",
+    content: "Da igual si es chef profesional o aficionado que se cree de MasterChef: los utensilios que marcan la diferencia son los mismos. Cuchillos de verdad, piedras de afilar, termómetros y organización. Nada de gadgets de teletienda que acaban en el fondo del armario.",
     products: [
       { id: "1", title: "Cuchillo Santoku Arcos Riviera 18cm", price: "47,58€", imageUrl: "https://m.media-amazon.com/images/I/41fIPFqleyL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B005LR6C7C?tag=giftgenius-21", badges: ["Top Ventas", "Calidad/Precio"] },
       { id: "2", title: "Rallador Microplane Premium Zester", price: "23,95€", imageUrl: "https://m.media-amazon.com/images/I/51QX8v-PWkL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B00151WA06?tag=giftgenius-21", badges: ["Mejor Valorado"] },
@@ -139,8 +139,8 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "opositores",
     title: "Regalos para Opositores y Estudiantes",
-    description: "Ergonomía, concentración y motivación para quienes preparan un examen importante.",
-    content: "La vida del opositor es una maratón mental y física. Horas interminables en la silla, dolores de espalda y batallas contra la distracción. Para ellos, el mejor regalo es aquel que les hace el estudio más cómodo o eficiente. Hemos seleccionado desde soportes que cuidan sus cervicales hasta herramientas de gestión del tiempo que valen su peso en oro (o en plazas).",
+    description: "Lo que necesitan para estudiar horas: ergonomía, concentración y organización.",
+    content: "Horas en la silla, cervicales cargadas y distracción constante. El opositor agradece todo lo que hace el estudio más cómodo o eficiente: soportes para la espalda, temporizadores Pomodoro, tapones para el ruido, agendas específicas. Pequeñas ayudas que suman cuando las horas se acumulan.",
     products: [
       { id: "1", title: "Pack Subrayadores Stabilo Boss Pastel (15 uds)", price: "22,58€", imageUrl: "https://m.media-amazon.com/images/I/7106mm4gx5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08S76ZLVJ?tag=giftgenius-21", badges: ["Top Ventas"] },
       { id: "2", title: "Temporizador Visual 60 Min (Pomodoro)", price: "12,99€", imageUrl: "https://m.media-amazon.com/images/I/6132ZKvgWXL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CZZXXSCZ?tag=giftgenius-21", badges: ["Calidad/Precio"] },
@@ -159,8 +159,8 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "abogados",
     title: "Regalos para Abogados y Juristas",
-    description: "Detalles de clase, decoración de despacho y accesorios para profesionales del derecho.",
-    content: "En el mundo del derecho, la imagen y la organización lo son todo. Un buen regalo para un abogado debe equilibrar la elegancia clásica con la utilidad moderna. Ya sea para celebrar un primer caso ganado o decorar un bufete consolidado, esta lista incluye desde símbolos icónicos de la justicia hasta accesorios de oficina que imponen respeto.",
+    description: "Accesorios de despacho con clase que transmiten profesionalidad.",
+    content: "En derecho importan la imagen y la organización. Un regalo para abogado combina elegancia clásica con utilidad: maletines, portafolios, bolígrafos de firma, decoración de despacho (mazos, estatuas). Sirve para celebrar un primer caso o para un bufete ya consolidado.",
     products: [
       { id: "1", title: "Bolígrafo Parker Jotter (Acero Inox)", price: "7,10€", imageUrl: "https://m.media-amazon.com/images/I/51yQrjjPTaL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07S2NFB17?tag=giftgenius-21", badges: ["Top Ventas", "Calidad/Precio"] },
       { id: "2", title: "Maletín de Piel Profesional (Slim)", price: "52,99€", imageUrl: "https://m.media-amazon.com/images/I/914hQfRF9+L._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B01N0INMFG?tag=giftgenius-21", badges: ["Mejor Valorado"] },
@@ -179,8 +179,8 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "fotografos",
     title: "Regalos para Fotógrafos",
-    description: "Accesorios creativos, limpieza y gadgets para amantes de la fotografía.",
-    content: "Regalar a un fotógrafo es difícil porque suelen ser muy técnicos, pero hay accesorios infalibles que todos agradecen. Hemos evitado las cámaras (eso es muy personal) y nos hemos centrado en lo que rodea la experiencia: mantener el equipo seguro, limpiar las lentes, estabilizar la imagen o jugar con la luz. Acierto seguro para profesionales y aficionados.",
+    description: "Accesorios que protegen el equipo, limpian lentes y mejoran las fotos.",
+    content: "Las cámaras son muy personales; mejor no meterse. Lo que sí agradecen todos: proteger el equipo, limpiar lentes, estabilizar la imagen y jugar con la luz. Tarjetas SD, trípodes, mochilas, reflectores. Funciona igual para profesionales que para aficionados.",
     products: [
       { id: "1", title: "Tarjeta SD SanDisk Extreme Pro (128GB)", price: "38,99€", imageUrl: "https://m.media-amazon.com/images/I/81wwLOgkLgL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09X7FXHVJ?tag=giftgenius-21", badges: ["Top Ventas"] },
       { id: "2", title: "Reflector de Luz 5 en 1 (Plegable)", price: "19,49€", imageUrl: "https://m.media-amazon.com/images/I/61zzFMdNi3S._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B002ZIVKAE?tag=giftgenius-21", badges: ["Calidad/Precio"] },
@@ -199,8 +199,8 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "viajeros",
     title: "Regalos para Viajeros",
-    description: "Gadgets de viaje, organización y confort para recorrer el mundo.",
-    content: "Para el que siempre tiene un billete de avión en la mano, lo más valioso es el espacio y la comodidad. Un buen regalo para viajeros debe ser ligero, resistente y resolver problemas en ruta. Desde cómo meter más ropa en menos espacio hasta cómo dormir en un avión sin romperse el cuello. Estos regalos serán sus compañeros inseparables en la próxima aventura.",
+    description: "Gadgets ligeros y prácticos para quien viaja a menudo.",
+    content: "Quien viaja mucho prioriza espacio y comodidad. Regalos que resuelven problemas reales: meter más ropa en menos sitio, dormir en el avión sin dolor de cuello, cargar el móvil en cualquier enchufe. Ligero, resistente y útil. Lo que lleva en la mochila en el próximo viaje.",
     products: [
       { id: "1", title: "Mochila Cabina 40x20x25 (Ryanair/Vueling)", price: "29,99€", imageUrl: "https://m.media-amazon.com/images/I/718pNNcyJIL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D59MW2N3?tag=giftgenius-21", badges: ["Top Ventas"] },
       { id: "2", title: "Organizadores de Equipaje (Set 8 Piezas)", price: "19,89€", imageUrl: "https://m.media-amazon.com/images/I/61NreUMk5GL._AC_SY450_.jpg", amazonLink: "https://www.amazon.es/dp/B09SHJHN42?tag=giftgenius-21", badges: ["Calidad/Precio"] },

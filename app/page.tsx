@@ -43,8 +43,7 @@ export default function HomePage() {
               Encuentra el Regalo Perfecto por Profesión
             </h1>
             <p className="mt-6 text-lg text-gray-600 sm:text-xl">
-              Descubre ideas de regalos originales y perfectos para cada profesión y hobby. Guías
-              curadas para que aciertes siempre.
+              Hemos seleccionado lo que funciona para cada profesión. Ideas que aciertan, sin relleno.
             </p>
 
             {/* Buscador funcional */}
@@ -84,10 +83,10 @@ export default function HomePage() {
           </span>
         </div>
         <h2 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl">
-          Elige tu nicho y acierta seguro
+          Elige profesión y mira qué encaja
         </h2>
         <p className="mt-2 text-gray-600">
-          Explora nuestras guías curadas por profesión
+          Selección por profesión, hecha a mano
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">

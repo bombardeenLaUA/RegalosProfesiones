@@ -109,7 +109,7 @@ export default async function RegalosPage({ params }: PageProps) {
             {niche.products.length} Ideas de Regalos Originales para {displayName}
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-gray-600 leading-relaxed">
-            Hemos analizado el mercado para ahorrarte tiempo: esta es nuestra selección exclusiva con los Top ventas y mejor valorados del momento.
+            Top ventas y mejor valorados del momento. Selección hecha a mano para ahorrarte el trabajo.
           </p>
           {/* CTA Hero - Deep Linking */}
           <div className="mt-10 flex flex-col items-center">
@@ -152,7 +152,7 @@ export default async function RegalosPage({ params }: PageProps) {
               ))
             ) : (
               <p>
-                Regalar a un {displayName.toLowerCase()} es una forma excelente de reconocer su dedicación y pasión. Un regalo bien elegido demuestra que has pensado en sus intereses.
+                Un regalo para un {displayName.toLowerCase()} que encaje con lo que hace dice más que mil palabras.
               </p>
             )}
           </div>

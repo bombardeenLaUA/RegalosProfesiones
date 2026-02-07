@@ -13,7 +13,7 @@ export default function Footer() {
               GiftGenius
             </Link>
             <p className="mt-4 text-sm text-gray-600 max-w-md">
-              Tu guía definitiva para encontrar el regalo perfecto. Ideas curadas por profesión y hobby para que nunca vuelvas a preguntarte qué regalar.
+              Ideas de regalo por profesión, elegidas a mano. Sin algoritmos, con criterio real.
             </p>
           </div>
 
