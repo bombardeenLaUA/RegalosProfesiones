@@ -28,9 +28,9 @@ function getBadgeConfig(badge: string): { icon: React.ElementType; variant: Badg
 }
 
 const BADGE_STYLES: Record<BadgeVariant, string> = {
-  ventas: "bg-yellow-400 text-gray-900",
+  ventas: "bg-green-500 text-white",
   valorado: "bg-yellow-400 text-gray-900",
-  "calidad-precio": "bg-emerald-100 text-emerald-800",
+  "calidad-precio": "bg-blue-500 text-white",
 };
 
 interface ProductCardProps {
