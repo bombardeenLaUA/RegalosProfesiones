@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import PriceDisclaimer from "@/components/PriceDisclaimer";
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
+        <GoogleAnalytics gaId="G-VTC5MCCQXY" />
         <Navbar />
         <PriceDisclaimer />
         <main className="flex-1">{children}</main>
