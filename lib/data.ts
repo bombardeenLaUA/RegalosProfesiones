@@ -182,7 +182,7 @@ export const NICHE_DATA: Niche[] = [
     description: "Accesorios creativos, limpieza y gadgets para amantes de la fotografía.",
     content: "Regalar a un fotógrafo es difícil porque suelen ser muy técnicos, pero hay accesorios infalibles que todos agradecen. Hemos evitado las cámaras (eso es muy personal) y nos hemos centrado en lo que rodea la experiencia: mantener el equipo seguro, limpiar las lentes, estabilizar la imagen o jugar con la luz. Acierto seguro para profesionales y aficionados.",
     products: [
-      { id: "1", title: "Cámara Instantánea Instax Mini Evo (2ª Mano, Como Nuevo)", price: "185,71€", imageUrl: "https://m.media-amazon.com/images/I/513tgZCijEL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C8HD6F5W?tag=giftgenius-21" },
+      { id: "1", title: "Cámara Instantánea Instax Mini Evo (2ª Mano, Intacta)", price: "185,71€", imageUrl: "https://m.media-amazon.com/images/I/513tgZCijEL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C8HD6F5W?tag=giftgenius-21" },
       { id: "2", title: "Trípode Flexible Joby GorillaPod", price: "69,99€", imageUrl: "https://m.media-amazon.com/images/I/51L3v-ExuOL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C81TNMP4?tag=giftgenius-21" },
       { id: "3", title: "Kit de Limpieza Profesional (Pera y Lápiz)", price: "5,53€", imageUrl: "https://m.media-amazon.com/images/I/61k6tggXi3L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CW522W9W?tag=giftgenius-21" },
       { id: "4", title: "Bola de Cristal para Fotografía (Lensball)", price: "18,29€", imageUrl: "https://m.media-amazon.com/images/I/81KbXVsZMtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B01NCM3AH4?tag=giftgenius-21" },
