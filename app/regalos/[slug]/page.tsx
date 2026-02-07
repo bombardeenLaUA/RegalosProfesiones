@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 function getNicheDisplayName(title: string): string {
-  return title.replace("Los Mejores Regalos para ", "");
+  return title.replace("Regalos para ", "");
 }
 
 export default async function RegalosPage({ params }: PageProps) {
