@@ -9,7 +9,8 @@ export default function PriceDisclaimer() {
           <span className="font-semibold">Nota:</span> Los precios mostrados son
           el precio base de cada producto y no reflejan los descuentos activos.
           A su vez, este precio base no se verá afectado por los posibles cambios de precio por parte de Amazon.
-          Las etiquetas hacen caso a los precios base, sin descuentos.
+          Las etiquetas de Top Ventas y demás hacen caso a los precios base, sin descuentos.
+          Los precios de envío no se tienen en cuenta.
           ¡Haz clic en los productos para ver el precio final en Amazon, te puedes llevar una sorpresa!
         </p>
       </div>
