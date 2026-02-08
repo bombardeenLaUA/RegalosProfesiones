@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { NICHE_DATA } from "@/lib/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.giftgenius.es";
+  const baseUrl = "https://giftgenius.es";
 
   // 1. Páginas estáticas (Inicio)
   const staticPages: MetadataRoute.Sitemap = [
