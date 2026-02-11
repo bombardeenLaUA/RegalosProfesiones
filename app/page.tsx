@@ -80,7 +80,7 @@ export default function HomePage() {
           <span
             className="inline-block rounded-full bg-orange-100 px-4 py-1 text-sm font-medium text-orange-700 animate-[fadeIn_0.5s_ease-out_both]"
           >
-            10 Profesiones Disponibles
+            11 Profesiones Disponibles
           </span>
         </div>
         <h2 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl">

@@ -58,9 +58,9 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "enfermeros",
-    title: "Regalos para Enfermeros",
+    title: "Regalos para Médicos y Enfermeros",
     description: "Herramientas clínicas y accesorios que mejoran el turno. Nada de tazas genéricas.",
-    content: "Los enfermeros pasan 12 horas de pie, con los bolsillos como oficina y los pies como transporte. La clave: **utilidad real**. Fonendoscopios, tijeras clínicas, organización para el uniforme, zuecos que aguantan el ritmo. Cosas que un enfermero reconoce al instante y que le facilitan el día.",
+    content: "Los médicos y enfermeros pasan 12 horas de pie, con los bolsillos como oficina y los pies como transporte. La clave: **utilidad real**. Fonendoscopios, tijeras clínicas, organización para el uniforme, zuecos que aguantan el ritmo. Cosas que un enfermero reconoce al instante y que le facilitan el día.",
     products: [
       { id: "1", title: "Zuecos Sanitarios Calzuro (Esterilizables)", price: "73,36 €", imageUrl: "https://m.media-amazon.com/images/I/41JdoFGq0XL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0BGCCQ57Z?tag=giftgenius-21", badges: ["Top Ventas"] },
       { id: "2", title: "Organizador de Bolsillo 'Salvabolsillos'", price: "12,99 €", imageUrl: "https://m.media-amazon.com/images/I/61kdXbdNZVL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0FHBC4N6Y?tag=giftgenius-21", badges: ["Calidad/Precio"] },
@@ -223,11 +223,11 @@ export const NICHE_DATA: Niche[] = [
     content: "La psicología es una profesión de desgaste invisible. Escuchar problemas ajenos durante horas requiere un entorno que proteja y herramientas que faciliten. Desde la biblia del diagnóstico hasta gadgets para que el café no se enfríe entre sesión y sesión. Regalos pensados para cuidar al cuidador.",
     products: [
       { id: "1", title: "Taza Inteligente Ember 2 (Mantiene el Café Caliente)", price: "195,71€", imageUrl: "https://m.media-amazon.com/images/I/51SiY3XfHUL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07Z5H4TF5?tag=giftgenius-21", badges: ["Top Ventas"] },
-      { id: "2", title: "Máquina de Ruido Blanco (Privacidad para Sesiones)", price: "42,99€", imageUrl: "https://m.media-amazon.com/images/I/6128M8q6DCL._AC_SY879_.jpg", amazonLink: "https://www.amazon.es/dp/B0FCMCTHGX?tag=giftgenius-21", badges: ["Calidad/Precio"] },
-      { id: "3", title: "Figura Funko Pop! Sigmund Freud (Toque de Humor)", price: "19,48€", imageUrl: "https://m.media-amazon.com/images/I/61gqYjYlBmL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0DNRT7FBW?tag=giftgenius-21", badges: ["Mejor Valorado"] },
-      { id: "4", title: "Manual Diagnóstico y Estadístico (La Biblia del Psicólogo)", price: "155.00 €", imageUrl: "https://m.media-amazon.com/images/I/61oxOjob0mL._SY425_.jpg", amazonLink: "https://www.amazon.es/dp/8411060721?tag=giftgenius-21" },
+      { id: "2", title: "Máquina de Ruido Blanco (Privacidad para Sesiones)", price: "44,95€", imageUrl: "https://m.media-amazon.com/images/I/71jbYCkSdSL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B08FMTY28V?tag=giftgenius-21", badges: ["Calidad/Precio"] },
+      { id: "3", title: "Manual Diagnóstico y Estadístico (La Biblia del Psicólogo)", price: "155,00 €", imageUrl: "https://m.media-amazon.com/images/I/61oxOjob0mL._SY425_.jpg", amazonLink: "https://www.amazon.es/dp/8411060721?tag=giftgenius-21" , badges: ["Mejor Valorado"] },
+      { id: "4", title: "Pulsera Molécula Serotonina (Energía Positiva)", price: "12,98€", imageUrl: "https://m.media-amazon.com/images/I/511d4-UQ4TL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DG4ZHZQ7?tag=giftgenius-21" },
       { id: "5", title: "Funda de Pañuelos Piel (Estética de Consulta)", price: "15,99€", imageUrl: "https://m.media-amazon.com/images/I/81nCaxX32yL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CQ4P111F?tag=giftgenius-21" },
-      { id: "6", title: "Colgante Símbolo Psi Plata de Ley (Joya Minimalista)", price: "35.00 €", imageUrl: "https://m.media-amazon.com/images/I/51aTIbkKxyL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D95H33B8?tag=giftgenius-21" },
+      { id: "6", title: "Colgante Símbolo Psi Plata de Ley (Joya Minimalista)", price: "12,98 €", imageUrl: "https://m.media-amazon.com/images/I/51aTIbkKxyL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D95H33B8?tag=giftgenius-21" },
       { id: "7", title: "Sujetalibros Anatomía Cerebro (Decoración Despacho)", price: "27,39€", imageUrl: "https://m.media-amazon.com/images/I/51-mkSmY81L._SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0F5692VDH?tag=giftgenius-21" },
       { id: "8", title: "Difusor Aromas Ultrasonico 250ML (Ambiente Relajante)", price: "35,99€", imageUrl: "https://m.media-amazon.com/images/I/61gfZ1uLvFL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0CWGDQ53J?tag=giftgenius-21" },
       { id: "9", title: "Lámpara LED Neurona 3D (Iluminación Temática)", price: "17,99€", imageUrl: "https://m.media-amazon.com/images/I/71FmMZVnGrL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FH44Q74Y?tag=giftgenius-21" },
