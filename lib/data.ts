@@ -229,11 +229,11 @@ export const NICHE_DATA: Niche[] = [
       { id: "5", title: "Funda de Pañuelos Piel (Estética de Consulta)", price: "15,99€", imageUrl: "https://m.media-amazon.com/images/I/81nCaxX32yL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CQ4P111F?tag=giftgenius-21" },
       { id: "6", title: "Colgante Símbolo Psi Plata de Ley (Joya Minimalista)", price: "35.00 €", imageUrl: "https://m.media-amazon.com/images/I/51aTIbkKxyL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D95H33B8?tag=giftgenius-21" },
       { id: "7", title: "Sujetalibros Anatomía Cerebro (Decoración Despacho)", price: "27,39€", imageUrl: "https://m.media-amazon.com/images/I/51-mkSmY81L._SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0F5692VDH?tag=giftgenius-21" },
-      { id: "8", title: "Cartel Madera Reversible 'En Sesión' (Sin Interrupciones)", price: "21,99€", imageUrl: "https://m.media-amazon.com/images/I/71ZsYEEZ0XL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0GDF3QQBR?tag=giftgenius-21" },
+      { id: "8", title: "Difusor Aromas Ultrasonico 250ML (Ambiente Relajante)", price: "35,99€", imageUrl: "https://m.media-amazon.com/images/I/61gfZ1uLvFL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0CWGDQ53J?tag=giftgenius-21" },
       { id: "9", title: "Lámpara LED Neurona 3D (Iluminación Temática)", price: "17,99€", imageUrl: "https://m.media-amazon.com/images/I/71FmMZVnGrL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FH44Q74Y?tag=giftgenius-21" },
       { id: "10", title: "Maceta Cerámica Cabeza Pensante (Decoración Metafórica)", price: "13,99€", imageUrl: "https://m.media-amazon.com/images/I/51XvFpEM9jL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CR3R749F?tag=giftgenius-21" },
       { id: "11", title: "Cojín Rueda de las Emociones (Herramienta Terapéutica)", price: "13,00€", imageUrl: "https://m.media-amazon.com/images/I/71-AFc-xyzL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D2319QRJ?tag=giftgenius-21" },
-      { id: "12", title: "Escultura Abstracta 'El Silencio' (Símbolo de Escucha)", price: "28.99 €", imageUrl: "https://m.media-amazon.com/images/I/51MRQ3NkjYL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0G3PS29MR?tag=giftgenius-21" }
+      { id: "12", title: "Escultura Abstracta 'El Silencio' (Símbolo de Escucha)", price: "15,57 €", imageUrl: "https://m.media-amazon.com/images/I/51MRQ3NkjYL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0G3PS29MR?tag=giftgenius-21" }
     ]
   },
 ];
