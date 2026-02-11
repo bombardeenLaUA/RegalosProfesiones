@@ -216,6 +216,25 @@ export const NICHE_DATA: Niche[] = [
       { id: "12", title: "Hamaca Camping Ultraligera (Nylon)", price: "32,99€", imageUrl: "https://m.media-amazon.com/images/I/618pKE7G3TL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0B53JW8K6?tag=giftgenius-21" }
     ]
   },
+  {
+    slug: "psicologos",
+    title: "Regalos para Psicólogos",
+    description: "Herramientas de autocuidado y clínica para quienes cuidan de la salud mental.",
+    content: "La psicología es una profesión de desgaste invisible. Escuchar problemas ajenos durante horas requiere un entorno que proteja y herramientas que faciliten. Desde la biblia del diagnóstico hasta gadgets para que el café no se enfríe entre sesión y sesión. Regalos pensados para cuidar al cuidador.",
+    products: [
+      { id: "1", title: "Manual Diagnóstico y Estadístico DSM-5-TR", price: "155,00€", imageUrl: "https://m.media-amazon.com/images/I/61oxOjob0mL._SY425_.jpg", amazonLink: "https://www.amazon.es/dp/8411060721?tag=giftgenius-21" },
+      { id: "2", title: "Taza Inteligente Ember 2", price: "195,71€", imageUrl: "https://m.media-amazon.com/images/I/51SiY3XfHUL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07Z5H4TF5?tag=giftgenius-21" },
+      { id: "3", title: "Máquina de Ruido Blanco Dohm Classic", price: "79,95€", imageUrl: "https://m.media-amazon.com/images/I/51MKpD7Ni9L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B019GAFJEG?tag=giftgenius-21" },
+      { id: "4", title: "Reloj de Arena 50 Minutos", price: "29,94€", imageUrl: "https://m.media-amazon.com/images/I/4122SjzjzEL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BY7LWBNS?tag=giftgenius-21" },
+      { id: "5", title: "Kit de Arte Kintsugi", price: "14,88€", imageUrl: "https://m.media-amazon.com/images/I/81oqtB+KRcL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0DMSC2LKB?tag=giftgenius-21" },
+      { id: "6", title: "Sillón Eames Lounge Chair Replica", price: "145,99€", imageUrl: "https://m.media-amazon.com/images/I/61X04Zrv4WL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0DTT7CRF1?tag=giftgenius-21" },
+      { id: "7", title: "Masajeador Cervical Shiatsu Calor", price: "28,49€", imageUrl: "https://m.media-amazon.com/images/I/813sCRUKhGL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BFZP3J3G?tag=giftgenius-21" },
+      { id: "8", title: "Funda Caja Pañuelos Piel Sintética", price: "15,99€", imageUrl: "https://m.media-amazon.com/images/I/81nCaxX32yL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CQ4P111F?tag=giftgenius-21" },
+      { id: "9", title: "Philips Hue Go Lámpara Portátil", price: "89,99€", imageUrl: "https://m.media-amazon.com/images/I/71jwyZ9bKHL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07SQ2FZTK?tag=giftgenius-21", badges: ["🏆 Top Ventas","💎 Calidad/Precio"] },      { id: "10", title: "Libro El Cuerpo Lleva la Cuenta", price: "29.90 €", imageUrl: "https://m.media-amazon.com/images/I/912t-vOEOEL._SY466_.jpg", amazonLink: "https://www.amazon.es/dp/B087D4PLP2?tag=giftgenius-21", badges: ["⭐ Mejor Valorado"] },
+      { id: "11", title: "Poster Teoría Polivagal Sistema Nervioso", price: "13,50€", imageUrl: "https://m.media-amazon.com/images/I/814YX7ozKsL._SY466_.jpg", amazonLink: "https://www.amazon.es/dp/8410335956?tag=giftgenius-21" },
+      { id: "12", title: "Moleskine Smart Writing Set", price: "249,00€", imageUrl: "https://m.media-amazon.com/images/I/916BTwTRASL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09T3HXC74?tag=giftgenius-21" }
+    ]
+  },
 ];
 
 export function getNicheBySlug(slug: string): Niche | undefined {

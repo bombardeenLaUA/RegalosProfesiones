@@ -1,0 +1,29 @@
+# PROJECT CONTEXT
+
+- **Name:** GiftGenius
+- **Type:** Programmatic SEO Gift Finder
+- **Stack:** Next.js 14 (App Router), TypeScript (Strict), Tailwind CSS, Shadcn UI
+- **Goal:** High-performance, high-SEO ranking, affiliate monetization
+
+# VIBE CODING PRINCIPLES (YC STANDARD)
+
+1. **Clean Implementation:** Never patch bad code. If a solution fails, revert and rewrite cleanly.
+2. **Modularity:** Prefer small, single-purpose files over monolithic ones.
+3. **Safety First:** Always prioritize "working builds". Before finishing a task, mentally check if `npm run build` would pass.
+4. **Testing as Guardrails:** Ensure critical logic is robust.
+5. **Incremental Commits:** Encourage the user to commit (`git commit`) after every successful feature implementation.
+
+# GIFTGENIUS SPECIFIC RULES
+
+1. **Data Formatting (CRITICAL):**
+   - In `data.ts` or any product array: NEVER leave a trailing comma after the last item's closing brace `}` or the closing bracket `]`.
+   - Syntax must be strict JSON-compatible within the TS file to prevent build errors.
+
+2. **Content Style:**
+   - All generated text (descriptions, intros) must be 100% HUMAN, professional, empathetic, and expert.
+   - Strictly FORBIDDEN: AI-sounding phrases, robotic tones, or generic fluff.
+   - Language: Spanish (España).
+
+3. **Product Selection:**
+   - Only "Hall of Fame" / "Elite" products.
+   - Lists of 12 items exactly.
