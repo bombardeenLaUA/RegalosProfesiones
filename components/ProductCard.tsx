@@ -83,9 +83,12 @@ export default function ProductCard({
   };
 
   const tooltipPositionClasses = {
-    top: "bottom-[110%] left-1/2 -translate-x-1/2",
-    left: "right-[105%] top-1/2 -translate-y-1/2",
-    right: "left-[105%] top-1/2 -translate-y-1/2",
+    top:
+      "left-0 right-0 bottom-[110%] lg:left-1/2 lg:right-auto lg:-translate-x-1/2",
+    left:
+      "left-0 right-0 bottom-[110%] lg:right-[105%] lg:left-auto lg:top-1/2 lg:bottom-auto lg:-translate-y-1/2",
+    right:
+      "left-0 right-0 bottom-[110%] lg:left-[105%] lg:right-auto lg:top-1/2 lg:bottom-auto lg:-translate-y-1/2",
   };
 
   const arrowClasses = {
@@ -152,7 +155,7 @@ export default function ProductCard({
           )}
         </a>
       </div>
-      <div className="flex flex-1 flex-col p-6">
+      <div ref={tooltipRef} className="relative flex flex-1 flex-col p-6">
         <h2 className="font-semibold text-gray-900 line-clamp-2 group-hover:text-amber-700">
           <a
             href={product.amazonLink}
@@ -167,7 +170,7 @@ export default function ProductCard({
         <div className="mt-2 flex items-center justify-between gap-2">
           <p className="text-2xl font-bold text-amber-600">{product.price}</p>
           {hasGiftReason && (
-            <div className="relative shrink-0" ref={tooltipRef}>
+            <div className="shrink-0">
               <button
                 type="button"
                 onClick={handleInfoClick}
@@ -178,7 +181,7 @@ export default function ProductCard({
               </button>
               {isTooltipOpen && (
                 <div
-                  className={`absolute z-50 isolate w-64 overflow-visible rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl animate-[fadeIn_0.15s_ease-out_both] ${tooltipPositionClasses[position]}`}
+                  className={`absolute z-50 isolate w-full overflow-visible rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl animate-[fadeIn_0.15s_ease-out_both] lg:w-64 ${tooltipPositionClasses[position]}`}
                 >
                   <p className="text-sm leading-relaxed text-gray-700">{product.giftReason}</p>
                   <div
