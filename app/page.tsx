@@ -2,11 +2,11 @@
 
 import { useState, useRef } from "react";
 import Link from "next/link";
-import { Search, ArrowRight, Palette, Gamepad2, Heart, Code, GraduationCap, ChefHat, BookOpen, Scale, Camera, Plane, Brain } from "lucide-react";
+import { Search, ArrowRight, Palette, Gamepad2, Heart, Code, GraduationCap, ChefHat, BookOpen, Scale, Camera, Plane, Brain, PawPrint, Scissors, Wrench, Ruler } from "lucide-react";
 import { NICHE_DATA } from "@/lib/data";
 
 const NICHE_ICONS: Record<string, React.ElementType> = {
-  arquitectos: Palette,
+  arquitectos: Ruler,
   gamers: Gamepad2,
   enfermeros: Heart,
   programadores: Code,
@@ -17,6 +17,10 @@ const NICHE_ICONS: Record<string, React.ElementType> = {
   fotografos: Camera,
   viajeros: Plane,
   psicologos: Brain,
+  "disenadores-graficos": Palette,
+  mecanicos: Wrench,
+  "peluqueros-barberos": Scissors,
+  veterinarios: PawPrint,
 };
 
 export default function HomePage() {
