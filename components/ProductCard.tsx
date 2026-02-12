@@ -84,7 +84,7 @@ export default function ProductCard({
 
   const tooltipPositionClasses = {
     top:
-      "left-0 right-0 bottom-[110%] lg:left-1/2 lg:right-auto lg:-translate-x-1/2",
+      "left-0 right-0 bottom-[calc(100%+4px)] lg:left-1/2 lg:right-auto lg:-translate-x-1/2",
     left:
       "left-0 right-0 bottom-[110%] lg:right-[105%] lg:left-auto lg:top-1/2 lg:bottom-auto lg:-translate-y-1/2",
     right:
@@ -92,7 +92,7 @@ export default function ProductCard({
   };
 
   const arrowClasses = {
-    top: "left-1/2 top-full -translate-x-1/2 h-0 w-0 border-[6px] border-transparent border-t-white",
+    top: "right-4 left-auto top-full h-0 w-0 border-[6px] border-transparent border-t-white",
     left:
       "top-1/2 -right-2 z-[-1] h-2 w-2 -translate-y-1/2 rotate-45 border-r border-t border-gray-200 bg-white",
     right:
