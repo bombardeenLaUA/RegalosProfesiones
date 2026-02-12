@@ -236,6 +236,86 @@ export const NICHE_DATA: Niche[] = [
       { id: "12", title: "Escultura Abstracta 'El Silencio' (Símbolo de Escucha)", price: "15,57 €", imageUrl: "https://m.media-amazon.com/images/I/51MRQ3NkjYL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0G3PS29MR?tag=giftgenius-21" }
     ]
   },
+  {
+    slug: "disenadores-graficos",
+    title: "Regalos para Diseñadores Gráficos",
+    description: "Herramientas de precisión, inspiración visual y accesorios de escritorio para creativos.",
+    content: "Los diseñadores viven en un mundo de píxeles, vectores y plazos de entrega imposibles. Valoran la estética por encima de todo, pero necesitan funcionalidad. Un buen regalo para ellos mejora su flujo de trabajo, organiza su caos creativo o simplemente es un objeto de deseo bien diseñado. Nada de 'comic sans' ni colores fuera de la paleta.",
+    products: [
+      { id: "1", title: "Guía Pantone Color Bridge (La Referencia Absoluta del Color)", price: "174,28€", imageUrl: "https://m.media-amazon.com/images/I/61iDPaauE5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BHLSSNLH?tag=giftgenius-21" },
+      { id: "2", title: "Ratón Logitech MX Master 3S (Precisión Pixel-Perfect)", price: "99,99€", imageUrl: "https://m.media-amazon.com/images/I/618IJzC-fFL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FHHV6YR5?tag=giftgenius-21" },
+      { id: "3", title: "Tableta Gráfica Wacom Intuos M (El Estándar Creativo)", price: "89,05€", imageUrl: "https://m.media-amazon.com/images/I/61T4kMUQKrL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09DSVJWH6?tag=giftgenius-21" },
+      { id: "4", title: "Libro: Pensar con Tipos (La Biblia de la Tipografía)", price: "24.90 €", imageUrl: "undefined", amazonLink: "undefined" },
+      { id: "5", title: "Controlador TourBox Neo (Consola para Adobe/Photoshop)", price: "187,00€", imageUrl: "https://m.media-amazon.com/images/I/61JiMrg3KKL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BBQQHH76?tag=giftgenius-21" },
+      { id: "6", title: "Cubo de Mezcla de Color CMY (Física de la Luz)", price: "35,99€", imageUrl: "https://m.media-amazon.com/images/I/517V5RsB7oL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B0BQ2Y12K9?tag=giftgenius-21", badges: ["Calidad/Precio"] },    
+      { id: "7", title: "Calibrador de Pantalla Datacolor SpyderX (Colores Reales)", price: "129,00€", imageUrl: "https://m.media-amazon.com/images/I/61viFYXKwkL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FMJFPTVG?tag=giftgenius-21" },
+      { id: "8", title: "Cuaderno Rhodia DotPad A4 (Papel para Bocetos UI)", price: "15,99€", imageUrl: "https://m.media-amazon.com/images/I/51Bm8pYI+LL._SY342_.jpg", amazonLink: "https://www.amazon.es/dp/B06Y6D17CX?tag=giftgenius-21" },
+      { id: "9", title: "Taza Pantone Oficial (Estética de Estudio)", price: "17,32€", imageUrl: "https://m.media-amazon.com/images/I/51aK-uVwg-L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B06W55Q4R9?tag=giftgenius-21" },
+      { id: "10", title: "Libro Gigante: Logo Modernism (Inspiración Visual TASCHEN)", price: "60.00 €", imageUrl: "undefined", amazonLink: "undefined" },
+      { id: "11", title: "Guante de Dibujo Digital (Deslizar sin Manchar)", price: "6,49€", imageUrl: "https://m.media-amazon.com/images/I/71cz9-9hAjL._SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0F1G1YW7K?tag=giftgenius-21" },
+      { id: "12", title: "Baraja de Cartas 'The Design Deck' (Aprender Jugando)", price: "11,93€", imageUrl: "https://m.media-amazon.com/images/I/815sz0r1L3L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B00001QHVP?tag=giftgenius-21", badges: ["Top Ventas","Mejor Valorado"] }
+    ]
+  },
+  {
+    slug: "mecanicos",
+    title: "Regalos para Mecánicos",
+    description: "Herramientas indestructibles, soluciones de limpieza y gadgets para el taller.",
+    content: "El taller es un entorno hostil: grasa, golpes y piezas que desaparecen. El mecánico necesita herramientas que aguanten el maltrato, luces que lleguen a rincones oscuros del motor y productos que cuiden sus manos después de la batalla. Aquí encontrarás equipamiento práctico que se gana su sitio en la caja de herramientas desde el primer día.",
+    products: [
+      { id: "1", title: "Kit de Herramientas Wera Tool-Check Plus (Calidad Alemana)", price: "82,87€", imageUrl: "https://m.media-amazon.com/images/I/81L77xBd++L._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B00I8MYMT2?tag=giftgenius-21", badges: ["Top Ventas","Mejor Valorado"] },
+      { id: "2", title: "Guantes Mechanix Wear Original (Protección Estándar)", price: "10,94€", imageUrl: "https://m.media-amazon.com/images/I/91Jg5U6TTmL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0001VNZUA?tag=giftgenius-21" },
+      { id: "3", title: "Lámpara de Trabajo LED Magnética (Iluminación Motor)", price: "12,50€", imageUrl: "https://m.media-amazon.com/images/I/515fVf4jmGL._AC_SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0FG7RH5VD?tag=giftgenius-21" },
+      { id: "4", title: "Pasta Lavamanos Solopol (Limpieza Industrial Real)", price: "0,50€", imageUrl: "https://m.media-amazon.com/images/I/71oU5XwizdL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B0CPVK2CMJ?tag=giftgenius-21" },
+      { id: "5", title: "Asiento con Ruedas para Taller (Salva Rodillas)", price: "49,90€", imageUrl: "https://m.media-amazon.com/images/I/61TExx2QKrL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07D326M7G?tag=giftgenius-21" },
+      { id: "6", title: "Cámara Endoscópica para Móvil (Diagnóstico Interno)", price: "29,99€", imageUrl: "https://m.media-amazon.com/images/I/61yFScfk3qL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C69M17SB?tag=giftgenius-21", badges: ["Calidad/Precio"] },
+      { id: "7", title: "Llave Dinamométrica de Precisión 1/2 (Apriete Exacto)", price: "100,31€", imageUrl: "https://m.media-amazon.com/images/I/51W-hGrgKQL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07WTHL5KT?tag=giftgenius-21" },
+      { id: "8", title: "Set de Vasos 10mm (La Llave que Siempre se Pierde)", price: "20,99€", imageUrl: "https://m.media-amazon.com/images/I/71YYNNDp77L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0DK3HMY9C?tag=giftgenius-21" },
+      { id: "9", title: "Funda Magnética para Aletas (Protege el Coche)", price: "8,50€", imageUrl: "https://m.media-amazon.com/images/I/41LHGp-JkMS._AC_.jpg", amazonLink: "https://www.amazon.es/dp/B08411VN23?tag=giftgenius-21" },
+      { id: "10", title: "Escaner Diagnóstico OBD2 Bluetooth (Lectura de Fallos)", price: "9,99€", imageUrl: "https://m.media-amazon.com/images/I/81r+ya5Pl7L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BZ27SV9Z?tag=giftgenius-21" },
+      { id: "11", title: "Muñequera Magnética (Sujeta Tornillos)", price: "10,49€", imageUrl: "https://m.media-amazon.com/images/I/716cKVuqMdL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B082B1LY7Z?tag=giftgenius-21" },
+      { id: "12", title: "Taza Neumático Apilada (Decoración Taller)", price: "8,05€", imageUrl: "https://m.media-amazon.com/images/I/71JAmtDSpQL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0GFDPQYG4?tag=giftgenius-21" }
+    ]
+  },
+  {
+    slug: "peluqueros-barberos",
+    title: "Regalos para Peluqueros y Barberos",
+    description: "Accesorios de corte premium, cuidado personal y decoración con estilo vintage.",
+    content: "Estar de pie todo el día cortando y peinando exige mucho física y creativamente. Los mejores regalos combinan ergonomía (para cuidar su espalda y manos) con ese toque de estilo que define su barbería o salón. Desde herramientas de precisión hasta detalles que hacen que el cliente se sienta en un club exclusivo.",
+    products: [
+      { id: "1", title: "Alfombra Antifatiga Barbería (Salud para la Espalda)", price: "61,99€", imageUrl: "https://m.media-amazon.com/images/I/51G01Pwjt6L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FJ86KDFW?tag=giftgenius-21", badges: ["Mejor Valorado"] },
+      { id: "2", title: "Máquina Cortapelos Wahl Magic Clip (El Oro del Barbero)", price: "189,60€", imageUrl: "https://m.media-amazon.com/images/I/714UzYD6jwL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B01FS6H5TO?tag=giftgenius-21", badges: ["Calidad/Precio"] },
+      { id: "3", title: "Jarra Barbicide Cristal (Icono de Desinfección)", price: "27,94€", imageUrl: "https://m.media-amazon.com/images/I/613MgogGjJL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0B5WNPB4Y?tag=giftgenius-21" },
+      { id: "4", title: "Navaja de Afeitar Tipo Feather (Precisión Japonesa)", price: "7,99€", imageUrl: "https://m.media-amazon.com/images/I/81JJrEc2oEL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B092FZVGZ7?tag=giftgenius-21" },
+      { id: "5", title: "Holster/Cinturón para Tijeras de Cuero", price: "7,49€", imageUrl: "https://m.media-amazon.com/images/I/51Bxy-XGyoL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0F87HX5MP?tag=giftgenius-21" },
+      { id: "6", title: "Espejo de Mano Profesional (Visión Trasera)", price: "9,99€", imageUrl: "https://m.media-amazon.com/images/I/51NuhyqFQJL._AC_SY879_.jpg", amazonLink: "https://www.amazon.es/dp/B0BS14HWGC?tag=giftgenius-21", badges: ["Top Ventas"] },
+      { id: "7", title: "Talquera con Brocha Suave (Limpieza de Cuello)", price: "7,29€", imageUrl: "https://m.media-amazon.com/images/I/51ij0hriaBL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07L8YV5VK?tag=giftgenius-21" },
+      { id: "8", title: "Capa de Corte Diseño Vintage (Estética Old School)", price: "16.99 €", imageUrl: "https://m.media-amazon.com/images/I/61LuzQjmvbL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0G1ZD28WR?tag=giftgenius-21" },
+      { id: "9", title: "Crema de Manos Reparadora Intensiva (Protección Química)", price: "5,33€", imageUrl: "https://m.media-amazon.com/images/I/71WW92U-S9L._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg", amazonLink: "https://www.amazon.es/dp/B01IFGMALM?tag=giftgenius-21" },
+      { id: "10", title: "Lámpara Poste de Barbero (Decoración Giratoria)", price: "108,00€", imageUrl: "https://m.media-amazon.com/images/I/51Sm9K1DyEL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0B6FZSX2J?tag=giftgenius-21" },
+      { id: "11", title: "Cepillo Fade para Degradados (Cerdas Jabalí)", price: "17,96€", imageUrl: "https://m.media-amazon.com/images/I/610pB7v8DHL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07635W6RY?tag=giftgenius-21" },
+      { id: "12", title: "Aro de Luz LED para Fotos (Marketing en Instagram)", price: "39,99€", imageUrl: "https://m.media-amazon.com/images/I/61Sq10jQw1L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0833VJ5FQ?tag=giftgenius-21" }
+    ]
+  },
+  {
+    slug: "veterinarios",
+    title: "Regalos para Veterinarios",
+    description: "Equipamiento diagnóstico, ropa cómoda y detalles para amantes de los animales.",
+    content: "Los veterinarios son médicos de pacientes que no hablan y a veces muerden. Su trabajo es vocacional y físicamente exigente. Agradecen regalos que faciliten el diagnóstico rápido, ropa que resista manchas y arañazos, o detalles que celebren ese vínculo especial con los animales sin caer en lo cursi. Funcionalidad clínica con corazón.",
+    products: [
+      { id: "1", title: "Fonendoscopio 3M Littmann Classic III (Edición Veterinaria)", price: "164,56€", imageUrl: "https://m.media-amazon.com/images/I/61EV9bd45gL._SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B00QESFO80?tag=giftgenius-21", badges: ["Top Ventas","Calidad/Precio"] },
+      { id: "2", title: "Gorro de Quirófano con Huellas (Estampado Animal)", price: "7,89€", imageUrl: "https://m.media-amazon.com/images/I/614UtNUnIeL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B0F5HQMCWT?tag=giftgenius-21" },
+      { id: "3", title: "Reloj de Silicona para Uniforme (Higiene Clínica)", price: "6,49€", imageUrl: "https://m.media-amazon.com/images/I/51As4j1629L._AC_SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0C7HFDNPY?tag=giftgenius-21" },
+      { id: "4", title: "Tijeras de Vendaje Punta Roma (Seguridad Paciente)", price: "7,79€", imageUrl: "https://m.media-amazon.com/images/I/51TUnyk-y+L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09XR17SFH?tag=giftgenius-21" },
+      { id: "5", title: "Linterna de Diagnóstico Ocular (Luz Cobalto)", price: "10,99€", imageUrl: "https://m.media-amazon.com/images/I/51qioE5DXcL._SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0BVB4146F?tag=giftgenius-21" },
+      { id: "6", title: "Kit de Impresión de Huellas (Recuerdo para Dueños)", price: "9,99€", imageUrl: "https://m.media-amazon.com/images/I/61A+Atv1c6L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08V85LK3F?tag=giftgenius-21" },
+      { id: "7", title: "Organizador de Bolsillo (Salvabolsillos)", price: "8,75€", imageUrl: "https://m.media-amazon.com/images/I/71Deo60NuaL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BPRF9K66?tag=giftgenius-21" },
+      { id: "8", title: "Calcetines de Compresión Divertidos (Perros/Gatos)", price: "16.99 €", imageUrl: "https://m.media-amazon.com/images/I/61hAx6yoXSL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C9PF6FJM?tag=giftgenius-21" },
+      { id: "9", title: "Libro: Anatomía Veterinaria para Colorear (Repaso Visual)", price: "22.00 €", imageUrl: "undefined", amazonLink: "undefined" },
+      { id: "10", title: "Taza 'Trust me, I'm a Dogtor' (Humor)", price: "9,50€", imageUrl: "https://m.media-amazon.com/images/I/817uowuu1HL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0GGC7RKC3?tag=giftgenius-21", badges: ["Mejor Valorado"] },
+      { id: "11", title: "Porta-Gell Hidroalcohólico Forma Animal", price: "5,62€", imageUrl: "https://m.media-amazon.com/images/I/61T66mTixHL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0GCH84F9L?tag=giftgenius-21" },
+      { id: "12", title: "Forro Polar Personalizado Huella (Guardias Frías)", price: "29.95 €", imageUrl: "https://m.media-amazon.com/images/I/41y2feIgymL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0DSJJTP12?tag=giftgenius-21" }
+    ]
+  }
 ];
 
 export function getNicheBySlug(slug: string): Niche | undefined {
