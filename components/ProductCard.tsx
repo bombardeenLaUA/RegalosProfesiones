@@ -89,9 +89,11 @@ export default function ProductCard({
   };
 
   const arrowClasses = {
-    top: "left-1/2 top-full -translate-x-1/2 border-[6px] border-transparent border-t-white",
-    left: "right-0 top-1/2 -translate-y-1/2 border-[6px] border-transparent border-l-white border-t-transparent border-b-transparent",
-    right: "left-0 top-1/2 -translate-y-1/2 border-[6px] border-transparent border-r-white border-t-transparent border-b-transparent",
+    top: "left-1/2 top-full -translate-x-1/2 h-0 w-0 border-[6px] border-transparent border-t-white",
+    left:
+      "top-1/2 -right-2 h-2 w-2 -translate-y-1/2 rotate-45 border-r border-t border-gray-200 bg-white",
+    right:
+      "top-1/2 -left-2 h-2 w-2 -translate-y-1/2 rotate-45 border-l border-b border-gray-200 bg-white",
   };
 
   return (
@@ -180,7 +182,7 @@ export default function ProductCard({
                 >
                   <p className="text-sm leading-relaxed text-gray-700">{product.giftReason}</p>
                   <div
-                    className={`absolute h-0 w-0 ${arrowClasses[position]}`}
+                    className={`absolute ${arrowClasses[position]}`}
                     aria-hidden
                   />
                 </div>
