@@ -90,12 +90,14 @@ export default function ProductCard({
 
   const arrowClasses = {
     top: "left-1/2 top-full -translate-x-1/2 border-[6px] border-transparent border-t-white",
-    left: "right-0 top-1/2 translate-x-full -translate-y-1/2 border-[6px] border-transparent border-r-white",
-    right: "left-0 top-1/2 -translate-x-full -translate-y-1/2 border-[6px] border-transparent border-l-white",
+    left: "-right-1.5 top-1/2 -translate-y-1/2 border-[6px] border-transparent border-r-white border-t-transparent border-b-transparent",
+    right: "-left-1.5 top-1/2 -translate-y-1/2 border-[6px] border-transparent border-l-white border-t-transparent border-b-transparent",
   };
 
   return (
-    <article className="group relative flex flex-col overflow-visible rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80">
+    <article
+      className={`group relative flex flex-col overflow-visible rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80 ${isTooltipOpen ? "z-[100]" : "z-0"}`}
+    >
       <div className="relative aspect-square overflow-hidden bg-white p-4">
         {product.badges && product.badges.length > 0 && (
           <div className="absolute left-0 top-0 z-10 flex flex-col gap-1">
