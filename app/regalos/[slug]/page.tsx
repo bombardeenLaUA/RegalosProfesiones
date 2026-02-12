@@ -5,7 +5,7 @@ import type { Product } from "@/lib/data";
 import AmazonCtaButton from "@/components/AmazonCtaButton";
 import ProductGrid from "@/components/ProductGrid";
 import ProfessionViewTracker from "@/components/ProfessionViewTracker";
-import ShareCategoryButton from "@/components/ShareCategoryButton";
+import ShareIcon from "@/components/ShareIcon";
 
 /** Parsea precio en formato español (ej: "32,99€" o "1.028,00€") a número para Schema.org */
 function parsePriceToNumber(priceStr: string): number | null {
@@ -108,16 +108,18 @@ export default async function RegalosPage({ params }: PageProps) {
       {/* Header con H1 y CTA Principal */}
       <header className="bg-gradient-to-b from-amber-50/80 to-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
-            {niche.products.length} Ideas de Regalos Originales para {displayName}
-          </h1>
+          <div className="flex items-start justify-between gap-4">
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
+              {niche.products.length} Ideas de Regalos Originales para {displayName}
+            </h1>
+            <ShareIcon slug={slug} displayName={displayName} />
+          </div>
           <p className="mt-6 max-w-3xl text-lg text-gray-600 leading-relaxed">
             Top ventas y mejor valorados del momento. Selección hecha a mano para ahorrarte el trabajo.
           </p>
-          {/* Compartir + CTA Hero */}
-          <div className="mt-10 flex flex-col items-center gap-4">
-            <ShareCategoryButton slug={slug} displayName={displayName} />
-            <p className="text-center text-gray-600">
+          {/* CTA Hero */}
+          <div className="mt-10 flex flex-col items-center">
+            <p className="mb-4 text-center text-gray-600">
               ¿Prefieres ver más opciones? Accede al catálogo completo en Amazon
             </p>
             <AmazonCtaButton slug={slug} displayName={displayName} variant="hero" />
