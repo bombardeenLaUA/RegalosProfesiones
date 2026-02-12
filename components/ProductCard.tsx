@@ -90,8 +90,8 @@ export default function ProductCard({
 
   const arrowClasses = {
     top: "left-1/2 top-full -translate-x-1/2 border-[6px] border-transparent border-t-white",
-    left: "-right-1.5 top-1/2 -translate-y-1/2 border-[6px] border-transparent border-r-white border-t-transparent border-b-transparent",
-    right: "-left-1.5 top-1/2 -translate-y-1/2 border-[6px] border-transparent border-l-white border-t-transparent border-b-transparent",
+    left: "right-0 top-1/2 -translate-y-1/2 border-[6px] border-transparent border-l-white border-t-transparent border-b-transparent",
+    right: "left-0 top-1/2 -translate-y-1/2 border-[6px] border-transparent border-r-white border-t-transparent border-b-transparent",
   };
 
   return (
@@ -176,7 +176,7 @@ export default function ProductCard({
               </button>
               {isTooltipOpen && (
                 <div
-                  className={`absolute z-50 w-64 animate-[fadeInScale_0.2s_ease-out] rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl ${tooltipPositionClasses[position]}`}
+                  className={`absolute z-50 w-64 rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl animate-[fadeIn_0.15s_ease-out_both] ${tooltipPositionClasses[position]}`}
                 >
                   <p className="text-sm leading-relaxed text-gray-700">{product.giftReason}</p>
                   <div
