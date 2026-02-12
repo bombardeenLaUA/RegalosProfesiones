@@ -108,8 +108,8 @@ export default async function RegalosPage({ params }: PageProps) {
       {/* Header con H1 y CTA Principal */}
       <header className="bg-gradient-to-b from-amber-50/80 to-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-start justify-between gap-4">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
+          <div className="flex flex-row flex-wrap items-center gap-3 sm:gap-4">
+            <h1 className="min-w-0 flex-1 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
               {niche.products.length} Ideas de Regalos Originales para {displayName}
             </h1>
             <ShareIcon slug={slug} displayName={displayName} />
