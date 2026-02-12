@@ -178,7 +178,7 @@ export default function ProductCard({
               </button>
               {isTooltipOpen && (
                 <div
-                  className={`absolute z-50 w-64 rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl animate-[fadeIn_0.15s_ease-out_both] ${tooltipPositionClasses[position]}`}
+                  className={`absolute z-50 isolate w-64 overflow-visible rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl animate-[fadeIn_0.15s_ease-out_both] ${tooltipPositionClasses[position]}`}
                 >
                   <p className="text-sm leading-relaxed text-gray-700">{product.giftReason}</p>
                   <div
