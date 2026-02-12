@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { ExternalLink, Trophy, Star, Gem } from "lucide-react";
 import type { Product } from "@/lib/data";
+import { trackProductClick } from "@/hooks/use-analytics";
 
 // Elimina emojis del texto para mostrar solo el texto limpio con icono Lucide
 function getCleanBadgeText(badge: string): string {
@@ -35,9 +36,11 @@ const BADGE_STYLES: Record<BadgeVariant, string> = {
 
 interface ProductCardProps {
   product: Product;
+  listName: string;
 }
 
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({ product, listName }: ProductCardProps) {
+  const handleProductClick = () => trackProductClick(product, listName);
   const [imageError, setImageError] = useState(false);
 
   return (
@@ -68,6 +71,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           target="_blank"
           rel="noopener noreferrer nofollow sponsored"
           className="relative block h-full w-full"
+          onClick={handleProductClick}
         >
           {imageError ? (
             <div
@@ -100,6 +104,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             target="_blank"
             rel="noopener noreferrer nofollow sponsored"
             className="block text-inherit no-underline hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 rounded"
+            onClick={handleProductClick}
           >
             {product.title}
           </a>
@@ -111,6 +116,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             target="_blank"
             rel="noopener noreferrer nofollow sponsored"
             className="flex w-full items-center justify-center gap-2 rounded-xl bg-amber-400 px-6 py-4 font-semibold text-gray-900 shadow-md transition-all hover:bg-amber-500 hover:shadow-lg"
+            onClick={handleProductClick}
           >
             Ver en Amazon
             <ExternalLink className="h-5 w-5" />

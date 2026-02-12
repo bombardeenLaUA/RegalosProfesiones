@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
@@ -30,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
-        <GoogleAnalytics gaId="G-VTC5MCCQXY" />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-VTC5MCCQXY"} />
         <GoogleTagManager gtmId="GTM-PSDFBXLQ" />
         <Navbar />
         <PriceDisclaimer />

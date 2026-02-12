@@ -8,9 +8,10 @@ const PRODUCTS_PER_PAGE = 12;
 
 interface ProductGridProps {
   products: Product[];
+  listName: string;
 }
 
-export default function ProductGrid({ products }: ProductGridProps) {
+export default function ProductGrid({ products, listName }: ProductGridProps) {
   const [visibleCount, setVisibleCount] = useState(PRODUCTS_PER_PAGE);
   const visibleProducts = products.slice(0, visibleCount);
   const hasMore = visibleCount < products.length;
@@ -24,7 +25,7 @@ export default function ProductGrid({ products }: ProductGridProps) {
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visibleProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard key={product.id} product={product} listName={listName} />
         ))}
       </div>
 

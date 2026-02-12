@@ -4,6 +4,8 @@ import { getNicheBySlug, getAllSlugs } from "@/lib/data";
 import type { Product } from "@/lib/data";
 import AmazonCtaButton from "@/components/AmazonCtaButton";
 import ProductGrid from "@/components/ProductGrid";
+import ProfessionViewTracker from "@/components/ProfessionViewTracker";
+import ShareCategoryButton from "@/components/ShareCategoryButton";
 
 /** Parsea precio en formato español (ej: "32,99€" o "1.028,00€") a número para Schema.org */
 function parsePriceToNumber(priceStr: string): number | null {
@@ -97,6 +99,7 @@ export default async function RegalosPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen">
+      <ProfessionViewTracker slug={slug} title={niche.title} />
       {/* Schema Markup JSON-LD para SEO */}
       <script
         type="application/ld+json"
@@ -111,9 +114,10 @@ export default async function RegalosPage({ params }: PageProps) {
           <p className="mt-6 max-w-3xl text-lg text-gray-600 leading-relaxed">
             Top ventas y mejor valorados del momento. Selección hecha a mano para ahorrarte el trabajo.
           </p>
-          {/* CTA Hero - Deep Linking */}
-          <div className="mt-10 flex flex-col items-center">
-            <p className="mb-4 text-center text-gray-600">
+          {/* Compartir + CTA Hero */}
+          <div className="mt-10 flex flex-col items-center gap-4">
+            <ShareCategoryButton slug={slug} displayName={displayName} />
+            <p className="text-center text-gray-600">
               ¿Prefieres ver más opciones? Accede al catálogo completo en Amazon
             </p>
             <AmazonCtaButton slug={slug} displayName={displayName} variant="hero" />
@@ -127,7 +131,7 @@ export default async function RegalosPage({ params }: PageProps) {
       </p>
 
       {/* Grid de Productos con Cargar más y CTA */}
-      <ProductGrid products={niche.products} />
+      <ProductGrid products={niche.products} listName={niche.title} />
 
       {/* Sección SEO: Contenido personalizado por nicho */}
       <section className="border-t border-gray-200 bg-gray-50 py-16">
