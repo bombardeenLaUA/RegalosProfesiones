@@ -38,9 +38,9 @@ const BADGE_STYLES: Record<BadgeVariant, string> = {
 function getTooltipPosition(index: number, isDesktop: boolean): "top" | "left" | "right" {
   if (!isDesktop) return "top";
   const col = index % 4;
-  if (col === 0) return "right";
-  if (col === 3) return "left";
-  return "top";
+  if (col === 0) return "left";  // Columna izquierda: tooltip a la izquierda de la tarjeta
+  if (col === 3) return "right"; // Columna derecha: tooltip a la derecha de la tarjeta
+  return "top";                   // Columnas centrales: tooltip arriba
 }
 
 interface ProductCardProps {
@@ -83,15 +83,15 @@ export default function ProductCard({
   };
 
   const tooltipPositionClasses = {
-    top: "bottom-full left-1/2 -translate-x-1/2 mb-2",
-    left: "right-full top-1/2 -translate-y-1/2 mr-2",
-    right: "left-full top-1/2 -translate-y-1/2 ml-2",
+    top: "bottom-[110%] left-1/2 -translate-x-1/2",
+    left: "right-[105%] top-1/2 -translate-y-1/2",
+    right: "left-[105%] top-1/2 -translate-y-1/2",
   };
 
   const arrowClasses = {
-    top: "left-1/2 top-full -translate-x-1/2 border-8 border-transparent border-t-gray-50",
-    left: "right-0 top-1/2 translate-x-full -translate-y-1/2 border-8 border-transparent border-l-gray-50",
-    right: "left-0 top-1/2 -translate-x-full -translate-y-1/2 border-8 border-transparent border-r-gray-50",
+    top: "left-1/2 top-full -translate-x-1/2 border-[6px] border-transparent border-t-white",
+    left: "right-0 top-1/2 translate-x-full -translate-y-1/2 border-[6px] border-transparent border-r-white",
+    right: "left-0 top-1/2 -translate-x-full -translate-y-1/2 border-[6px] border-transparent border-l-white",
   };
 
   return (
@@ -174,9 +174,9 @@ export default function ProductCard({
               </button>
               {isTooltipOpen && (
                 <div
-                  className={`absolute z-50 max-w-[220px] animate-[fadeInScale_0.2s_ease-out] rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm text-gray-700 shadow-xl ${tooltipPositionClasses[position]}`}
+                  className={`absolute z-50 w-64 animate-[fadeInScale_0.2s_ease-out] rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl ${tooltipPositionClasses[position]}`}
                 >
-                  <p className="leading-snug">{product.giftReason}</p>
+                  <p className="text-sm leading-relaxed text-gray-700">{product.giftReason}</p>
                   <div
                     className={`absolute h-0 w-0 ${arrowClasses[position]}`}
                     aria-hidden
