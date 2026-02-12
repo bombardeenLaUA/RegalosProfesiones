@@ -13,6 +13,7 @@ interface ProductGridProps {
 
 export default function ProductGrid({ products, listName }: ProductGridProps) {
   const [visibleCount, setVisibleCount] = useState(PRODUCTS_PER_PAGE);
+  const [openTooltipId, setOpenTooltipId] = useState<string | null>(null);
   const visibleProducts = products.slice(0, visibleCount);
   const hasMore = visibleCount < products.length;
   const totalRemaining = products.length - visibleCount;
@@ -21,11 +22,22 @@ export default function ProductGrid({ products, listName }: ProductGridProps) {
     setVisibleCount((prev) => Math.min(prev + PRODUCTS_PER_PAGE, products.length));
   };
 
+  const handleTooltipToggle = (productId: string) => {
+    setOpenTooltipId((prev) => (prev === productId ? null : productId));
+  };
+
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {visibleProducts.map((product) => (
-          <ProductCard key={product.id} product={product} listName={listName} />
+        {visibleProducts.map((product, index) => (
+          <ProductCard
+            key={product.id}
+            product={product}
+            listName={listName}
+            index={index}
+            isTooltipOpen={openTooltipId === product.id}
+            onTooltipToggle={handleTooltipToggle}
+          />
         ))}
       </div>
 

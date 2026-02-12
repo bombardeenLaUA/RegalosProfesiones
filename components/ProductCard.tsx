@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import { ExternalLink, Trophy, Star, Gem } from "lucide-react";
+import { ExternalLink, Trophy, Star, Gem, Info } from "lucide-react";
 import type { Product } from "@/lib/data";
 import { trackProductClick } from "@/hooks/use-analytics";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 // Elimina emojis del texto para mostrar solo el texto limpio con icono Lucide
 function getCleanBadgeText(badge: string): string {
@@ -34,17 +35,67 @@ const BADGE_STYLES: Record<BadgeVariant, string> = {
   "calidad-precio": "bg-blue-500 text-white",
 };
 
+function getTooltipPosition(index: number, isDesktop: boolean): "top" | "left" | "right" {
+  if (!isDesktop) return "top";
+  const col = index % 4;
+  if (col === 0) return "right";
+  if (col === 3) return "left";
+  return "top";
+}
+
 interface ProductCardProps {
   product: Product;
   listName: string;
+  index: number;
+  isTooltipOpen: boolean;
+  onTooltipToggle: (productId: string) => void;
 }
 
-export default function ProductCard({ product, listName }: ProductCardProps) {
+export default function ProductCard({
+  product,
+  listName,
+  index,
+  isTooltipOpen,
+  onTooltipToggle,
+}: ProductCardProps) {
   const handleProductClick = () => trackProductClick(product, listName);
   const [imageError, setImageError] = useState(false);
+  const tooltipRef = useRef<HTMLDivElement>(null);
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
+  const position = getTooltipPosition(index, isDesktop);
+  const hasGiftReason = Boolean(product.giftReason);
+
+  useEffect(() => {
+    if (!isTooltipOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (tooltipRef.current && !tooltipRef.current.contains(e.target as Node)) {
+        onTooltipToggle(product.id);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isTooltipOpen, product.id, onTooltipToggle]);
+
+  const handleInfoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    onTooltipToggle(product.id);
+  };
+
+  const tooltipPositionClasses = {
+    top: "bottom-full left-1/2 -translate-x-1/2 mb-2",
+    left: "right-full top-1/2 -translate-y-1/2 mr-2",
+    right: "left-full top-1/2 -translate-y-1/2 ml-2",
+  };
+
+  const arrowClasses = {
+    top: "left-1/2 top-full -translate-x-1/2 border-8 border-transparent border-t-gray-50",
+    left: "right-0 top-1/2 translate-x-full -translate-y-1/2 border-8 border-transparent border-l-gray-50",
+    right: "left-0 top-1/2 -translate-x-full -translate-y-1/2 border-8 border-transparent border-r-gray-50",
+  };
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80">
+    <article className="group relative flex flex-col overflow-visible rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80">
       <div className="relative aspect-square overflow-hidden bg-white p-4">
         {product.badges && product.badges.length > 0 && (
           <div className="absolute left-0 top-0 z-10 flex flex-col gap-1">
@@ -109,7 +160,32 @@ export default function ProductCard({ product, listName }: ProductCardProps) {
             {product.title}
           </a>
         </h2>
-        <p className="mt-2 text-2xl font-bold text-amber-600">{product.price}</p>
+        <div className="mt-2 flex items-center justify-between gap-2">
+          <p className="text-2xl font-bold text-amber-600">{product.price}</p>
+          {hasGiftReason && (
+            <div className="relative shrink-0" ref={tooltipRef}>
+              <button
+                type="button"
+                onClick={handleInfoClick}
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-300 text-white transition-colors hover:bg-gray-400"
+                aria-label="Por qué es un buen regalo"
+              >
+                <Info className="h-4 w-4" />
+              </button>
+              {isTooltipOpen && (
+                <div
+                  className={`absolute z-50 max-w-[220px] animate-[fadeInScale_0.2s_ease-out] rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm text-gray-700 shadow-xl ${tooltipPositionClasses[position]}`}
+                >
+                  <p className="leading-snug">{product.giftReason}</p>
+                  <div
+                    className={`absolute h-0 w-0 ${arrowClasses[position]}`}
+                    aria-hidden
+                  />
+                </div>
+              )}
+            </div>
+          )}
+        </div>
         <div className="mt-auto pt-6">
           <a
             href={product.amazonLink}

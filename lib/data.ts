@@ -5,6 +5,7 @@ export interface Product {
   imageUrl: string;
   amazonLink: string;
   badges?: string[];
+  giftReason?: string;
 }
 
 export interface Niche {
@@ -22,8 +23,8 @@ export const NICHE_DATA: Niche[] = [
     description: "Herramientas de precisión, libros de diseño y accesorios que un arquitecto usa de verdad.",
     content: "Los arquitectos valoran la estética y la precisión: nada de cosas de oficina genéricas. Un buen regalo cae en **productividad** (herramientas que usan a diario), **inspiración** (libros, maquetas) o **confort** (materiales premium, acabados mate). Hemos priorizado lo que realmente se usa en el día a día.",
     products: [
-      { id: "1", title: "Bolígrafo Digital Metapen (Alta Precisión)", price: "32,99€", imageUrl: "https://m.media-amazon.com/images/I/41yUOq1wFtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09ZTXVNVD?tag=giftgenius-21", badges: ["Top Ventas", "Calidad/Precio"] },      
-      { id: "2", title: "Alfombrilla de Corte A3 (Autocicatrizante)", price: "7,39€", imageUrl: "https://m.media-amazon.com/images/I/61QsK82thtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07TT872BF?tag=giftgenius-21", badges: ["Mejor Valorado"] },
+      { id: "1", title: "Bolígrafo Digital Metapen (Alta Precisión)", price: "32,99€", imageUrl: "https://m.media-amazon.com/images/I/41yUOq1wFtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09ZTXVNVD?tag=giftgenius-21", badges: ["Top Ventas", "Calidad/Precio"], giftReason: "Convierte bocetos en vectores digitales al instante. Ideal para quien dibuja a mano y trabaja en digital." },      
+      { id: "2", title: "Alfombrilla de Corte A3 (Autocicatrizante)", price: "7,39€", imageUrl: "https://m.media-amazon.com/images/I/61QsK82thtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07TT872BF?tag=giftgenius-21", badges: ["Mejor Valorado"], giftReason: "Se autorepara con el calor: los cortes desaparecen. Protege la mesa y alarga la vida del cúter." },
       { id: "3", title: "Libro: El Arquitecto Emprendedor", price: "15,36€", imageUrl: "https://m.media-amazon.com/images/I/61EuFK10IAL._SY466_.jpg", amazonLink: "https://www.amazon.es/dp/B0DR6MB9DQ?tag=giftgenius-21" },
       { id: "4", title: "Escalímetro Triangular de Aluminio", price: "4,99€", imageUrl: "https://m.media-amazon.com/images/I/71TkeOvf3HL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B079C1HKB8?tag=giftgenius-21" },
       { id: "5", title: "Tubo Portaplanos Extensible", price: "13,99 €", imageUrl: "https://m.media-amazon.com/images/I/61Gv54Z5vRL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09SZ9SWRC?tag=giftgenius-21&th=1" },
@@ -42,7 +43,7 @@ export const NICHE_DATA: Niche[] = [
     description: "Periféricos que marcan la diferencia, luz RGB y accesorios que los gamers piden.",
     content: "Regalar a un gamer no es comprar el primer juego que veas. Hay que mirar su ecosistema: ¿PC o consola? ¿Competitivo o historia? Lo que mejor encaja suele ser **atmósfera** (luz RGB, decoración) o **rendimiento** (periféricos que dan ventaja real). Desde paneles que se sincronizan con la pantalla hasta teclados que responden al instante.",
     products: [
-      { id: "1", title: "Taza Mágica Gameboy (Cambia con Calor)", price: "19,03 €", imageUrl: "https://m.media-amazon.com/images/I/71alMT8fYrL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B06WRVFRJV?tag=giftgenius-21", badges: ["Top Ventas", "Mejor Valorado"] },
+      { id: "1", title: "Taza Mágica Gameboy (Cambia con Calor)", price: "19,03 €", imageUrl: "https://m.media-amazon.com/images/I/71alMT8fYrL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B06WRVFRJV?tag=giftgenius-21", badges: ["Top Ventas", "Mejor Valorado"], giftReason: "Café caliente revela el diseño de Gameboy. Nostalgia gaming que les encanta a los retrofans." },
       { id: "2", title: "Teclado Mecánico RGB Compacto (60%)", price: "39,99 €", imageUrl: "https://m.media-amazon.com/images/I/610Wsop5scL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0FFMRQNLW/?tag=giftgenius-21", badges: ["Calidad/Precio"] },
       { id: "3", title: "Webcam Streaming 1080P 60FPS", price: "27,99 €", imageUrl: "https://m.media-amazon.com/images/I/61LPTw0M-qL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0C76ZD7KV?tag=giftgenius-21" },
       { id: "4", title: "Soporte Auriculares RGB + Carga Inalámbrica", price: "27,95 €", imageUrl: "https://m.media-amazon.com/images/I/61JI6UgtcJL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DGGNPHP8?tag=giftgenius-21" },
