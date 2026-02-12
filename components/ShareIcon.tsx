@@ -49,10 +49,11 @@ export default function ShareIcon({ slug, displayName }: ShareIconProps) {
       <button
         type="button"
         onClick={handleShare}
-        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-600 transition-all hover:scale-110 hover:bg-gray-100 hover:text-gray-900"
+        className="flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200"
         aria-label="Compartir"
       >
-        <Share2 className="h-6 w-6" />
+        <Share2 className="h-4 w-4" />
+        <span className="text-sm font-medium">Compartir</span>
       </button>
       {toast && (
         <span
