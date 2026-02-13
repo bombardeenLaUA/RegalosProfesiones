@@ -161,6 +161,7 @@ export default function ProductCard({
             href={product.amazonLink}
             target="_blank"
             rel="noopener noreferrer nofollow sponsored"
+            title={product.title}
             className="block text-inherit no-underline hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 rounded"
             onClick={handleProductClick}
           >
