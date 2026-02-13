@@ -173,7 +173,7 @@ export default function ProductCard({
             href={product.amazonLink}
             target="_blank"
             rel="noopener noreferrer nofollow sponsored"
-            className="text-2xl font-bold text-amber-600 hover:text-amber-700 focus:outline-none focus:ring-0 focus:ring-offset-0"
+            className="text-2xl font-bold text-gray-900 hover:text-gray-900 focus:outline-none focus:ring-0 focus:ring-offset-0"
             onClick={handleProductClick}
           >
             {product.price}
