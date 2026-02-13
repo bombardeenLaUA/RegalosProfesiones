@@ -169,7 +169,15 @@ export default function ProductCard({
           </a>
         </h2>
         <div className="relative mt-2 flex items-center justify-between gap-2">
-          <p className="text-2xl font-bold text-amber-600">{product.price}</p>
+          <a
+            href={product.amazonLink}
+            target="_blank"
+            rel="noopener noreferrer nofollow sponsored"
+            className="text-2xl font-bold text-amber-600 hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 rounded"
+            onClick={handleProductClick}
+          >
+            {product.price}
+          </a>
           {hasGiftReason && (
             <div className="shrink-0">
               <button
