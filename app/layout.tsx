@@ -4,6 +4,7 @@ import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import PriceDisclaimer from "@/components/PriceDisclaimer";
+import ThemeToggle from "@/components/ThemeToggle";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -35,6 +36,9 @@ export default function RootLayout({
           <GoogleTagManager gtmId="GTM-PSDFBXLQ" />
           <Navbar />
           <PriceDisclaimer />
+          <div className="flex justify-center w-full pt-6 pb-4 bg-amber-50 dark:bg-slate-900 border-0">
+            <ThemeToggle />
+          </div>
           <main className="flex-1">{children}</main>
           <Footer />
         </ThemeProvider>

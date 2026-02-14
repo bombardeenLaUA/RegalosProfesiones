@@ -101,7 +101,7 @@ export default function ProductCard({
 
   return (
     <article
-      className={`group relative flex flex-col overflow-visible rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80 dark:border-slate-700 dark:bg-slate-800 dark:hover:shadow-xl dark:shadow-slate-900/50 ${isTooltipOpen ? "z-[100]" : "z-0"}`}
+      className={`group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80 dark:border-slate-700 dark:bg-slate-800 dark:hover:shadow-xl dark:shadow-slate-900/50 ${isTooltipOpen ? "z-[100]" : "z-0"}`}
     >
       {/* Enlace a Amazon que cubre toda la tarjeta; el botón de info queda fuera con pointer-events-auto */}
       <a
