@@ -4,7 +4,6 @@ import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import PriceDisclaimer from "@/components/PriceDisclaimer";
-import ThemeToggle from "@/components/ThemeToggle";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -36,10 +35,6 @@ export default function RootLayout({
           <GoogleTagManager gtmId="GTM-PSDFBXLQ" />
           <Navbar />
           <PriceDisclaimer />
-          {/* Fondo sólido = primer color del Hero (from-amber-50 / from-slate-900). Sin gradiente ni borde para evitar corte */}
-          <div className="flex justify-end items-center pr-16 pt-10 pb-0 bg-amber-50 dark:bg-slate-900 border-0">
-            <ThemeToggle />
-          </div>
           <main className="flex-1">{children}</main>
           <Footer />
         </ThemeProvider>

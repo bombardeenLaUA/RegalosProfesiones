@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import Link from "next/link";
 import { Search, ArrowRight, Palette, Gamepad2, Heart, Code, GraduationCap, ChefHat, BookOpen, Scale, Camera, Plane, Brain, PawPrint, Scissors, Wrench, Ruler, Smile, Shield, Music, Pill, Dumbbell, Feather, Martini, HardHat, Sparkles, Image } from "lucide-react";
 import { NICHE_DATA } from "@/lib/data";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const NICHE_ICONS: Record<string, React.ElementType> = {
   arquitectos: Ruler,
@@ -49,10 +50,13 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Hero Section — mismo fondo que la barra del toggle (gradiente + overlay radial) para que no haya corte de color */}
+      {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-amber-50 via-white to-orange-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900">
-        {/* Overlay radial suave desde arriba-derecha: en claro amber-100/50, en oscuro slate-700/20 */}
+        {/* Overlay radial suave desde arriba-derecha */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-100/50 via-transparent to-transparent dark:from-slate-700/20 dark:via-transparent" aria-hidden />
+        <div className="relative z-10 flex justify-center w-full pt-8 pb-4 bg-transparent">
+          <ThemeToggle />
+        </div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl dark:text-gray-100">
