@@ -47,7 +47,7 @@ export default function ProductGrid({ products, listName }: ProductGridProps) {
           <button
             type="button"
             onClick={handleLoadMore}
-            className="rounded-xl border-2 border-amber-400 bg-white px-8 py-4 font-semibold text-amber-600 transition-all hover:bg-amber-50 hover:border-amber-500"
+            className="rounded-xl border-2 border-amber-400 bg-white px-8 py-4 font-semibold text-amber-600 transition-all hover:bg-amber-50 hover:border-amber-500 dark:border-amber-500 dark:bg-slate-800 dark:text-amber-400 dark:hover:bg-slate-700 dark:hover:border-amber-400"
           >
             Cargar más productos ({Math.min(PRODUCTS_PER_PAGE, totalRemaining)} más)
           </button>

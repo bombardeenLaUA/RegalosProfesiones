@@ -4,7 +4,9 @@ import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import PriceDisclaimer from "@/components/PriceDisclaimer";
+import ThemeToggle from "@/components/ThemeToggle";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,14 +29,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-VTC5MCCQXY"} />
-        <GoogleTagManager gtmId="GTM-PSDFBXLQ" />
-        <Navbar />
-        <PriceDisclaimer />
-        <main className="flex-1">{children}</main>
-        <Footer />
+    <html lang="es" suppressHydrationWarning>
+      <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col bg-white text-gray-900 dark:bg-slate-950 dark:text-gray-100`}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem storageKey="theme">
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-VTC5MCCQXY"} />
+          <GoogleTagManager gtmId="GTM-PSDFBXLQ" />
+          <Navbar />
+          <PriceDisclaimer />
+          <div className="flex justify-end items-center px-4 py-2 border-b border-gray-200 dark:border-slate-800 bg-gray-50/80 dark:bg-slate-900/50">
+            <ThemeToggle />
+          </div>
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

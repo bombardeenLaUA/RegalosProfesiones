@@ -12,6 +12,15 @@ body {
   background: var(--background);
 }
 
+/* Premium dark: fondo slate-950 con gradiente radial sutil (no negro puro) */
+.dark body {
+  --foreground: #f1f5f9;
+  --background: #020617;
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(51, 65, 85, 0.35), transparent 50%),
+    #020617;
+  min-height: 100vh;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -101,9 +101,9 @@ export default function ProductCard({
 
   return (
     <article
-      className={`group relative flex flex-col overflow-visible rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80 ${isTooltipOpen ? "z-[100]" : "z-0"}`}
+      className={`group relative flex flex-col overflow-visible rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80 dark:border-slate-700 dark:bg-slate-800 dark:hover:shadow-xl dark:shadow-slate-900/50 ${isTooltipOpen ? "z-[100]" : "z-0"}`}
     >
-      <div className="relative aspect-square overflow-hidden bg-white p-4">
+      <div className="relative aspect-square overflow-hidden bg-white p-4 dark:bg-slate-800">
         {product.badges && product.badges.length > 0 && (
           <div className="absolute left-0 top-0 z-10 flex flex-col gap-1">
             {product.badges
@@ -133,14 +133,14 @@ export default function ProductCard({
         >
           {imageError ? (
             <div
-              className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-amber-100 via-orange-50 to-amber-100 p-4 text-center"
+              className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-amber-100 via-orange-50 to-amber-100 p-4 text-center dark:from-slate-700 dark:via-slate-800 dark:to-slate-700"
               role="img"
               aria-label={product.title}
             >
-              <span className="line-clamp-4 text-sm font-medium text-gray-700">
+              <span className="line-clamp-4 text-sm font-medium text-gray-700 dark:text-gray-300">
                 {product.title}
               </span>
-              <span className="mt-2 text-xs text-gray-500">GiftGenius</span>
+              <span className="mt-2 text-xs text-gray-500 dark:text-gray-400">GiftGenius</span>
             </div>
           ) : (
             <Image
@@ -156,13 +156,13 @@ export default function ProductCard({
         </a>
       </div>
       <div ref={tooltipRef} className="relative flex flex-1 flex-col p-6">
-        <h2 className="font-semibold text-gray-900 line-clamp-2 group-hover:text-amber-700">
+        <h2 className="font-semibold text-gray-900 line-clamp-2 group-hover:text-amber-700 dark:text-gray-100 dark:group-hover:text-amber-400">
           <a
             href={product.amazonLink}
             target="_blank"
             rel="noopener noreferrer nofollow sponsored"
             title={product.title}
-            className="block text-inherit no-underline hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 rounded"
+            className="block text-inherit no-underline hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 rounded dark:hover:text-amber-400 dark:focus:ring-offset-slate-800"
             onClick={handleProductClick}
           >
             {product.title}
@@ -173,7 +173,7 @@ export default function ProductCard({
             href={product.amazonLink}
             target="_blank"
             rel="noopener noreferrer nofollow sponsored"
-            className="text-2xl font-bold text-amber-600 focus:outline-none focus:ring-0 focus:ring-offset-0"
+            className="text-2xl font-bold text-amber-600 focus:outline-none focus:ring-0 focus:ring-offset-0 dark:text-amber-400"
             onClick={handleProductClick}
           >
             {product.price}
@@ -183,18 +183,18 @@ export default function ProductCard({
               <button
                 type="button"
                 onClick={handleInfoClick}
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-300 text-white transition-colors hover:bg-gray-400"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-300 text-white transition-colors hover:bg-gray-400 dark:bg-slate-600 dark:hover:bg-slate-500"
                 aria-label="Por qué es un buen regalo"
               >
                 <Info className="h-4 w-4" />
               </button>
               {isTooltipOpen && (
                 <div
-                  className={`absolute z-50 isolate w-full overflow-visible rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl animate-[fadeIn_0.15s_ease-out_both] lg:w-64 ${tooltipPositionClasses[position]}`}
+                  className={`absolute z-50 isolate w-full overflow-visible rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl animate-[fadeIn_0.15s_ease-out_both] lg:w-64 dark:border-slate-600 dark:bg-slate-800 ${tooltipPositionClasses[position]}`}
                 >
-                  <p className="text-sm leading-relaxed text-gray-700">{product.giftReason}</p>
+                  <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-300">{product.giftReason}</p>
                   <div
-                    className={`absolute ${arrowClasses[position]}`}
+                    className={`absolute ${arrowClasses[position]} ${position === "top" ? "dark:!border-t-slate-800" : "dark:border-slate-600 dark:bg-slate-800"}`}
                     aria-hidden
                   />
                 </div>
@@ -207,7 +207,7 @@ export default function ProductCard({
             href={product.amazonLink}
             target="_blank"
             rel="noopener noreferrer nofollow sponsored"
-            className="flex w-full items-center justify-center gap-2 rounded-xl bg-amber-400 px-6 py-4 font-semibold text-gray-900 shadow-md transition-all hover:bg-amber-500 hover:shadow-lg"
+            className="flex w-full items-center justify-center gap-2 rounded-xl bg-amber-400 px-6 py-4 font-semibold text-gray-900 shadow-md transition-all hover:bg-amber-500 hover:shadow-lg dark:bg-amber-500 dark:text-gray-900 dark:hover:bg-amber-400"
             onClick={handleProductClick}
           >
             Ver en Amazon
