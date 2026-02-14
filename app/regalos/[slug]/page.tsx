@@ -139,7 +139,7 @@ export default async function RegalosPage({ params }: PageProps) {
       <section className="border-t border-gray-200 bg-gray-50 py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900">
-            ¿Por qué hacer un regalo a un {displayName}?
+            ¿Por qué hacer un regalo a un {niche.singularName}?
           </h2>
           <div className="mt-6 space-y-4 text-gray-600 leading-relaxed">
             {niche.content ? (
@@ -158,7 +158,7 @@ export default async function RegalosPage({ params }: PageProps) {
               ))
             ) : (
               <p>
-                Un regalo para un {displayName.toLowerCase()} que encaje con lo que hace dice más que mil palabras.
+                Un regalo para un {niche.singularName} que encaje con lo que hace dice más que mil palabras.
               </p>
             )}
           </div>

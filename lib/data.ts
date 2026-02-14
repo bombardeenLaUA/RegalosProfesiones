@@ -11,6 +11,7 @@ export interface Product {
 export interface Niche {
   slug: string;
   title: string;
+  singularName: string;
   description: string;
   content?: string;
   products: Product[];
@@ -20,6 +21,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "arquitectos",
     title: "Regalos para Arquitectos",
+    singularName: "arquitecto",
     description: "Herramientas de precisión, libros de diseño y accesorios que un arquitecto usa de verdad.",
     content: "Los arquitectos valoran la estética y la precisión: nada de cosas de oficina genéricas. Un buen regalo cae en **productividad** (herramientas que usan a diario), **inspiración** (libros, maquetas) o **confort** (materiales premium, acabados mate). Hemos priorizado lo que realmente se usa en el día a día.",
     products: [
@@ -40,6 +42,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "gamers",
     title: "Regalos para Gamers",
+    singularName: "gamer",
     description: "Periféricos que marcan la diferencia, luz RGB y accesorios que los gamers piden.",
     content: "Regalar a un gamer no es comprar el primer juego que veas. Hay que mirar su ecosistema: ¿PC o consola? ¿Competitivo o historia? Lo que mejor encaja suele ser **atmósfera** (luz RGB, decoración) o **rendimiento** (periféricos que dan ventaja real). Desde paneles que se sincronizan con la pantalla hasta teclados que responden al instante.",
     products: [
@@ -60,6 +63,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "enfermeros",
     title: "Regalos para Médicos y Enfermeros",
+    singularName: "médico o enfermero",
     description: "Herramientas clínicas y accesorios que mejoran el turno. Nada de tazas genéricas.",
     content: "Los médicos y enfermeros pasan 12 horas de pie, con los bolsillos como oficina y los pies como transporte. La clave: **utilidad real**. Fonendoscopios, tijeras clínicas, organización para el uniforme, zuecos que aguantan el ritmo. Cosas que un enfermero reconoce al instante y que le facilitan el día.",
     products: [
@@ -80,6 +84,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "programadores",
     title: "Regalos para Programadores",
+    singularName: "programador",
     description: "Teclados ergonómicos, libros de código y gadgets que un dev de verdad usa.",
     content: "Los programadores priorizan eficiencia, ergonomía y un toque de humor geek. Hardware que cuida la postura (teclados mecánicos, ratones verticales), gadgets que ayudan a concentrarse (auriculares, barras de luz) y algún detalle que les saca una sonrisa entre líneas de código. Nada que acabe en el cajón.",
     products: [
@@ -100,6 +105,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "profesores",
     title: "Regalos para Profesores y Maestros",
+    singularName: "profesor o maestro",
     description: "Papelería útil, organización para el aula y detalles que un profe valora.",
     content: "Los profesores corrigen hasta tarde y necesitan energía. Mezclamos utilidad (organizadores, plastificadoras, agendas) con caprichos que se agradecen (vasos térmicos, sellos de motivación). Cosas para el aula y para sus descansos. Nada genérico.",
     products: [
@@ -120,6 +126,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "cocineros",
     title: "Regalos para Cocineros y Chefs",
+    singularName: "cocinero o chef",
     description: "Utensilios que se usan de verdad en cocina. Nada que acabe en el cajón.",
     content: "Da igual si es chef profesional o aficionado que se cree de MasterChef: los utensilios que marcan la diferencia son los mismos. Cuchillos de verdad, piedras de afilar, termómetros y organización. Nada de gadgets de teletienda que acaban en el fondo del armario.",
     products: [
@@ -140,6 +147,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "opositores",
     title: "Regalos para Opositores y Estudiantes",
+    singularName: "opositor o estudiante",
     description: "Lo que necesitan para estudiar horas: ergonomía, concentración y organización.",
     content: "Horas en la silla, cervicales cargadas y distracción constante. El opositor agradece todo lo que hace el estudio más cómodo o eficiente: soportes para la espalda, temporizadores Pomodoro, tapones para el ruido, agendas específicas. Pequeñas ayudas que suman cuando las horas se acumulan.",
     products: [
@@ -160,6 +168,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "abogados",
     title: "Regalos para Abogados y Juristas",
+    singularName: "abogado o jurista",
     description: "Accesorios de despacho con clase que transmiten profesionalidad.",
     content: "En derecho importan la imagen y la organización. Un regalo para abogado combina elegancia clásica con utilidad: maletines, portafolios, bolígrafos de firma, decoración de despacho (mazos, estatuas). Sirve para celebrar un primer caso o para un bufete ya consolidado.",
     products: [
@@ -180,6 +189,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "fotografos",
     title: "Regalos para Fotógrafos",
+    singularName: "fotógrafo",
     description: "Accesorios que protegen el equipo, limpian lentes y mejoran las fotos.",
     content: "Las cámaras son muy personales; mejor no meterse. Lo que sí agradecen todos: proteger el equipo, limpiar lentes, estabilizar la imagen y jugar con la luz. Tarjetas SD, trípodes, mochilas, reflectores. Funciona igual para profesionales que para aficionados.",
     products: [
@@ -200,6 +210,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "viajeros",
     title: "Regalos para Viajeros",
+    singularName: "viajero",
     description: "Gadgets ligeros y prácticos para quien viaja a menudo.",
     content: "Quien viaja mucho prioriza espacio y comodidad. Regalos que resuelven problemas reales: meter más ropa en menos sitio, dormir en el avión sin dolor de cuello, cargar el móvil en cualquier enchufe. Ligero, resistente y útil. Lo que lleva en la mochila en el próximo viaje.",
     products: [
@@ -220,6 +231,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "psicologos",
     title: "Regalos para Psicólogos",
+    singularName: "psicólogo",
     description: "Herramientas de autocuidado y clínica para quienes cuidan de la salud mental.",
     content: "La psicología es una profesión de desgaste invisible. Escuchar problemas ajenos durante horas requiere un entorno que proteja y herramientas que faciliten. Desde la biblia del diagnóstico hasta gadgets para que el café no se enfríe entre sesión y sesión. Regalos pensados para cuidar al cuidador.",
     products: [
@@ -240,6 +252,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "disenadores-graficos",
     title: "Regalos para Diseñadores Gráficos",
+    singularName: "diseñador gráfico",
     description: "Herramientas de precisión, inspiración visual y accesorios de escritorio para creativos.",
     content: "Los diseñadores viven en un mundo de píxeles, vectores y plazos de entrega imposibles. Valoran la estética por encima de todo, pero necesitan funcionalidad. Un buen regalo para ellos mejora su flujo de trabajo, organiza su caos creativo o simplemente es un objeto de deseo bien diseñado. Nada de 'comic sans' ni colores fuera de la paleta.",
     products: [
@@ -260,6 +273,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "mecanicos",
     title: "Regalos para Mecánicos",
+    singularName: "mecánico",
     description: "Herramientas indestructibles, soluciones de limpieza y gadgets para el taller.",
     content: "El taller es un entorno hostil: grasa, golpes y piezas que desaparecen. El mecánico necesita herramientas que aguanten el maltrato, luces que lleguen a rincones oscuros del motor y productos que cuiden sus manos después de la batalla. Aquí encontrarás equipamiento práctico que se gana su sitio en la caja de herramientas desde el primer día.",
     products: [
@@ -280,6 +294,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "peluqueros-barberos",
     title: "Regalos para Peluqueros y Barberos",
+    singularName: "peluquero o barbero",
     description: "Accesorios de corte premium, cuidado personal y decoración con estilo vintage.",
     content: "Estar de pie todo el día cortando y peinando exige mucho física y creativamente. Los mejores regalos combinan ergonomía (para cuidar su espalda y manos) con ese toque de estilo que define su barbería o salón. Desde herramientas de precisión hasta detalles que hacen que el cliente se sienta en un club exclusivo.",
     products: [
@@ -300,6 +315,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "veterinarios",
     title: "Regalos para Veterinarios",
+    singularName: "veterinario",
     description: "Equipamiento diagnóstico, ropa cómoda y detalles para amantes de los animales.",
     content: "Los veterinarios son médicos de pacientes que no hablan y a veces muerden. Su trabajo es vocacional y físicamente exigente. Agradecen regalos que faciliten el diagnóstico rápido, ropa que resista manchas y arañazos, o detalles que celebren ese vínculo especial con los animales sin caer en lo cursi. Funcionalidad clínica con corazón.",
     products: [
@@ -320,6 +336,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "dentistas",
     title: "Regalos para Dentistas",
+    singularName: "dentista",
     description: "Estética dental, ergonomía para el cuello y detalles con humor odontológico.",
     content: "La odontología es una mezcla de medicina, ingeniería y arte. Pasan el día encorvados sobre bocas ajenas (dolor de espalda seguro) y lidiando con pacientes nerviosos. Los mejores regalos combinan ergonomía, tecnología para su clínica o humor que quite hierro a la profesión más temida.",
     products: [
@@ -340,6 +357,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "policias",
     title: "Regalos para Policías",
+    singularName: "policía",
     description: "Equipo táctico, confort para el turno y seguridad para quienes nos protegen.",
     content: "El trabajo policial es 90% rutina y 10% adrenalina pura. El equipo que les dan de dotación suele ser básico, así que agradecen enormemente herramientas que mejoren su seguridad o su comodidad en el coche patrulla. Desde linternas que ciegan hasta organizadores para el caos del maletero.",
     products: [
@@ -360,6 +378,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "musicos",
     title: "Regalos para Músicos y Guitarristas",
+    singularName: "músico o guitarrista",
     description: "Accesorios que cuidan el instrumento, el oído y mejoran el sonido.",
     content: "Los músicos son obsesivos con su sonido y su equipo. Siempre les faltan púas, cables o herramientas de mantenimiento. Un buen regalo no es comprarles un instrumento (eso es muy personal), sino todo lo que lo rodea: afinadores precisos, protección auditiva de calidad y gadgets que facilitan el ensayo.",
     products: [
@@ -380,6 +399,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "farmaceuticos",
     title: "Regalos para Farmacéuticos",
+    singularName: "farmacéutico",
     description: "Ciencia, paciencia y descanso para quienes están detrás del mostrador.",
     content: "El farmacéutico es un híbrido entre científico, psicólogo y comerciante. Pasan el día de pie descifrando recetas ilegibles y escuchando dolencias. Valoran mucho el descanso de piernas, la organización meticulosa y, por supuesto, un poco de humor químico para sobrellevar el día.",
     products: [
@@ -400,6 +420,7 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "entrenadores-personales",
     title: "Regalos para Entrenadores y Fitness",
+    singularName: "entrenador personal",
     description: "Recuperación muscular, preparación de comidas y gadgets para el gimnasio.",
     content: "Su cuerpo es su herramienta de trabajo. Viven cargando pesas, contando repeticiones y comiendo de tupper. Los mejores regalos son los que les ayudan a recuperar mejor los músculos, a transportar sus 5 comidas diarias o a grabar contenido para sus redes sociales sin hacer malabares.",
     products: [
@@ -420,18 +441,19 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "escritores",
     title: "Regalos para Escritores y Periodistas",
+    singularName: "escritor o periodista",
     description: "Inspiración, libretas de calidad y herramientas para combatir el bloqueo creativo.",
     content: "Escribir es un acto solitario de lucha contra la página en blanco. Los escritores aman los objetos que ritualizan su trabajo: teclados con un sonido específico, cuadernos donde la tinta no traspasa, o herramientas que capturan ideas al vuelo antes de que se escapen. Buscamos alimentar su musa y cuidar sus manos.",
     products: [
-      { id: "1", title: "Pluma Estilográfica Lamy Safari (Charcoal)", price: "25,37€", imageUrl: "https://m.media-amazon.com/images/I/61OCv1DIljL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B000GPI74U?tag=giftgenius-21", badges: ["Top Ventas"], giftReason: "Escribir a mano ayuda a pensar diferente. Esta pluma es indestructible, ergonómica y tiene un diseño bauhaus atemporal." },
+      { id: "1", title: "Pluma Estilográfica Lamy Safari (Charcoal)", price: "25,25€", imageUrl: "https://m.media-amazon.com/images/I/61OCv1DIljL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B000GPI74U?tag=giftgenius-21", badges: ["Top Ventas"], giftReason: "Escribir a mano ayuda a pensar diferente. Esta pluma es indestructible, ergonómica y tiene un diseño bauhaus atemporal." },
       { id: "2", title: "Cuaderno Moleskine Clásico (Tapa Dura)", price: "18,90€", imageUrl: "https://m.media-amazon.com/images/I/816aJynTsCL._AC_SY879_.jpg", amazonLink: "https://www.amazon.es/dp/8883701038?tag=giftgenius-21", badges: ["Calidad/Precio"], giftReason: "El estándar de la industria. Hemingway las usaba. Hay algo en abrir una Moleskine nueva que invita a empezar esa novela pendiente." },
-      { id: "3", title: "Lápices Blackwing 602 (Caja 12 Unidades)", price: "44,98€", imageUrl: "https://m.media-amazon.com/images/I/61LScqtldhL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B006YYPIUI?tag=giftgenius-21", badges: ["Mejor Valorado"], giftReason: "Son leyenda. Los usaban Steinbeck y Truman Capote. No es un lápiz cualquiera, es un icono de culto que desliza sobre el papel como mantequilla." },
+      { id: "3", title: "Lápices Blackwing 602 (Caja 12 Unidades, 3,75€/Unidad)", price: "44,98€", imageUrl: "https://m.media-amazon.com/images/I/61uIaG-Mp+L._AC_SL1500_.jpg", amazonLink: "https://www.amazon.es/dp/B006CQWILK?tag=giftgenius-21", badges: ["Mejor Valorado"], giftReason: "Son leyenda. Los usaban Steinbeck y Truman Capote. No es un lápiz cualquiera, es un icono de culto que desliza sobre el papel como mantequilla." },
       { id: "4", title: "Teclado Mecánico Retro (Estilo Máquina Escribir)", price: "53,24€", imageUrl: "https://m.media-amazon.com/images/I/71Y5L1dyduL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FPFQJ8NV?tag=giftgenius-21", giftReason: "El sonido de las teclas es hipnótico. Recupera la sensación física de escribir en una máquina antigua pero con tecnología bluetooth moderna." },
       { id: "5", title: "Atril de Lectura Bambú (Manos Libres)", price: "20,99€", imageUrl: "https://m.media-amazon.com/images/I/71dUCGttFsS._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CLNLLBLR?tag=giftgenius-21", giftReason: "Para transcribir notas o leer documentación sin ocupar las manos. Mejora la postura cervical tras horas de investigación." },
       { id: "6", title: "Vela Olor 'Biblioteca Antigua'", price: "25,27€", imageUrl: "https://m.media-amazon.com/images/I/712H9wPE5AL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07CP4N5HF?tag=giftgenius-21", giftReason: "El olfato dispara la creatividad. El olor a papel viejo, madera y vainilla crea la atmósfera perfecta para concentrarse." },
       { id: "7", title: "Reloj de Arena 30 Minutos (Cristal y Madera)", price: "22,99€", imageUrl: "https://m.media-amazon.com/images/I/61PMfXTCoLL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0D4TDVW41?tag=giftgenius-21", giftReason: "Ver el tiempo fluir físicamente ayuda a concentrarse mejor que el cronómetro del móvil. Perfecto para sprints de escritura intensiva sin distracciones digitales." },
       { id: "8", title: "Libro: El Guion (Robert McKee)", price: "16,00€", imageUrl: "https://m.media-amazon.com/images/I/61Ofv-r+kOL._SY466_.jpg", amazonLink: "https://www.amazon.es/dp/8484284468?tag=giftgenius-21", giftReason: "La biblia de la estructura narrativa. Aunque escriban novela, entender cómo funciona una historia por dentro es obligatorio." },
-      { id: "9", title: "Bloc de Notas Impermeable (Para la Ducha)", price: "14,50€", imageUrl: "https://m.media-amazon.com/images/I/71r9+tk9bsL._SY342_.jpg", amazonLink: "https://www.amazon.es/dp/B0CSC1KJKQ?tag=giftgenius-21", giftReason: "Las mejores ideas de trama siempre llegan en la ducha. Esto permite apuntarlas allí mismo antes de que se vayan por el desagüe." },
+      { id: "9", title: "Bloc de Notas Impermeable (Para la Ducha)", price: "31,59€", imageUrl: "https://m.media-amazon.com/images/I/71r9+tk9bsL._SY342_.jpg", amazonLink: "https://www.amazon.es/dp/B0CSC1KJKQ?tag=giftgenius-21", giftReason: "Las mejores ideas de trama siempre llegan en la ducha. Esto permite apuntarlas allí mismo antes de que se vayan por el desagüe." },
       { id: "10", title: "Lámpara Estilo Banquero (Cristal Verde Clásico)", price: "39,99€", imageUrl: "https://m.media-amazon.com/images/I/51BLSe8X1dL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0G6QNW13L?tag=giftgenius-21", giftReason: "Crea instantáneamente esa atmósfera de 'biblioteca clásica'. La luz verde es icónica y te mete en el papel de escritor serio nada más encenderla." },
       { id: "11", title: "Vade de Escritorio Grande (Fieltro o Cuero)", price: "42,59€", imageUrl: "https://m.media-amazon.com/images/I/81BDcqyMzzL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0F4TZ39Z2?tag=giftgenius-21", giftReason: "Delimita el 'espacio sagrado' de escritura en la mesa. Hace que el teclado suene mejor, organiza visualmente el caos y da gusto apoyar los brazos." },
       { id: "12", title: "Lámpara de Lectura Pinza (Luz Cálida)", price: "8,99€", imageUrl: "https://m.media-amazon.com/images/I/61NFFwpXUPL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BLS36X4P?tag=giftgenius-21", giftReason: "Para leer en la cama o revisar manuscritos de noche sin molestar a nadie. Luz ámbar que no quita el sueño." }
@@ -440,19 +462,20 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "bartenders",
     title: "Regalos para Bartenders y Mixólogos",
+    singularName: "bartender o mixólogo",
     description: "Coctelería de precisión, herramientas premium y estilo para la barra.",
     content: "La coctelería es química, teatro y precisión. Un bartender odia las herramientas baratas que se oxidan o los medidores inexactos. Buscan peso, equilibrio y estética. Regalos que sirven tanto para el profesional detrás de la barra como para el aficionado que monta su speakeasy en casa.",
     products: [
       { id: "1", title: "Pelador de Cítricos en Y (Corte Fino)", price: "7,66€", imageUrl: "https://m.media-amazon.com/images/I/71mE0Qsia3L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0000CCY1S?tag=giftgenius-21", badges: ["Top Ventas"], giftReason: "Para hacer esos 'twists' de piel de naranja perfectos. Necesitas que corte solo la piel y no la parte blanca amarga." },
-      { id: "2", title: "Alfombrilla de Barra (Goma Antideslizante)", price: "4,00€", imageUrl: "https://m.media-amazon.com/images/I/71fg-2+ygNL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CP4329DX?tag=giftgenius-21", badges: ["Calidad/Precio"], giftReason: "Evita que los vasos resbalen y recoge el líquido que se derrama al servir. Mantiene la estación de trabajo limpia." },
+      { id: "2", title: "Alfombrilla de Barra (Goma Antideslizante, 4€/Unidad)", price: "19,99€", imageUrl: "https://m.media-amazon.com/images/I/71fg-2+ygNL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CP4329DX?tag=giftgenius-21", badges: ["Calidad/Precio"], giftReason: "Evita que los vasos resbalen y recoge el líquido que se derrama al servir. Mantiene la estación de trabajo limpia." },
       { id: "3", title: "Cuchara Imperial Trenzada (40cm)", price: "11,14€", imageUrl: "https://m.media-amazon.com/images/I/41HsGkeIyKL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08JG35YFD?tag=giftgenius-21", badges: ["Mejor Valorado"], giftReason: "Para remover sin agitar. El trenzado ayuda a que la cuchara gire suavemente entre los dedos. Tiene que ser larga para llegar al fondo." },
       { id: "4", title: "Set Coctelería Boston (Acero Contrapesado)", price: "21,99€", imageUrl: "https://m.media-amazon.com/images/I/71A7c4i6HZL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09HQTKPPJ?tag=giftgenius-21", giftReason: "La coctelera de dos piezas es la profesional. Se abre con un golpe seco y no se atasca como las de tres piezas de supermercado." },
       { id: "5", title: "Jigger Japonés de Precisión (Medidor)", price: "10,11€", imageUrl: "https://m.media-amazon.com/images/I/61dhO4Hf-IL._SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B08WM28ZG8?tag=giftgenius-21", giftReason: "La coctelería es exactitud. Este medidor alto y estrecho permite servir 30ml o 45ml exactos sin derramar ni una gota." },
       { id: "6", title: "Ahumador de Cócteles (Kit con Virutas)", price: "55,99€", imageUrl: "https://m.media-amazon.com/images/I/81giNCIRH5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BJV68C17?tag=giftgenius-21", giftReason: "Aporta sabor y espectáculo. Ahumar un Old Fashioned con madera de roble delante de los invitados es éxito asegurado." },
-      { id: "7", title: "Moldes Hielo Esferas Grandes (Silicona)", price: "2,00€", imageUrl: "https://m.media-amazon.com/images/I/71Dcgz3pqvL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C65H5MP4?tag=giftgenius-21", giftReason: "El hielo pequeño se derrite rápido y agua la bebida. Una esfera grande se mantiene, enfriando el whisky sin estropearlo." },
+      { id: "7", title: "Moldes Hielo Esferas Grandes (Silicona, 2€/Unidad)", price: "8,99€", imageUrl: "https://m.media-amazon.com/images/I/71Dcgz3pqvL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0C65H5MP4?tag=giftgenius-21", giftReason: "El hielo pequeño se derrite rápido y agua la bebida. Una esfera grande se mantiene, enfriando el whisky sin estropearlo." },
       { id: "8", title: "Punzón de Hielo Japonés (Mango Madera)", price: "7,99€", imageUrl: "https://m.media-amazon.com/images/I/513K3OabMLL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09ZKZWLRP?tag=giftgenius-21", giftReason: "Tallar tu propio hielo a mano es el nivel máximo de postureo y habilidad. Romper el bloque con estilo separa a los aficionados de los pros." },
       { id: "9", title: "Atomizador de Vermut (Spray Vidrio)", price: "16,99€", imageUrl: "https://m.media-amazon.com/images/I/71zwCgdQzwL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0FGGKRFX1?tag=giftgenius-21", giftReason: "El secreto del Dry Martini perfecto. En vez de echar el vermut a chorro, lo pulverizas sutilmente sobre la copa para dar aroma sin ahogar la ginebra." },
-      { id: "10", title: "Botellas para Bitters (Estilo Vintage)", price: "9,50€", imageUrl: "https://m.media-amazon.com/images/I/71Yu3XGsLXL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08JT4SVV8?tag=giftgenius-21", giftReason: "Los bitters caseros elevan el nivel. Estas botellas con dosificador 'dasher' son preciosas y funcionales para la barra." },
+      { id: "10", title: "Botellas para Bitters (Estilo Vintage, 9,50€/Unidad)", price: "37,99€", imageUrl: "https://m.media-amazon.com/images/I/71Yu3XGsLXL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B08JT4SVV8?tag=giftgenius-21", giftReason: "Los bitters caseros elevan el nivel. Estas botellas con dosificador 'dasher' son preciosas y funcionales para la barra." },
       { id: "11", title: "Vaso Mezclador Yarai (Cristal Tallado)", price: "19,95€", imageUrl: "https://m.media-amazon.com/images/I/61KBZQBCmGL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07C4ZQJF2?tag=giftgenius-21", giftReason: "Para cócteles que se remueven, no se agitan (como el Martini). El cristal grueso mantiene el frío y el diseño es elegancia pura." },
       { id: "12", title: "Pinzas de Precisión 30cm (Emplatado Garnish)", price: "8,98€", imageUrl: "https://m.media-amazon.com/images/I/71d4A5iv+oL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0BFF4RMLQ?tag=giftgenius-21", giftReason: "Poner la florecita o la piel de limón con los dedos queda torpe y sucio. Colocarla con estas pinzas largas es cirugía estética, higiene y clase." }
     ]
@@ -460,12 +483,13 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "artistas",
     title: "Regalos para Artistas y Pintores",
+    singularName: "artista",
     description: "Materiales de bellas artes, soportes y organización para el estudio.",
     content: "Los artistas plásticos son fetichistas de sus materiales. Un buen papel, un pincel que mantenga la punta o un estuche bien organizado les da paz mental. Huye de los maletines de '100 piezas' para niños; prefieren 3 tubos de pintura de calidad profesional a 50 de calidad escolar.",
     products: [
       { id: "1", title: "Guante de Dos Dedos (Anti-Manchas)", price: "6,99€", imageUrl: "https://m.media-amazon.com/images/I/71mlA9ERcSL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B07JVB33LV?tag=giftgenius-21", badges: ["Top Ventas"], giftReason: "Evita emborronar el dibujo con el lateral de la mano. Sirve tanto para dibujo tradicional (grafito) como digital." },
       { id: "2", title: "Set Acuarelas Winsor & Newton Cotman (Caja Bolsillo)", price: "43,50€", imageUrl: "https://m.media-amazon.com/images/I/61M9UV9z7iL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B001DMO5P0?tag=giftgenius-21", badges: ["Calidad/Precio"], giftReason: "Pigmentos de verdad en una caja que cabe en el bolsillo. Perfecta para 'Urban Sketching' y pintar al aire libre." },
-      { id: "3", title: "Jabón Limpiador de Pinceles (The Masters)", price: "261,71€", imageUrl: "https://m.media-amazon.com/images/I/71H5paytcNL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0009RRT9Y?tag=giftgenius-21", badges: ["Mejor Valorado"], giftReason: "Salva pinceles que parecían muertos. Quita óleo, acrílico y acuarela seca, y acondiciona el pelo para que dure años." },
+      { id: "3", title: "Jabón Limpiador de Pinceles (The Masters, 261,29€/kg)", price: "22,35€", imageUrl: "https://m.media-amazon.com/images/I/71H5paytcNL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0009RRT9Y?tag=giftgenius-21", badges: ["Mejor Valorado"], giftReason: "Salva pinceles que parecían muertos. Quita óleo, acrílico y acuarela seca, y acondiciona el pelo para que dure años." },
       { id: "4", title: "Caballete de Campo Plegable (Aluminio)", price: "19,90€", imageUrl: "https://m.media-amazon.com/images/I/61uJ7M1ebaL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09CTXJ7RY?tag=giftgenius-21", giftReason: "Ligero y estable. Permite salir del estudio y pintar paisajes sin cargar con un mueble de madera pesado." },
       { id: "5", title: "Maniquí Articulado de Madera (Referencia)", price: "10,15€", imageUrl: "https://m.media-amazon.com/images/I/61k6cAwqssL._AC_SY879_.jpg", amazonLink: "https://www.amazon.es/dp/B0048DO88U?tag=giftgenius-21", giftReason: "Dibujar proporciones humanas de memoria es difícil. Tener una referencia física en la mesa ayuda a entender poses y sombras." },
       { id: "6", title: "Bloc de Dibujo Papel Mix Media (300g)", price: "11,42€", imageUrl: "https://m.media-amazon.com/images/I/71z5rzEtR4S._AC_SY879_.jpg", amazonLink: "https://www.amazon.es/dp/B000WH12VW?tag=giftgenius-21", giftReason: "Un papel grueso que aguanta lo que le eches: agua, tinta, rotulador. No se ondula y permite experimentar." },
@@ -473,21 +497,22 @@ export const NICHE_DATA: Niche[] = [
       { id: "8", title: "Paleta de Mezclas Cerámica (Forma Flor)", price: "11,77€", imageUrl: "https://m.media-amazon.com/images/I/51IpT-zLATS._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B091Q5W9NP?tag=giftgenius-21", giftReason: "El plástico se mancha; la cerámica no. Se limpia con un trapo y ves el color real de la mezcla sobre el blanco puro." },
       { id: "9", title: "Mesa de Luz LED A4 (Para Calcar/Bocetar)", price: "13,99€", imageUrl: "https://m.media-amazon.com/images/I/71wWzmhUIVL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B0BTNPLH47?tag=giftgenius-21", giftReason: "Acelera el trabajo sucio. Permite pasar un boceto a limpio en otro papel sin ensuciar el original. Muy fina y útil." },
       { id: "10", title: "Libro: Color y Luz (James Gurney)", price: "29,95€", imageUrl: "https://m.media-amazon.com/images/I/710-VTtv4SL._SY385_.jpg", amazonLink: "https://www.amazon.es/dp/8441536724?tag=giftgenius-21", giftReason: "Es el manual definitivo para entender cómo funciona la luz en la pintura realista. Imprescindible en la biblioteca de un artista." },
-      { id: "11", title: "Delantal de Trabajo Denim (Bolsillos Grandes)", price: "24,90€", imageUrl: "https://m.media-amazon.com/images/I/71mX70NEKiL._AC_SX569_.jpg", amazonLink: "https://www.amazon.es/dp/B0F6XX5GP7?tag=giftgenius-21", giftReason: "Mancharse es parte del proceso, pero arruinar la ropa no. Un delantal resistente con bolsillos para trapos y pinceles." },
+      { id: "11", title: "Delantal de Trabajo Denim (Bolsillos Grandes)", price: "17,99€", imageUrl: "https://m.media-amazon.com/images/I/71mX70NEKiL._AC_SX569_.jpg", amazonLink: "https://www.amazon.es/dp/B0F6XX5GP7?tag=giftgenius-21", giftReason: "Mancharse es parte del proceso, pero arruinar la ropa no. Un delantal resistente con bolsillos para trapos y pinceles." },
       { id: "12", title: "Caja de Almacenamiento Art Bin (Transparente)", price: "13,50€", imageUrl: "https://m.media-amazon.com/images/I/51d-oZk3bhL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B082VSSPQM?tag=giftgenius-21", giftReason: "Tener los tubos de pintura tirados es un caos. Esta caja permite ver lo que hay dentro y organizarlos por colores." }
     ]
   },
   {
     slug: "jefes-obra",
     title: "Regalos para Jefes de Obra",
+    singularName: "jefe de obra",
     description: "Equipo de obra, gadgets de medición y organización para la ingeniería de campo.",
     content: "Viven entre la oficina técnica y el barro de la obra. Valoran la robustez y la precisión. Un regalo útil para ellos debe aguantar polvo, caídas y lluvia, o ayudarles a tomar datos en campo de forma más eficiente. Herramientas que dicen 'sé que tu trabajo es duro e importante'.",
     products: [
-      { id: "1", title: "Calculadora Científica Casio FX-991SP (La Pro)", price: "39,90€", imageUrl: "https://m.media-amazon.com/images/I/71Rp2FKKBoL._AC_SY879_.jpg", amazonLink: "https://www.amazon.es/dp/B0C43TZXK5?tag=giftgenius-21", badges: ["Top Ventas"], giftReason: "El móvil sirve, pero la calculadora física es más rápida para cálculos de obra. Este modelo es el que usan los ingenieros de verdad." },
+      { id: "1", title: "Calculadora Científica Casio FX-991SP (La Pro)", price: "39,90€", imageUrl: "https://m.media-amazon.com/images/I/71Rp2FKKBoL._AC_SY879_.jpg", amazonLink: "https://www.amazon.es/dp/B0C43TZXK5?tag=giftgenius-21", badges: ["Top Ventas", "Mejor Valorado"], giftReason: "El móvil sirve, pero la calculadora física es más rápida para cálculos de obra. Este modelo es el que usan los ingenieros de verdad." },
       { id: "2", title: "Cuaderno 'Rite in the Rain' (Impermeable)", price: "15,92€", imageUrl: "https://m.media-amazon.com/images/I/71ApTWFFYpL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B000ZZTUEM?tag=giftgenius-21", badges: ["Calidad/Precio"], giftReason: "En la obra llueve y hay barro. Este papel repele el agua y permite escribir incluso bajo un chaparrón sin deshacerse." },
-      { id: "3", title: "Medidor Láser de Distancia 50m (Bosch/Leica)", price: "92,99€", imageUrl: "https://m.media-amazon.com/images/I/71H4bW727BL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CMM1NCRC?tag=giftgenius-21", badges: ["Mejor Valorado"], giftReason: "La cinta métrica se queda corta y necesita dos personas. El láser es rápido, preciso y lo hace uno solo. Básico en obra." },
-      { id: "4", title: "Bolígrafo Técnico Rotring 600 (Cuerpo Latón)", price: "29,90€", imageUrl: "https://m.media-amazon.com/images/I/61TVl5dtI3L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B077GPND47?tag=giftgenius-21", badges: ["Top Ventas","Mejor Valorado"], giftReason: "El bolígrafo de culto de la ingeniería. Cuerpo hexagonal pesado, mecanismo perfecto y estética industrial. Dura toda la vida." },
-      { id: "5", title: "Chaleco Reflectante Multibolsillos (Ingeniero)", price: "18,50€", imageUrl: "https://m.media-amazon.com/images/I/91A7UKMA-eL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B00DN9MMD8?tag=giftgenius-21", giftReason: "El chaleco básico no tiene dónde meter nada. Este tiene bolsillos para el móvil, planos, boli y metro. Organización encima." },
+      { id: "3", title: "Medidor Láser de Distancia 50m (Bosch/Leica)", price: "92,99€", imageUrl: "https://m.media-amazon.com/images/I/71H4bW727BL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CMM1NCRC?tag=giftgenius-21", giftReason: "La cinta métrica se queda corta y necesita dos personas. El láser es rápido, preciso y lo hace uno solo. Básico en obra." },
+      { id: "4", title: "Bolígrafo Técnico Rotring 600 (Cuerpo Latón)", price: "29,90€", imageUrl: "https://m.media-amazon.com/images/I/61TVl5dtI3L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B077GPND47?tag=giftgenius-21", giftReason: "El bolígrafo de culto de la ingeniería. Cuerpo hexagonal pesado, mecanismo perfecto y estética industrial. Dura toda la vida." },
+      { id: "5", title: "Chaleco Reflectante Multibolsillos (Ingeniero)", price: "28,45€", imageUrl: "https://m.media-amazon.com/images/I/91A7UKMA-eL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B00DN9MMD8?tag=giftgenius-21", giftReason: "El chaleco básico no tiene dónde meter nada. Este tiene bolsillos para el móvil, planos, boli y metro. Organización encima." },
       { id: "6", title: "Multiherramienta Leatherman (Alicates/Corte)", price: "159,00€", imageUrl: "https://m.media-amazon.com/images/I/71+3dCNJ8-L._AC_SY879_.jpg", amazonLink: "https://www.amazon.es/dp/B07YDXKR4J?tag=giftgenius-21", giftReason: "Tener un alicate, destornillador y cuchilla en el cinturón ahorra muchos paseos a la caseta de herramientas." },
       { id: "7", title: "Nivel de Bolsillo Magnético (Mini)", price: "11,99€", imageUrl: "https://m.media-amazon.com/images/I/715qAjUxiyL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B0CTY67ZYH?tag=giftgenius-21", giftReason: "Para comprobaciones rápidas. Se pega a las tuberías o vigas metálicas y cabe en cualquier bolsillo." },
       { id: "8", title: "Botas de Seguridad Estilo Casual (Punta Acero)", price: "52,99€", imageUrl: "https://m.media-amazon.com/images/I/71IMjrgyo-L._AC_SY575_.jpg", amazonLink: "https://www.amazon.es/dp/B0D9449DQ1?tag=giftgenius-21", giftReason: "Las botas de seguridad suelen ser horribles. Hay modelos tipo 'sneaker' o montaña que cumplen normativa pero se pueden llevar a la oficina." },
@@ -499,7 +524,8 @@ export const NICHE_DATA: Niche[] = [
   },
   {
     slug: "maquilladores",
-    title: "Regalos para Maquilladores (MUA)",
+    title: "Regalos para Maquilladores",
+    singularName: "maquillador",
     description: "Iluminación, organización y herramientas pro para artistas del maquillaje.",
     content: "El maquillaje profesional es arte sobre piel, pero también logística. Cargar con kilos de material, tener buena luz en cualquier sitio y mantener la higiene es su día a día. Los mejores regalos solucionan el transporte, mejoran la iluminación o facilitan la limpieza de sus herramientas.",
     products: [
