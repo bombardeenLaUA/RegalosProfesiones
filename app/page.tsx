@@ -29,7 +29,7 @@ const NICHE_ICONS: Record<string, React.ElementType> = {
   escritores: Feather,
   bartenders: Martini,
   artistas: Palette,
-  "ingenieros-civiles": HardHat,
+  "jefes-obra": HardHat,
   maquilladores: Sparkles,
 };
 
