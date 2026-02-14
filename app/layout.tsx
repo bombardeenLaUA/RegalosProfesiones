@@ -36,8 +36,8 @@ export default function RootLayout({
           <GoogleTagManager gtmId="GTM-PSDFBXLQ" />
           <Navbar />
           <PriceDisclaimer />
-          {/* Fondo sólido igual al inicio del Hero: amber-50 (claro) / slate-900 (oscuro). Toggle centrado en móvil y PC */}
-          <div className="flex justify-center items-center pt-8 pb-0 bg-amber-50 dark:bg-slate-900">
+          {/* Claro: amber-50. Oscuro: #202633 (tono de la barra en captura) para que coincida con el Hero */}
+          <div className="flex justify-center items-center pt-8 pb-0 bg-amber-50 dark:bg-[#202633]">
             <ThemeToggle />
           </div>
           <main className="flex-1">{children}</main>
