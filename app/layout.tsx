@@ -14,20 +14,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  // URL absoluta necesaria para que WhatsApp y redes muestren la imagen de previsualización
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://giftgenius.es"),
   title: {
-    default: "GiftGenius - Encuentra el regalo perfecto por profesión",
+    default: "GiftGenius - Regalos Perfectos por Profesión",
     template: "%s | GiftGenius",
   },
   description:
-    "Guía de regalos útiles y herramientas profesionales para cada sector. Sin clichés, solo lo que realmente necesitan.",
+    "Ideas reales para gente real. Encuentra el regalo que un profesional realmente usará.",
   openGraph: {
-    title: "GiftGenius",
-    description: "Ideas de regalos expertos para cada profesión.",
+    title: "GiftGenius - Regalos Perfectos por Profesión",
+    description: "Ideas reales para gente real. Encuentra el regalo que un profesional realmente usará.",
     type: "website",
     locale: "es_ES",
-    // Next.js usa automáticamente app/opengraph-image.png si existe
-    images: ["/opengraph-image.png"],
   },
 };
 
@@ -44,7 +43,7 @@ export default function RootLayout({
           <GoogleTagManager gtmId="GTM-PSDFBXLQ" />
           <Navbar />
           <PriceDisclaimer />
-          <div className="flex justify-center w-full pt-6 pb-4 bg-amber-50 dark:bg-slate-900 border-0">
+          <div className="flex justify-center w-full pt-8 pb-4 bg-amber-50 dark:bg-slate-900 border-0">
             <ThemeToggle />
           </div>
           <main className="flex-1">{children}</main>
