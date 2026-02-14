@@ -36,7 +36,7 @@ export default function RootLayout({
           <GoogleTagManager gtmId="GTM-PSDFBXLQ" />
           <Navbar />
           <PriceDisclaimer />
-          <div className="flex justify-end items-center px-4 py-2 border-b border-gray-200 dark:border-slate-800 bg-gray-50/80 dark:bg-slate-900/50">
+          <div className="flex justify-end items-center px-4 pt-4 pb-2 bg-gradient-to-br from-amber-50 via-white to-orange-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900">
             <ThemeToggle />
           </div>
           <main className="flex-1">{children}</main>
