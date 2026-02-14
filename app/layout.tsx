@@ -36,8 +36,11 @@ export default function RootLayout({
           <GoogleTagManager gtmId="GTM-PSDFBXLQ" />
           <Navbar />
           <PriceDisclaimer />
-          <div className="flex justify-end items-center pr-12 pt-8 pb-0">
-            <ThemeToggle />
+          <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 via-white to-orange-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-100/50 via-transparent to-transparent dark:from-slate-700/20 dark:via-transparent" aria-hidden />
+            <div className="relative z-10 flex justify-end items-center pr-12 pt-8 pb-0">
+              <ThemeToggle />
+            </div>
           </div>
           <main className="flex-1">{children}</main>
           <Footer />
