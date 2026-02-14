@@ -52,7 +52,7 @@ export default function ThemeToggle() {
     >
       <span
         className={`slider absolute inset-0 cursor-pointer overflow-hidden rounded-[30px] transition-colors duration-400 ${
-          isDark ? "bg-[#2a2a2a]" : "bg-[#00a6ff]"
+          isDark ? "bg-slate-900" : "bg-amber-500"
         }`}
       >
         {/* Sol / Luna (círculo) */}
