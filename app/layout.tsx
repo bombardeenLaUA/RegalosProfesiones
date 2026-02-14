@@ -16,11 +16,19 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://giftgenius.es"),
   title: {
-    default: "GiftGenius - Ideas de Regalos Originales por Profesión y Hobby",
+    default: "GiftGenius - Encuentra el regalo perfecto por profesión",
     template: "%s | GiftGenius",
   },
   description:
-    "Ideas de regalo por profesión, seleccionadas a mano. Arquitectos, programadores, cocineros, gamers y más. Sin algoritmos, con criterio.",
+    "Guía de regalos útiles y herramientas profesionales para cada sector. Sin clichés, solo lo que realmente necesitan.",
+  openGraph: {
+    title: "GiftGenius",
+    description: "Ideas de regalos expertos para cada profesión.",
+    type: "website",
+    locale: "es_ES",
+    // Next.js usa automáticamente app/opengraph-image.png si existe
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({
