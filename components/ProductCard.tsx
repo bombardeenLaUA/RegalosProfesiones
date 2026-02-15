@@ -83,10 +83,12 @@ export default function ProductCard({
   };
 
   const tooltipPositionClasses = {
-    top:
-      "left-0 right-0 bottom-[110%] lg:left-1/2 lg:right-auto lg:-translate-x-1/2",
+    // Columnas centrales: tooltip arriba, centrado con left-1/2 -translate-x-1/2
+    top: "left-1/2 -translate-x-1/2 bottom-[110%]",
+    // Primera columna: tooltip a la izquierda (no modificar)
     left:
       "left-0 right-0 bottom-[110%] lg:right-[105%] lg:left-auto lg:top-1/2 lg:bottom-auto lg:-translate-y-1/2",
+    // Última columna: tooltip a la derecha (no modificar)
     right:
       "left-0 right-0 bottom-[110%] lg:left-[105%] lg:right-auto lg:top-1/2 lg:bottom-auto lg:-translate-y-1/2",
   };
