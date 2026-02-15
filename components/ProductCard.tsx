@@ -83,8 +83,8 @@ export default function ProductCard({
   };
 
   const tooltipPositionClasses = {
-    // Columnas centrales: tooltip arriba, centrado con left-1/2 -translate-x-1/2
-    top: "left-1/2 -translate-x-1/2 bottom-[110%]",
+    // Columnas centrales: globo centrado sobre el icono (left-1/2 -translate-x-1/2)
+    top: "left-1/2 right-auto -translate-x-1/2 bottom-[110%]",
     // Primera columna: tooltip a la izquierda (no modificar)
     left:
       "left-0 right-0 bottom-[110%] lg:right-[105%] lg:left-auto lg:top-1/2 lg:bottom-auto lg:-translate-y-1/2",
@@ -94,7 +94,8 @@ export default function ProductCard({
   };
 
   const arrowClasses = {
-    top: "right-3 left-auto top-full h-0 w-0 border-[6px] border-transparent border-t-white",
+    // Flecha centrada bajo el globo en columnas centrales
+    top: "left-1/2 -translate-x-1/2 top-full h-0 w-0 border-[6px] border-transparent border-t-white",
     left:
       "top-1/2 -right-1 z-[-1] h-2 w-2 -translate-y-1/2 rotate-45 border-r border-t border-gray-200 bg-white",
     right:
