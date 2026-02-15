@@ -14,8 +14,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  // URL absoluta necesaria para que WhatsApp y redes muestren la imagen de previsualización
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://giftgenius.es"),
+  metadataBase: new URL("https://giftgenius.es"),
+  alternates: {
+    canonical: "./",
+  },
   title: {
     default: "GiftGenius - Regalos Perfectos por Profesión",
     template: "%s | GiftGenius",
