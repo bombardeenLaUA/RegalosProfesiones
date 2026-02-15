@@ -101,7 +101,7 @@ export default function ProductCard({
 
   return (
     <article
-      className={`group relative flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80 dark:border-slate-700 dark:bg-slate-800 dark:hover:shadow-xl dark:shadow-slate-900/50 ${isTooltipOpen ? "z-[100]" : "z-0"}`}
+      className={`group relative flex flex-col rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-200/80 dark:border-slate-700 dark:bg-slate-800 dark:hover:shadow-xl dark:shadow-slate-900/50 ${isTooltipOpen ? "z-[100]" : "z-0"}`}
     >
       {/* Enlace a Amazon que cubre toda la tarjeta; el botón de info queda fuera con pointer-events-auto */}
       <a
@@ -117,14 +117,15 @@ export default function ProductCard({
           {product.badges && product.badges.length > 0 && (
             <div className="absolute left-0 top-0 z-10 flex flex-col gap-1">
               {product.badges
-                .map((badge) => {
+                .map((badge, badgeIndex) => {
                   const config = getBadgeConfig(badge);
                   if (!config) return null;
                   const { icon: IconComponent, variant, cleanText } = config;
+                  const isFirst = badgeIndex === 0;
                   return (
                     <div
                       key={badge}
-                      className={`flex items-center gap-1 rounded-br-lg px-2 py-1 ${BADGE_STYLES[variant]}`}
+                      className={`flex items-center gap-1 rounded-br-lg px-2 py-1 ${isFirst ? "rounded-tl-2xl" : ""} ${BADGE_STYLES[variant]}`}
                     >
                       <IconComponent className="h-3.5 w-3.5 shrink-0" />
                       <span className="text-xs font-bold">{cleanText}</span>
@@ -166,7 +167,7 @@ export default function ProductCard({
               {product.price}
             </span>
             {hasGiftReason && (
-              <div ref={tooltipRef} className="shrink-0 pointer-events-auto">
+              <div ref={tooltipRef} className="relative z-50 shrink-0 pointer-events-auto">
                 <button
                   type="button"
                   onClick={handleInfoClick}
