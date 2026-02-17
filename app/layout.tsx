@@ -5,9 +5,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import PriceDisclaimer from "@/components/PriceDisclaimer";
 import ThemeToggle from "@/components/ThemeToggle";
-import LanguageToggle from "@/components/LanguageToggle";
 import Footer from "@/components/Footer";
-import { Providers } from "./providers";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -41,18 +40,17 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col bg-white text-gray-900 dark:bg-slate-950 dark:text-gray-100`}>
-        <Providers>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem storageKey="theme">
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-VTC5MCCQXY"} />
           <GoogleTagManager gtmId="GTM-PSDFBXLQ" />
           <Navbar />
           <PriceDisclaimer />
           <div className="flex justify-center items-center gap-4 w-full pt-8 pb-4 bg-amber-50 dark:bg-slate-900 border-0">
             <ThemeToggle />
-            <LanguageToggle />
           </div>
           <main className="flex-1">{children}</main>
           <Footer />
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );
