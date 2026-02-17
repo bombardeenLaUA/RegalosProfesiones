@@ -1,25 +1,19 @@
 export interface Product {
   id: string;
   title: string;
-  title_en?: string;
   price: string;
   imageUrl: string;
   amazonLink: string;
   badges?: string[];
   giftReason: string;
-  giftReason_en?: string;
 }
 
 export interface Niche {
   slug: string;
   title: string;
-  title_en?: string;
   singularName: string;
-  singularName_en?: string;
   description: string;
-  description_en?: string;
   content?: string;
-  content_en?: string;
   products: Product[];
 }
 
@@ -27,38 +21,30 @@ export const NICHE_DATA: Niche[] = [
   {
     slug: "arquitectos",
     title: "Regalos para Arquitectos",
-    title_en: "Gifts for Architects",
     singularName: "arquitecto",
-    singularName_en: "architect",
     description: "Herramientas de precisión, libros de diseño y accesorios que un arquitecto usa de verdad.",
-    description_en: "Precision tools, design books, and accessories that an architect actually uses.",
     content: "Los arquitectos valoran la estética y la precisión: nada de cosas de oficina genéricas. Un buen regalo cae en **productividad** (herramientas que usan a diario), **inspiración** (libros, maquetas) o **confort** (materiales premium, acabados mate). Hemos priorizado lo que realmente se usa en el día a día.",
-    content_en: "Architects value aesthetics and precision: no generic office supplies. A good gift falls into **productivity** (tools they use daily), **inspiration** (books, models), or **comfort** (premium materials, matte finishes). We've prioritized what's actually used day-to-day.",
     products: [
-      { id: "1", title: "Bolígrafo Digital Metapen (Alta Precisión)", title_en: "Metapen Digital Stylus (High Precision)", price: "32,99€", imageUrl: "https://m.media-amazon.com/images/I/41yUOq1wFtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09ZTXVNVD?tag=giftgenius-21", badges: ["Top Ventas", "Calidad/Precio"], giftReason: "Porque perder el Apple Pencil original de 140€ duele, y este hace lo mismo por una fracción del precio. Para bocetar en obra sin miedo.", giftReason_en: "Losing a $140 Apple Pencil hurts. This does the same thing for a fraction of the price. Perfect for sketching on-site without worry." },
-      { id: "2", title: "Alfombrilla de Corte A3 (Autocicatrizante)", title_en: "A3 Self-Healing Cutting Mat", price: "7,39€", imageUrl: "https://m.media-amazon.com/images/I/61QsK82thtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07TT872BF?tag=giftgenius-21", badges: ["Mejor Valorado"], giftReason: "La mesa del estudio es sagrada. Esto evita que la destroce con el cúter haciendo maquetas a las 3 de la mañana.", giftReason_en: "The studio desk is sacred. This prevents destroying it with an X-Acto knife while making models at 3 AM." },
-      { id: "3", title: "Libro: El Arquitecto Emprendedor", title_en: "Book: The Entrepreneur Architect", price: "15,36€", imageUrl: "https://m.media-amazon.com/images/I/61EuFK10IAL._SY466_.jpg", amazonLink: "https://www.amazon.es/dp/B0DR6MB9DQ?tag=giftgenius-21", giftReason: "En la carrera te enseñan a diseñar edificios, pero nadie te explica cómo cobrar una factura o montar un estudio. Esto sí sirve para comer.", giftReason_en: "School teaches you to design buildings, but no one explains how to invoice or start a firm. This actually helps you make a living." },
-      { id: "4", title: "Escalímetro Triangular de Aluminio", title_en: "Triangular Aluminum Scale Ruler", price: "4,99€", imageUrl: "https://m.media-amazon.com/images/I/71TkeOvf3HL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B079C1HKB8?tag=giftgenius-21", giftReason: "Tocar uno de plástico es como tocar comida fría. El de aluminio pesa, es serio y da gusto usarlo cada vez que mides un plano.", giftReason_en: "Touching a plastic one is like touching cold food. The aluminum one has weight, feels serious, and is a joy to use every time you measure a plan." },
-      { id: "5", title: "Tubo Portaplanos Extensible", title_en: "Extendable Plan Tube", price: "13,99 €", imageUrl: "https://m.media-amazon.com/images/I/61Gv54Z5vRL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09SZ9SWRC?tag=giftgenius-21&th=1", giftReason: "Llevar los planos enrollados con una goma es de primero de carrera. Esto protege las entregas de la lluvia y del metro.", giftReason_en: "Carrying rolled-up plans with a rubber band is freshman year stuff. This protects deliveries from rain and subway damage." },
-      { id: "6", title: "Set Rotuladores Winsor & Newton (Arquitectura)", title_en: "Winsor & Newton Marker Set (Architecture)", price: "60,89€", imageUrl: "https://m.media-amazon.com/images/I/61+nTQraHsL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B089CQRLLM?tag=giftgenius-21", giftReason: "No son carioca. Son los que usan los pro para que un boceto rápido en una servilleta parezca una obra de arte. La tinta es otro nivel.", giftReason_en: "These aren't cheap markers. These are what pros use to make a quick napkin sketch look like a work of art. The ink is on another level." },
-      { id: "7", title: "Apple iPad Pro M4 256GB (Para Diseño)", title_en: "Apple iPad Pro M4 256GB (For Design)", price: "1.028,00€", imageUrl: "https://m.media-amazon.com/images/I/6198CBucttL._AC_SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0D3J9P7RK?tag=giftgenius-21", giftReason: "Es el tablero de dibujo del siglo XXI. Potencia bruta para mover modelos 3D y enseñar el proyecto al cliente ahí mismo.", giftReason_en: "It's the 21st-century drawing board. Raw power to move 3D models and show the project to the client right there." },
-      { id: "8", title: "Set de Portaminas Metálicos Profesionales", title_en: "Professional Metal Mechanical Pencil Set", price: "13,99€", imageUrl: "https://m.media-amazon.com/images/I/71Hitb05k5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07KK8VT4S?tag=giftgenius-21", giftReason: "El tacto del metal cambia la letra y el trazo. Diferentes grosores para cuando hay que dibujar muros o detalles finos.", giftReason_en: "The feel of metal changes your handwriting and stroke. Different lead sizes for drawing walls or fine details." },
-      { id: "9", title: "Llavero Temático 'Trust Me I'm an Architect'", title_en: "Themed Keychain 'Trust Me I'm an Architect'", price: "9,99 €", imageUrl: "https://m.media-amazon.com/images/I/61hMTPgo-rL._AC_SX569_.jpg", amazonLink: "https://www.amazon.es/dp/B08241S43M?tag=giftgenius-21", giftReason: "Una chorrada simpática para las llaves de la obra. Un guiño de orgullo profesional que les saca una sonrisa.", giftReason_en: "A fun little thing for the site keys. A nod to professional pride that makes them smile." },
-      { id: "10", title: "Cuaderno Leuchtturm1917 A5 (Tapa Dura)", title_en: "Leuchtturm1917 A5 Notebook (Hardcover)", price: "23,95€", imageUrl: "https://m.media-amazon.com/images/I/517Oz-MQuZL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B002TSIMW4?tag=giftgenius-21", giftReason: "Tapa dura para poder escribir apoyado en una pared de la obra. El papel aguanta la tinta sin traspasar. Un clásico por algo.", giftReason_en: "Hardcover so you can write leaning against a site wall. The paper holds ink without bleeding through. A classic for a reason." },
-      { id: "11", title: "Medidor Láser de Distancia (50m)", title_en: "Laser Distance Measurer (50m)", price: "25,99€", imageUrl: "https://m.media-amazon.com/images/I/61bOcqIpMZL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B0863RK1KX?tag=giftgenius-21", giftReason: "Medir una habitación solo con una cinta métrica es un infierno. Con esto tardas 3 segundos y pareces mucho más profesional.", giftReason_en: "Measuring a room with just a tape measure is hell. With this, it takes 3 seconds and you look way more professional." },
-      { id: "12", title: "Organizador de Escritorio Metálico (Oficina o Casa)", title_en: "Metal Desk Organizer (Office or Home)", price: "14,99 €", imageUrl: "https://m.media-amazon.com/images/I/818YxeZSblL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DSW5Y8ZV?tag=giftgenius-21", giftReason: "La desorganización en la mesa nunca es buena. Tener cada cosa en su sitio da la paz necesaria para concentrarse de verdad.", giftReason_en: "A messy desk is never good. Having everything in its place gives the peace needed to really focus." },
+      { id: "1", title: "Bolígrafo Digital Metapen (Alta Precisión)", price: "32,99€", imageUrl: "https://m.media-amazon.com/images/I/41yUOq1wFtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09ZTXVNVD?tag=giftgenius-21", badges: ["Top Ventas", "Calidad/Precio"], giftReason: "Porque perder el Apple Pencil original de 140€ duele, y este hace lo mismo por una fracción del precio. Para bocetar en obra sin miedo." },
+      { id: "2", title: "Alfombrilla de Corte A3 (Autocicatrizante)", price: "7,39€", imageUrl: "https://m.media-amazon.com/images/I/61QsK82thtL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07TT872BF?tag=giftgenius-21", badges: ["Mejor Valorado"], giftReason: "La mesa del estudio es sagrada. Esto evita que la destroce con el cúter haciendo maquetas a las 3 de la mañana." },
+      { id: "3", title: "Libro: El Arquitecto Emprendedor", price: "15,36€", imageUrl: "https://m.media-amazon.com/images/I/61EuFK10IAL._SY466_.jpg", amazonLink: "https://www.amazon.es/dp/B0DR6MB9DQ?tag=giftgenius-21", giftReason: "En la carrera te enseñan a diseñar edificios, pero nadie te explica cómo cobrar una factura o montar un estudio. Esto sí sirve para comer." },
+      { id: "4", title: "Escalímetro Triangular de Aluminio", price: "4,99€", imageUrl: "https://m.media-amazon.com/images/I/71TkeOvf3HL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B079C1HKB8?tag=giftgenius-21", giftReason: "Tocar uno de plástico es como tocar comida fría. El de aluminio pesa, es serio y da gusto usarlo cada vez que mides un plano." },
+      { id: "5", title: "Tubo Portaplanos Extensible", price: "13,99 €", imageUrl: "https://m.media-amazon.com/images/I/61Gv54Z5vRL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B09SZ9SWRC?tag=giftgenius-21&th=1", giftReason: "Llevar los planos enrollados con una goma es de primero de carrera. Esto protege las entregas de la lluvia y del metro." },
+      { id: "6", title: "Set Rotuladores Winsor & Newton (Arquitectura)", price: "60,89€", imageUrl: "https://m.media-amazon.com/images/I/61+nTQraHsL._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B089CQRLLM?tag=giftgenius-21", giftReason: "No son carioca. Son los que usan los pro para que un boceto rápido en una servilleta parezca una obra de arte. La tinta es otro nivel." },
+      { id: "7", title: "Apple iPad Pro M4 256GB (Para Diseño)", price: "1.028,00€", imageUrl: "https://m.media-amazon.com/images/I/6198CBucttL._AC_SX522_.jpg", amazonLink: "https://www.amazon.es/dp/B0D3J9P7RK?tag=giftgenius-21", giftReason: "Es el tablero de dibujo del siglo XXI. Potencia bruta para mover modelos 3D y enseñar el proyecto al cliente ahí mismo." },
+      { id: "8", title: "Set de Portaminas Metálicos Profesionales", price: "13,99€", imageUrl: "https://m.media-amazon.com/images/I/71Hitb05k5L._AC_SX679_.jpg", amazonLink: "https://www.amazon.es/dp/B07KK8VT4S?tag=giftgenius-21", giftReason: "El tacto del metal cambia la letra y el trazo. Diferentes grosores para cuando hay que dibujar muros o detalles finos." },
+      { id: "9", title: "Llavero Temático 'Trust Me I'm an Architect'", price: "9,99 €", imageUrl: "https://m.media-amazon.com/images/I/61hMTPgo-rL._AC_SX569_.jpg", amazonLink: "https://www.amazon.es/dp/B08241S43M?tag=giftgenius-21", giftReason: "Una chorrada simpática para las llaves de la obra. Un guiño de orgullo profesional que les saca una sonrisa." },
+      { id: "10", title: "Cuaderno Leuchtturm1917 A5 (Tapa Dura)", price: "23,95€", imageUrl: "https://m.media-amazon.com/images/I/517Oz-MQuZL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B002TSIMW4?tag=giftgenius-21", giftReason: "Tapa dura para poder escribir apoyado en una pared de la obra. El papel aguanta la tinta sin traspasar. Un clásico por algo." },
+      { id: "11", title: "Medidor Láser de Distancia (50m)", price: "25,99€", imageUrl: "https://m.media-amazon.com/images/I/61bOcqIpMZL._AC_SX425_.jpg", amazonLink: "https://www.amazon.es/dp/B0863RK1KX?tag=giftgenius-21", giftReason: "Medir una habitación solo con una cinta métrica es un infierno. Con esto tardas 3 segundos y pareces mucho más profesional." },
+      { id: "12", title: "Organizador de Escritorio Metálico (Oficina o Casa)", price: "14,99 €", imageUrl: "https://m.media-amazon.com/images/I/818YxeZSblL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0DSW5Y8ZV?tag=giftgenius-21", giftReason: "La desorganización en la mesa nunca es buena. Tener cada cosa en su sitio da la paz necesaria para concentrarse de verdad." },
     ]
   },
   {
     slug: "gamers",
     title: "Regalos para Gamers",
-    title_en: "Gifts for Gamers",
     singularName: "gamer",
-    singularName_en: "gamer",
     description: "Periféricos que marcan la diferencia, luz RGB y accesorios que los gamers piden.",
-    description_en: "Peripherals that make a difference, RGB lighting, and accessories gamers actually want.",
     content: "Regalar a un gamer no es comprar el primer juego que veas. Hay que mirar su ecosistema: ¿PC o consola? ¿Competitivo o historia? Lo que mejor encaja suele ser **atmósfera** (luz RGB, decoración) o **rendimiento** (periféricos que dan ventaja real). Desde paneles que se sincronizan con la pantalla hasta teclados que responden al instante.",
-    content_en: "Gifting a gamer isn't buying the first game you see. You need to look at their ecosystem: PC or console? Competitive or story-driven? What fits best is usually **atmosphere** (RGB lighting, decor) or **performance** (peripherals that give real advantage). From panels that sync with the screen to keyboards that respond instantly.",
     products: [
       { id: "1", title: "Taza Mágica Gameboy (Cambia con Calor)", price: "19,03 €", imageUrl: "https://m.media-amazon.com/images/I/71alMT8fYrL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B06WRVFRJV?tag=giftgenius-21", badges: ["Top Ventas", "Mejor Valorado"], giftReason: "Pura nostalgia. Ver cómo se enciende la pantalla con el café caliente le da una sensación diferente." },
       { id: "2", title: "Teclado Mecánico RGB Compacto (60%)", price: "39,99 €", imageUrl: "https://m.media-amazon.com/images/I/610Wsop5scL._AC_UL320_.jpg", amazonLink: "https://www.amazon.es/dp/B0FFMRQNLW/?tag=giftgenius-21", badges: ["Calidad/Precio"], giftReason: "Esos teclados gigantes de oficina ocupan mucho y son lentos. Este deja sitio para mover el ratón a lo loco y suena a gloria." },

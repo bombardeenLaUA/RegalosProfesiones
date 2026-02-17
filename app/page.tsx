@@ -4,7 +4,6 @@ import { useState, useRef } from "react";
 import Link from "next/link";
 import { Search, ArrowRight, Palette, Gamepad2, Heart, Code, GraduationCap, ChefHat, BookOpen, Scale, Camera, Plane, Brain, PawPrint, Scissors, Wrench, Ruler, Smile, Shield, Music, Pill, Dumbbell, Feather, Martini, HardHat, Sparkles, Image } from "lucide-react";
 import { NICHE_DATA } from "@/lib/data";
-import { useLanguage } from "@/context/LanguageContext";
 
 const NICHE_ICONS: Record<string, React.ElementType> = {
   arquitectos: Ruler,
@@ -35,16 +34,14 @@ const NICHE_ICONS: Record<string, React.ElementType> = {
 };
 
 export default function HomePage() {
-  const { language, t } = useLanguage();
   const [searchTerm, setSearchTerm] = useState("");
   const resultsRef = useRef<HTMLElement>(null);
 
-  const filteredNiches = NICHE_DATA.filter((niche) => {
-    const title = language === "en" && niche.title_en ? niche.title_en : niche.title;
-    const description = language === "en" && niche.description_en ? niche.description_en : niche.description;
-    const searchLower = searchTerm.toLowerCase();
-    return title.toLowerCase().includes(searchLower) || description.toLowerCase().includes(searchLower);
-  });
+  const filteredNiches = NICHE_DATA.filter(
+    (niche) =>
+      niche.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      niche.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   const scrollToResults = () => {
     resultsRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -59,10 +56,10 @@ export default function HomePage() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl dark:text-gray-100">
-              {t("hero-title")}
+              Encuentra el Regalo Perfecto por Profesión
             </h1>
             <p className="mt-6 text-lg text-gray-600 sm:text-xl dark:text-gray-300">
-              {t("hero-subtitle")}
+              Hemos seleccionado lo que funciona para cada profesión. Ideas que aciertan, sin relleno.
             </p>
 
             {/* Buscador funcional */}
@@ -71,7 +68,7 @@ export default function HomePage() {
                 <Search className="h-6 w-6 flex-shrink-0 text-gray-400 dark:text-gray-500" />
                 <input
                   type="text"
-                  placeholder={t("hero-search-placeholder")}
+                  placeholder="Buscar por profesión o hobby..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="flex-1 bg-transparent text-gray-900 placeholder:text-gray-400 outline-none dark:text-gray-100 dark:placeholder:text-gray-500"
@@ -81,7 +78,7 @@ export default function HomePage() {
                   onClick={scrollToResults}
                   className="rounded-lg bg-amber-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-amber-600 dark:bg-amber-500 dark:hover:bg-amber-400"
                 >
-                  {t("hero-explore")}
+                  Explorar
                 </button>
               </div>
             </div>
@@ -98,26 +95,24 @@ export default function HomePage() {
           <span
             className="inline-block rounded-full bg-orange-100 px-4 py-1 text-sm font-medium text-orange-700 animate-[fadeIn_0.5s_ease-out_both] dark:bg-amber-500/20 dark:text-amber-300"
           >
-            {NICHE_DATA.length} {t("professions-available")}
+            {NICHE_DATA.length} Profesiones Disponibles
           </span>
         </div>
         <h2 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl dark:text-gray-100">
-          {t("choose-profession")}
+          Elige profesión y mira qué encaja
         </h2>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
-          {t("selection-by-profession")}
+          Selección por profesión, hecha a mano
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {filteredNiches.length === 0 ? (
             <p className="col-span-full text-center text-gray-500 dark:text-gray-400">
-              {t("no-results")}
+              No encontramos categorías que coincidan con tu búsqueda.
             </p>
           ) : (
             filteredNiches.map((niche) => {
               const IconComponent = NICHE_ICONS[niche.slug] || Palette;
-              const displayTitle = language === "en" && niche.title_en ? niche.title_en : niche.title;
-              const displayDescription = language === "en" && niche.description_en ? niche.description_en : niche.description;
               return (
                 <Link
                   key={niche.slug}
@@ -128,13 +123,13 @@ export default function HomePage() {
                     <IconComponent className="h-7 w-7" />
                   </div>
                   <h3 className="mt-4 font-semibold text-gray-900 group-hover:text-amber-700 dark:text-gray-100 dark:group-hover:text-amber-400">
-                    {displayTitle}
+                    {niche.title}
                   </h3>
                   <p className="mt-2 line-clamp-2 text-sm text-gray-500 dark:text-gray-400">
-                    {displayDescription}
+                    {niche.description}
                   </p>
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-amber-600 group-hover:gap-2 dark:text-amber-400">
-                    {t("ver-ideas")}
+                    Ver ideas
                     <ArrowRight className="h-4 w-4 transition-all" />
                   </span>
                 </Link>
