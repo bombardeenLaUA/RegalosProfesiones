@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import { Gift } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="border-t border-gray-200 bg-gray-50 mt-auto dark:border-slate-800 dark:bg-slate-900/80">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -13,20 +17,20 @@ export default function Footer() {
               GiftGenius
             </Link>
             <p className="mt-4 text-sm text-gray-600 max-w-md dark:text-gray-300">
-              Ideas de regalo por profesión, elegidas a mano. Sin algoritmos, con criterio real.
+              {t("footer-description")}
             </p>
           </div>
 
           {/* Legal Links */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">Legal</h3>
+            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{t("legal")}</h3>
             <ul className="mt-4 space-y-3">
               <li>
                 <Link
                   href="/legal/aviso-legal"
                   className="text-sm text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-300 dark:hover:text-gray-100"
                 >
-                  Aviso Legal
+                  {t("aviso-legal")}
                 </Link>
               </li>
               <li>
@@ -34,7 +38,7 @@ export default function Footer() {
                   href="/legal/politica-privacidad"
                   className="text-sm text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-300 dark:hover:text-gray-100"
                 >
-                  Política de Privacidad
+                  {t("politica-privacidad")}
                 </Link>
               </li>
               <li>
@@ -42,7 +46,7 @@ export default function Footer() {
                   href="/legal/politica-privacidad#cookies"
                   className="text-sm text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-300 dark:hover:text-gray-100"
                 >
-                  Política de Cookies
+                  {t("politica-cookies")}
                 </Link>
               </li>
             </ul>
@@ -50,14 +54,14 @@ export default function Footer() {
 
           {/* Categorías rápidas */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">Categorías</h3>
+            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{t("categorias")}</h3>
             <ul className="mt-4 space-y-3">
               <li>
                 <Link
                   href="/regalos/programadores"
                   className="text-sm text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-300 dark:hover:text-gray-100"
                 >
-                  Regalos Programadores
+                  {t("regalos-programadores")}
                 </Link>
               </li>
               <li>
@@ -65,7 +69,7 @@ export default function Footer() {
                   href="/regalos/gamers"
                   className="text-sm text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-300 dark:hover:text-gray-100"
                 >
-                  Regalos Gamers
+                  {t("regalos-gamers")}
                 </Link>
               </li>
               <li>
@@ -73,7 +77,7 @@ export default function Footer() {
                   href="/regalos/profesores"
                   className="text-sm text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-300 dark:hover:text-gray-100"
                 >
-                  Regalos Profesores
+                  {t("regalos-profesores")}
                 </Link>
               </li>
             </ul>
@@ -82,7 +86,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-gray-200 pt-8 dark:border-slate-700">
           <p className="text-center text-xs text-gray-500 dark:text-gray-400">
-            © {new Date().getFullYear()} GiftGenius. Todos los derechos reservados. Como Afiliado de Amazon, obtenemos ingresos por las compras adscritas.
+            © {new Date().getFullYear()} GiftGenius. {t("copyright")}
           </p>
         </div>
       </div>

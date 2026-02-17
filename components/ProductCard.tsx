@@ -6,6 +6,7 @@ import { ExternalLink, Trophy, Star, Gem, Info } from "lucide-react";
 import type { Product } from "@/lib/data";
 import { trackProductClick } from "@/hooks/use-analytics";
 import { useMediaQuery } from "@/hooks/use-media-query";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Elimina emojis del texto para mostrar solo el texto limpio con icono Lucide
 function getCleanBadgeText(badge: string): string {
@@ -17,15 +18,19 @@ function getCleanBadgeText(badge: string): string {
 
 type BadgeVariant = "ventas" | "valorado" | "calidad-precio";
 
-function getBadgeConfig(badge: string): { icon: React.ElementType; variant: BadgeVariant; cleanText: string } | null {
+function getBadgeConfig(badge: string, language: "es" | "en" = "es"): { icon: React.ElementType; variant: BadgeVariant; cleanText: string } | null {
   const lower = badge.toLowerCase();
   const cleanText = getCleanBadgeText(badge);
   // Prioridad: Calidad/Precio (ofertas) > Ventas > Valorado
-  if (lower.includes("calidad")) {
-    return { icon: Gem, variant: "calidad-precio", cleanText };
+  if (lower.includes("calidad") || lower.includes("value")) {
+    return { icon: Gem, variant: "calidad-precio", cleanText: language === "en" ? "Best Value" : cleanText };
   }
-  if (lower.includes("ventas")) return { icon: Trophy, variant: "ventas", cleanText };
-  if (lower.includes("valorado")) return { icon: Star, variant: "valorado", cleanText };
+  if (lower.includes("ventas") || lower.includes("seller")) {
+    return { icon: Trophy, variant: "ventas", cleanText: language === "en" ? "Best Seller" : cleanText };
+  }
+  if (lower.includes("valorado") || lower.includes("rated")) {
+    return { icon: Star, variant: "valorado", cleanText: language === "en" ? "Top Rated" : cleanText };
+  }
   return null; // Solo estas 3 categorías existen visualmente
 }
 
@@ -58,12 +63,16 @@ export default function ProductCard({
   isTooltipOpen,
   onTooltipToggle,
 }: ProductCardProps) {
+  const { language, t } = useLanguage();
   const handleProductClick = () => trackProductClick(product, listName);
   const [imageError, setImageError] = useState(false);
   const tooltipRef = useRef<HTMLDivElement>(null);
   const isDesktop = useMediaQuery("(min-width: 1024px)");
   const position = getTooltipPosition(index, isDesktop);
   const hasGiftReason = Boolean(product.giftReason);
+  
+  const displayTitle = language === "en" && product.title_en ? product.title_en : product.title;
+  const displayReason = language === "en" && product.giftReason_en ? product.giftReason_en : product.giftReason;
 
   useEffect(() => {
     if (!isTooltipOpen) return;
@@ -112,7 +121,7 @@ export default function ProductCard({
         target="_blank"
         rel="noopener noreferrer nofollow sponsored"
         className="absolute inset-0 z-0 rounded-2xl"
-        aria-label={`Ir a Amazon: ${product.title}`}
+        aria-label={`${t("ir-a-amazon")}: ${displayTitle}`}
         onClick={handleProductClick}
       />
       <div className="relative z-10 flex flex-1 flex-col pointer-events-none">
@@ -121,7 +130,7 @@ export default function ProductCard({
             <div className="absolute left-0 top-0 z-10 flex flex-col gap-1">
               {product.badges
                 .map((badge, badgeIndex) => {
-                  const config = getBadgeConfig(badge);
+                  const config = getBadgeConfig(badge, language);
                   if (!config) return null;
                   const { icon: IconComponent, variant, cleanText } = config;
                   const isFirst = badgeIndex === 0;
@@ -145,14 +154,14 @@ export default function ProductCard({
               aria-hidden
             >
               <span className="line-clamp-4 text-sm font-medium text-gray-700 dark:text-gray-300">
-                {product.title}
+                {displayTitle}
               </span>
               <span className="mt-2 text-xs text-gray-500 dark:text-gray-400">GiftGenius</span>
             </div>
           ) : (
             <Image
               src={product.imageUrl}
-              alt={product.title}
+              alt={displayTitle}
               fill
               unoptimized
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
@@ -163,7 +172,7 @@ export default function ProductCard({
         </div>
         <div className="relative flex flex-1 flex-col p-6 pointer-events-none">
           <h2 className="font-semibold text-gray-900 line-clamp-2 group-hover:text-amber-700 dark:text-gray-100 dark:group-hover:text-amber-400">
-            <span className="block">{product.title}</span>
+            <span className="block">{displayTitle}</span>
           </h2>
           <div className="relative mt-2 flex items-center justify-between gap-2 pointer-events-none">
             <span className="text-2xl font-bold text-amber-600 dark:text-amber-400">
@@ -175,7 +184,7 @@ export default function ProductCard({
                   type="button"
                   onClick={handleInfoClick}
                   className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-300 text-white transition-colors hover:bg-gray-400 dark:bg-slate-600 dark:hover:bg-slate-500"
-                  aria-label="Por qué es un buen regalo"
+                  aria-label={t("por-que-regalo")}
                 >
                   <Info className="h-4 w-4" />
                 </button>
@@ -183,7 +192,7 @@ export default function ProductCard({
                   <div
                     className={`absolute z-50 isolate w-full overflow-visible rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl animate-[fadeIn_0.15s_ease-out_both] lg:w-64 dark:border-slate-600 dark:bg-slate-800 ${tooltipPositionClasses[position]}`}
                   >
-                    <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-300">{product.giftReason}</p>
+                    <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-300">{displayReason}</p>
                     <div
                       className={`absolute ${arrowClasses[position]} ${position === "top" ? "dark:!border-t-slate-800" : "dark:border-slate-600 dark:bg-slate-800"}`}
                       aria-hidden
@@ -195,7 +204,7 @@ export default function ProductCard({
           </div>
           <div className="mt-auto pt-6 pointer-events-none">
             <span className="flex w-full items-center justify-center gap-2 rounded-xl bg-amber-400 px-6 py-4 font-semibold text-gray-900 shadow-md transition-all group-hover:bg-amber-500 dark:bg-amber-500 dark:hover:bg-amber-400">
-              Ver en Amazon
+              {t("ver-en-amazon")}
               <ExternalLink className="h-5 w-5" />
             </span>
           </div>
