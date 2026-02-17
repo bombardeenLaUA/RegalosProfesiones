@@ -1,15 +1,14 @@
 "use client";
 
-import { ReactNode } from "react";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { LanguageProvider } from "@/context/LanguageContext";
 
-export function Providers({ children }: { children: ReactNode }) {
+export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <LanguageProvider>
-      <ThemeProvider attribute="class" defaultTheme="light" enableSystem storageKey="theme">
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem storageKey="theme">
+      <LanguageProvider>
         {children}
-      </ThemeProvider>
-    </LanguageProvider>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
