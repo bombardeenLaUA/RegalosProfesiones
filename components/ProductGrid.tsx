@@ -40,7 +40,7 @@ export default function ProductGrid({ products, listName }: ProductGridProps) {
       case 2:
         return "Ordenar: Mayor Precio ↓";
       default:
-        return "Ordenar: Por defecto";
+        return "Ordenar: Por defecto (Etiquetas primero)";
     }
   };
 
