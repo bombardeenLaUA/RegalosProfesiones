@@ -29,6 +29,25 @@ function getBadgeConfig(badge: string): { icon: React.ElementType; variant: Badg
   return null; // Solo estas 3 categorías existen visualmente
 }
 
+// Renderiza giftReason respetando saltos de línea y "Tip:" en negrita
+function renderGiftReason(text: string): React.ReactNode {
+  const tipMarker = "\n\n**Tip:**";
+  const idx = text.indexOf(tipMarker);
+  if (idx === -1) {
+    return <span style={{ whiteSpace: "pre-line" }}>{text}</span>;
+  }
+  const main = text.slice(0, idx).trim();
+  const tipText = text.slice(idx + tipMarker.length).trim();
+  return (
+    <>
+      <span style={{ whiteSpace: "pre-line" }}>{main}</span>
+      <span className="mt-2 block">
+        <strong>Tip:</strong> {tipText}
+      </span>
+    </>
+  );
+}
+
 const BADGE_STYLES: Record<BadgeVariant, string> = {
   ventas: "bg-green-500 text-white",
   valorado: "bg-yellow-400 text-gray-900",
@@ -183,7 +202,7 @@ export default function ProductCard({
                   <div
                     className={`absolute z-50 isolate w-full overflow-visible rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-2xl animate-[fadeIn_0.15s_ease-out_both] lg:w-64 dark:border-slate-600 dark:bg-slate-800 ${tooltipPositionClasses[position]}`}
                   >
-                    <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-300">{product.giftReason}</p>
+                    <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-300">{renderGiftReason(product.giftReason)}</p>
                     <div
                       className={`absolute ${arrowClasses[position]} ${position === "top" ? "dark:!border-t-slate-800" : "dark:border-slate-600 dark:bg-slate-800"}`}
                       aria-hidden
